@@ -64,6 +64,15 @@
     color: white;
     text-align: center;
 }
+a:hover {
+    color: blue;
+  }
+.audio-player {
+    width: 7.55cm;;
+    float: right;
+    bottom: 30%;
+    top: 70%;
+  }
 
 /* Styles para el Section*/
 .red5-text {
