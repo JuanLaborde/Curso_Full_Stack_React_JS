@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style-Form.css">
+    <title>Formulario de contacto</title>
+</head>
+
+<body>
+    
+    <div class="contact-box">
+        <div class="message">
+            <div class="success" id="success">
+                Gracias por tu mensaje!!
+            </div>
+        </div>
+        <form id="Formulario" action="CV-Juan-Laborde.html" method="post">
+            <input id="nombre" type="text" class="input-field" placeholder="Tu nombre">
+            <input id="email" type="email" class="input-field" placeholder="Tu Email">
+            <textarea id="mensaje" type="text" class="input-field textarea-field" placeholder="Tu mensaje"></textarea>
+            <button id="enviarCorreo" type="submit" class="btn-format">Enviar Mensage</button>
+            <button type="submit" class="btn-format">Regresar</button>
+
+
+        </form>
+        <script>
+            const form = document.getElementById("Formulario");
+            const success = document.getElementById("success");
+            const btnSend = document.getElementById('enviarCorreo');
+            btnSend.addEventListener("click", function (e) {
+                e.preventDefault();
+                const nombre = document.getElementById("nombre").value;
+                const email = document.getElementById("email").value;
+                const mensaje = document.getElementById("mensaje").value;
+                window.location.href = `mailto:juan.laborde33@gmail.com?
+                subject=EnvioDesdeFormulario&body=Nombre%3A${nombre}%0ACorreo%3A${email}%0AMensaje%3A${mensaje}`;
+                form.reset();
+                success.style.display = `block`
+            });
+        </script>
+
+
+    </div>
+</body>
+
+</html>

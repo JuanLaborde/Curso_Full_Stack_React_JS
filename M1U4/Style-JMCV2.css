@@ -1,0 +1,208 @@
+/* ----------------------------PRELOADER FORMAT -------------------------------------*/
+#preloader {
+    background: #000 url("images/loading.gif") no-repeat center center;
+    background-size: 50%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+/* ----------------------------BODY FORMAT -------------------------------------*/
+Body {
+    background-color: gainsboro;
+    margin: 0 0 0 0;
+    margin-bottom: 50px;
+}
+
+/* ----------------------------NAV FORMAT -------------------------------------*/
+.align-left {
+    float: left;
+    width: 90%;
+}
+
+.align-right {
+    align-self: right;
+    width: 10%;
+}
+
+.audio-player {
+    width: 7.55cm;
+    margin-top: 2%;
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-panel {
+    background-color: #be3144;
+    color: #be3144;
+    border-color: #be3144;
+
+}
+
+.container-elements-nav {
+    width: 100%;
+}
+
+.nav-format {
+    display: flex;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #be3144;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+    z-index: 10;
+}
+
+.Title-Nav {
+    color: black;
+    font-family: Lobster, monospace;
+    font-size: 40px;
+    margin-left: 50px;
+
+}
+
+/* ----------------------ASIDE FORMAT------------------------------- */
+a {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: blue;
+}
+
+a:active {
+    color: red;
+}
+
+.aline-Text {
+    line-height: 4px;
+}
+
+.Aside-Format {
+    background-color: gray;
+    width: 7.55cm;
+    height: 100%;
+    float: left;
+    position: absolute;
+    margin-top: 5%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.footer-Aside {
+    background-color: black;
+    position: fixed;
+    height: 50px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+
+}
+
+h3 {
+    margin-left: 35px;
+    font-size: 20px;
+}
+
+.Text-Footer-and-link {
+    text-align: center;
+    color: white;
+}
+
+.Text-Format-information {
+    margin-left: 35px;
+    font-size: 16px;
+}
+
+.Title-Text-Aside-Format {
+    color: black;
+    font-size: 25px;
+    margin-left: 300px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* -----------------------------IMAGE ASIDE FORMAT------------------------------- */
+.smaller-image {
+    width: 100px;
+}
+
+.thick-border {
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+}
+
+.border-style {
+    border-radius: 50%;
+    margin-top: 20%;
+}
+
+.center-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+/* ------------------------------FORMAT DE LAS SECCIONES---------------------------------------*/
+.container {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.fullCard {
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 300px;
+    margin-right: 15px;
+}
+
+.List-ul-Format {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.p-Section-Text-Format {
+    text-align: justify;
+}
+
+.Section-Format {
+    background-color: gainsboro;
+    height: 100%;
+    float: right;
+    margin-left: 0%;
+    margin-top: 6.5%;
+    justify-content: flex-start;
+}
+
+.Section2-Format {
+    background-color: #45567d;
+
+}
+
+.title-Section {
+    margin-left: 30%;
+    font-size: 25px;
+    color: white;
+}
+
+.Title-Text-Section-Format {
+    color: white;
+    font-size: 25px;
+    margin-left: 100px;
+    margin-top: 10px;
+    text-align: center;
+}
+
