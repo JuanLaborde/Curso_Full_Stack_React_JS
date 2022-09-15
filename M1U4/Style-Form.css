@@ -4,13 +4,13 @@
 }
 
 body {
-    background-color: #efefef;
+    background-color: #25252A;
 }
 
 .contact-box {
     width: 500px;
     background-color: #fff;
-    box-shadow: 0 0 20px 0 #999;
+    box-shadow: 0 0 30px 0 #42FbF2;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -19,6 +19,13 @@ body {
 
 form {
     margin: 35px;
+}
+
+h1{
+    color: white;
+    font-size: 35px;
+    margin-top: 100px;
+    text-align: center;
 }
 
 .input-field {

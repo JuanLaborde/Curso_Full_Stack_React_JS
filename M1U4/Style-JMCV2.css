@@ -36,7 +36,6 @@ audio::-webkit-media-controls-panel {
     background-color: #be3144;
     color: #be3144;
     border-color: #be3144;
-
 }
 
 .container-elements-nav {
@@ -60,7 +59,6 @@ audio::-webkit-media-controls-panel {
     font-family: Lobster, monospace;
     font-size: 40px;
     margin-left: 50px;
-
 }
 
 /* ----------------------ASIDE FORMAT------------------------------- */
@@ -87,14 +85,13 @@ a:active {
 .Aside-Format {
     background-color: gray;
     width: 7.55cm;
-    height: 100%;
     float: left;
-    position: absolute;
+    position: static;
     margin-top: 5%;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    justify-content: center;    
+    height: 150vh;
+    z-index: 1;
 }
 
 .footer-Aside {
@@ -104,7 +101,6 @@ a:active {
     bottom: 0px;
     left: 0px;
     right: 0px;
-
 }
 
 h3 {
@@ -124,9 +120,8 @@ h3 {
 
 .Title-Text-Aside-Format {
     color: black;
-    font-size: 25px;
-    margin-left: 300px;
-    margin-top: 10px;
+    font-size: 35px;
+    margin-top: 30px;
     text-align: center;
 }
 
@@ -154,17 +149,78 @@ h3 {
 }
 
 /* ------------------------------FORMAT DE LAS SECCIONES---------------------------------------*/
+.Button-format{
+    width: 150px;
+    height: 50px;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    background-color: #25252A;
+    transition: ease-out 0.3s;
+    font-size: 20px;
+    outline: none;
+    border: 3px solid #42FbF2;
+    position: relative;
+    z-index: 1;
+}
+
+.Button-format:hover{
+    color: #fff;
+    cursor:pointer;
+}
+
+.Button-format:before{
+    transition: 0.5s all ease;
+    position: absolute;
+    top:0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: #42FbF2;
+}
+
+.Button-format:hover:before{
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+}
+
 .container {
     display: flex;
     flex-flow: column wrap;
+    margin-left: 15%;
+    margin-top: 0%;
+}
+
+.Container-Button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    
 }
 
 .fullCard {
     border: 1px solid #000;
     border-radius: 5px;
     padding: 5px;
-    margin-left: 300px;
+    margin-left: 15px;
     margin-right: 15px;
+}
+
+.Iframe-Imagenes {
+    border: none;
+    margin: auto;
+    width: 100%;
+    height: 375px;
+    padding: 0px;
+    align-self: center;
+    background-color: #25252A;
+    margin-top: 20px;
 }
 
 .List-ul-Format {
@@ -176,6 +232,7 @@ h3 {
 
 .p-Section-Text-Format {
     text-align: justify;
+    font-size: 18px;
 }
 
 .Section-Format {
@@ -184,25 +241,92 @@ h3 {
     float: right;
     margin-left: 0%;
     margin-top: 6.5%;
-    justify-content: flex-start;
+    text-align: center;
 }
 
 .Section2-Format {
-    background-color: #45567d;
+    background-color: #25252A;
 
 }
 
 .title-Section {
-    margin-left: 30%;
     font-size: 25px;
     color: white;
+    text-align: center;
+    display: inline-block;
 }
 
 .Title-Text-Section-Format {
     color: white;
-    font-size: 25px;
-    margin-left: 100px;
+    font-size: 35px;
     margin-top: 10px;
     text-align: center;
 }
 
+/* ------------------------------FORMAT HTML SERIES - Juegos - FOTOGRAFIA---------------------------------------*/
+
+.container-slide {
+    margin: auto;
+    width: 800px;
+    padding: 0px;
+}
+
+.menu {
+    text-align: center;
+    margin: 20px;
+}
+
+.menu li {
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: grey;
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.slider {
+    position: relative;
+    width: 800px;
+    height: 300px
+}
+
+ul.slider li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    animation: slider 9s infinite linear;
+}
+
+ul.slider li img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+ul.slider li:first-child {
+    opacity: 1;
+}
+
+ul.slider li:target {
+    opacity: 1;
+}
