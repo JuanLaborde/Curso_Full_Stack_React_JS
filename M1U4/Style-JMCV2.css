@@ -89,7 +89,7 @@ a:active {
     position: static;
     margin-top: 5%;
     flex-direction: column;
-    justify-content: center;    
+    justify-content: center;
     height: 150vh;
     z-index: 1;
 }
@@ -149,7 +149,7 @@ h3 {
 }
 
 /* ------------------------------FORMAT DE LAS SECCIONES---------------------------------------*/
-.Button-format{
+.Button-format {
     width: 150px;
     height: 50px;
     border: none;
@@ -164,15 +164,15 @@ h3 {
     z-index: 1;
 }
 
-.Button-format:hover{
+.Button-format:hover {
     color: #fff;
-    cursor:pointer;
+    cursor: pointer;
 }
 
-.Button-format:before{
+.Button-format:before {
     transition: 0.5s all ease;
     position: absolute;
-    top:0;
+    top: 0;
     left: 50%;
     right: 50%;
     bottom: 0;
@@ -181,7 +181,7 @@ h3 {
     background-color: #42FbF2;
 }
 
-.Button-format:hover:before{
+.Button-format:hover:before {
     transition: 0.5s all ease;
     left: 0;
     right: 0;
@@ -196,12 +196,12 @@ h3 {
     margin-top: 0%;
 }
 
-.Container-Button{
+.Container-Button {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    
+
 }
 
 .fullCard {
@@ -263,7 +263,7 @@ h3 {
     text-align: center;
 }
 
-/* ------------------------------FORMAT HTML SERIES - Juegos - FOTOGRAFIA---------------------------------------*/
+/* ------------------------------FORMAT HTML SERIES - Juegos - Paisajes---------------------------------------*/
 
 .container-slide {
     margin: auto;
