@@ -1,0 +1,366 @@
+/* ----------------------------PRELOADER FORMAT -------------------------------------*/
+#preloader {
+    background: #000 url("images/loading.gif") no-repeat center center;
+    background-size: 50%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+/* ----------------------------BODY FORMAT -------------------------------------*/
+Body {
+    background-color: gainsboro;
+    margin: 0 0 0 0;
+    margin-bottom: 50px;
+}
+
+/* ----------------------------NAV FORMAT -------------------------------------*/
+.align-left {
+    float: left;
+    width: 90%;
+}
+
+.align-right {
+    align-self: right;
+    width: 10%;
+}
+
+.audio-player {
+    width: 7.55cm;
+    margin-top: 2%;
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-panel {
+    background-color: #be3144;
+    color: #be3144;
+    border-color: #be3144;
+}
+
+.container-elements-nav {
+    width: 100%;
+}
+
+.nav-format {
+    display: flex;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #be3144;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+    z-index: 10;
+}
+
+.Title-Nav {
+    color: black;
+    font-family: Lobster, monospace;
+    font-size: 40px;
+    margin-left: 50px;
+}
+
+/* ----------------------ASIDE FORMAT------------------------------- */
+a {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: blue;
+}
+
+a:active {
+    color: red;
+}
+
+.aline-Text {
+    line-height: 4px;
+}
+
+.Aside-Format {
+    background-color: gray;
+    width: 7.55cm;
+    float: left;
+    position: static;
+    margin-top: 5%;
+    flex-direction: column;
+    justify-content: center;
+    height: 150vh;
+    z-index: 1;
+}
+
+.footer-Aside {
+    background-color: black;
+    position: fixed;
+    height: 50px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+h3 {
+    margin-left: 35px;
+    font-size: 20px;
+}
+
+.Text-Footer-and-link {
+    text-align: center;
+    color: white;
+}
+
+.Text-Format-information {
+    margin-left: 35px;
+    font-size: 16px;
+}
+
+.Title-Text-Aside-Format {
+    color: black;
+    font-size: 35px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* -----------------------------IMAGE ASIDE FORMAT------------------------------- */
+.smaller-image {
+    width: 100px;
+}
+
+.thick-border {
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+}
+
+.border-style {
+    border-radius: 50%;
+    margin-top: 20%;
+}
+
+.center-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+/* ------------------------------FORMAT DE LAS SECCIONES---------------------------------------*/
+.Button-format {
+    width: 150px;
+    height: 50px;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    background-color: #25252A;
+    transition: ease-out 0.3s;
+    font-size: 20px;
+    outline: none;
+    border: 3px solid #42FbF2;
+    position: relative;
+    z-index: 1;
+}
+
+.Button-format:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+.Button-format:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: #42FbF2;
+}
+
+.Button-format:hover:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+}
+
+.container {
+    display: flex;
+    flex-flow: column wrap;
+    margin-left: 15%;
+    margin-top: 0%;
+}
+
+.Container-Button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.fullCard {
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+    box-shadow: 0 0 15px 0 gray;
+}
+
+.Iframe-Imagenes {
+    border: none;
+    margin: auto;
+    width: 100%;
+    height: 375px;
+    padding: 0px;
+    align-self: center;
+    background-color: #25252A;
+    margin-top: 20px;
+}
+
+.List-ul-Format {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.p-Section-Text-Format {
+    text-align: justify;
+    font-size: 18px;
+}
+
+.Section-Format {
+    background-color: gainsboro;
+    height: 100%;
+    float: right;
+    margin-left: 0%;
+    margin-top: 6.5%;
+    text-align: center;
+}
+
+.Section2-Format {
+    background-color: #25252A;
+
+}
+
+.title-Section {
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+}
+
+.Title-Text-Section-Format {
+    color: white;
+    font-size: 35px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* ------------------------------FORMAT HTML SERIES - Juegos - Paisajes---------------------------------------*/
+
+.container-slide {
+    margin: auto;
+    width: 800px;
+    padding: 0px;
+}
+
+.menu {
+    text-align: center;
+    margin: 20px;
+}
+
+.menu li {
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: grey;
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.slider {
+    position: relative;
+    width: 800px;
+    height: 300px
+}
+
+ul.slider li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    animation: slider 9s infinite linear;
+}
+
+ul.slider li img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+ul.slider li:first-child {
+    opacity: 1;
+}
+
+ul.slider li:target {
+    opacity: 1;
+}
+
+/*---------------------------------EXPERIENCIA LABORAL-----------------------------------*/
+
+.final-section {
+    background: linear-gradient(-45deg, #44202c, #0a1821);
+    width: 100%;
+    height: 100%;
+}
+
+.laboral-experience {
+    border: 1px solid white;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 56px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px white;
+}
+
+.row-format {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    grid-auto-rows: minmax(100px, auto);
+    justify-content: center;
+    color: white;
+}
+
+.row-format img{
+    width: 30%;
+}
+
