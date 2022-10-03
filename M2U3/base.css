@@ -1,0 +1,115 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	color: #000;
+	background: #332F29;
+	font-size: 100%;
+}
+
+#contenedor {
+	width: 800px;
+	background: #8FA68E;
+	margin-right: auto;
+	margin-left: auto;
+	overflow: hidden;
+}
+
+nav {
+	background: #CC3910;
+	float: left;
+	width: 160px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	color: #F1F2C0;
+	text-decoration: none;
+}
+
+section {
+	background: #F1F2C0;
+	float: left;
+	margin: 0 0 0 25px;
+	width: 400px;
+}
+
+aside {
+	background: #CCC59E;
+	float: right;
+	width: 190px;
+}
+
+@media screen and (max-width: 800px) {
+	*{
+		margin:0;
+		padding: 0;
+	}
+	#contenedor {
+		width: 100%;
+		background: #8FA68E;		
+		height: auto;
+		position: flex;
+	}
+	
+	nav {
+		background: #ffcc66;
+		float: none;
+		width: 100%;
+		display:inline-block;		
+	}
+
+	a {
+		color: black;
+		text-decoration: none;
+	}
+
+	h1 {
+		font-size: 27px;
+		margin-bottom: 21px;
+	}
+
+	h2 {
+		margin-left: 10px;
+		font-size: 21px;
+		margin-top: 31px;
+	}
+
+	p {
+		margin-left: 8px;
+		margin-top: 19px;
+		margin-bottom: 26px;
+		font-size: 15px;
+	}	
+
+	section {
+		background: #F1F2C0;
+		float: none;		
+		vertical-align: baseline;
+		width: 100%;
+		border: 1px solid black;
+		margin: 0;
+		display:inline-block;
+	}
+
+	aside {
+		background: #CCC59E;
+		float: none;		
+		width: 100%;
+		display:inline-block;
+	}
+
+
+	ul {
+		list-style-type: none;
+		font-size: 14px;
+		line-height: 30px;
+		margin-top: 1px;
+		margin-bottom: 1px;
+		margin-left: 40px;
+	}
+
+}
