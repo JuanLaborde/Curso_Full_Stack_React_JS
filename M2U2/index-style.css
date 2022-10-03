@@ -1,0 +1,119 @@
+body {
+    background-color: #FFFFFF;
+  }
+
+  div {
+    height: 200px;
+    width: 200px;
+  }
+
+  /*================= EJERCICIO 1 =================*/
+  .container {
+    width: 640px;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+  }
+
+  .sub-container{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 600px;
+    height: 600px;
+    text-align: center;
+    font-size: 25px;
+    vertical-align: middle;
+    line-height: 190px;  
+    align-items: flex-end;
+  }
+
+  .red {
+    background-color: red;
+    color: white;
+  }
+
+  .blue {
+    background-color: blue;
+    color: white;
+  }
+
+  .green {
+    background-color: green;
+    color: white;
+  }
+
+   /*================= EJERCICIO 2 =================*/
+   .container2 {
+    width: 640px;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+  }
+
+  .sub-container2{
+    display: flex;
+    flex-direction: row-reverse;
+    border: 1px solid black;
+    width: 600px;
+    height: 600px;
+    text-align: center;
+    font-size: 25px;
+    vertical-align: middle;
+    line-height: 190px;  
+    align-items: center;
+  }
+
+  .red2 {
+    background-color: red;
+    color: white;
+  }
+
+  .blue2 {
+    background-color: blue;
+    color: white;
+  }
+
+  .green2 {
+    background-color: green;
+    color: white;
+  }
+
+  /*================= EJERCICIO 3 =================*/
+  .container3 {
+    width: 1850px;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+    position: relative;
+  }
+
+  .sub-container3{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    width: 1850px;
+    height: 200px;
+    text-align: center;
+    font-size: 25px;
+    vertical-align: middle;
+    line-height: 190px;  
+    justify-content: space-between;
+  }
+
+  .red3 {
+    background-color: red;
+    color: white;
+  }
+
+  .blue3 {
+    background-color: blue;
+    color: white;
+  }
+
+  .green3 {
+    background-color: green;
+    color: white;
+  }
