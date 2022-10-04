@@ -19,6 +19,10 @@ nav {
 	background: #CC3910;
 	float: left;
 	width: 160px;
+	animation-name: box1;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+
 }
 
 ul {
@@ -35,35 +39,43 @@ section {
 	float: left;
 	margin: 0 0 0 25px;
 	width: 400px;
+	animation-name: box2;
+	animation-duration: 3s;
+	animation-delay: 0s;
+	animation-fill-mode: forwards;
 }
 
 aside {
 	background: #CCC59E;
 	float: right;
 	width: 190px;
+	animation-name: box3;
+	animation-duration: 3s;
+	animation-delay: 0s;
+	animation-fill-mode: forwards;
 }
 
 @media screen and (max-width: 800px) {
 	body {
-		margin:0;
+		margin: 0;
 		padding: 0;
 	}
 
-    a {
+	a {
 		color: black;
 		text-decoration: none;
 	}
 
 	aside {
 		background: #CCC59E;
-		float: none;		
+		float: none;
 		width: 100%;
-		display:inline-block;
+		display: inline-block;
 	}
 
 	#contenedor {
 		width: 100%;
-		background: #8FA68E;		
+		background: #8FA68E;
 		height: auto;
 		position: flex;
 	}
@@ -77,24 +89,24 @@ aside {
 		font-size: 21px;
 		margin: 31px 0px 0px 10px;
 	}
-	
+
 	nav {
 		background: #ffcc66;
 		float: none;
-		width: 100%;				
+		width: 100%;
 	}
 
-	p {		
+	p {
 		margin: 19px 0px 26px 8px;
 		font-size: 15px;
-	}	
+	}
 
 	section {
 		background: #F1F2C0;
-		float: none;		
+		float: none;
 		width: 100%;
 		border: 1px solid black;
-		margin: 0;		
+		margin: 0;
 	}
 
 	ul {
@@ -102,6 +114,42 @@ aside {
 		font-size: 16px;
 		line-height: 30px;
 		margin: 1px 0px 1px 18px;
+	}
+
+	@keyframes box1 {
+		from {
+			margin-left: 100%;
+			background: black;
+		}
+
+		to {
+			margin-left: 0%;
+			background: #ffcc66;
+		}
+	}
+
+	@keyframes box2 {
+		from {
+			margin-left: 100%;
+			background: black;
+		}
+
+		to {
+			margin-left: 0%;
+			background: #F1F2C0;;
+		}
+	}
+
+	@keyframes box3 {
+		from {
+			margin-left: 100%;
+			background: black;
+		}
+
+		to {
+			margin-left: 0%;
+			background: #CCC59E;
+		}
 	}
 
 }
