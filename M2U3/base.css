@@ -117,39 +117,55 @@ aside {
 	}
 
 	@keyframes box1 {
-		from {
+		0% {
 			margin-left: 100%;
 			background: black;
 		}
 
-		to {
+		50% {
+			background: black;
+		}
+
+		100%  {
 			margin-left: 0%;
 			background: #ffcc66;
 		}
 	}
 
 	@keyframes box2 {
-		from {
+
+		0% {
 			margin-left: 100%;
 			background: black;
 		}
 
-		to {
-			margin-left: 0%;
-			background: #F1F2C0;;
+		50% {
+			background: black;
 		}
+
+		100%  {
+			margin-left: 0%;
+			background: #F1F2C0;
+		}
+		
 	}
 
 	@keyframes box3 {
-		from {
+
+		0% {
 			margin-left: 100%;
 			background: black;
 		}
 
-		to {
+		50% {
+			background: black;
+		}
+
+		100%  {
 			margin-left: 0%;
 			background: #CCC59E;
 		}
+		
 	}
 
 }
