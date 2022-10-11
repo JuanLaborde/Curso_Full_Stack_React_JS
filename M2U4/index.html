@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <title>Presentación Proyecto Final</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar bg-light personalizacion-navbar">
+            <div class="container-fluid">
+                Presentación Proyecto Final
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid title-text">
+        <h2>Sección 1 - Página Principal</h2>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button header-background" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Logo
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="container text-center">
+                            <div class="row">
+                                <div class="col-2 Formato-de-columna-texto">
+                                    <p>Este sera el logo animado de la pagina. El cual es animado y se inicia con la
+                                        pagina.</p>
+                                </div>
+                                <div class="col-1 Formato-de-columna-button">
+                                    <button type="button" id="restartButton" class="btn btn-dark">Refresh</button>
+                                </div>
+                                <div class="col-9 contenedor" style="background-color: black;">
+                                    <div class="logo-format">
+                                        <div class="logo">
+                                            <h2>OLD GAME</h2>
+                                            <div class="back-text">
+                                                <span>T</span>
+                                                <span>R</span>
+                                                <span>I</span>
+                                                <span>B</span>
+                                                <span>U</span>
+                                                <span>T</span>
+                                                <span>E</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed header-background" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                            aria-controls="collapseTwo">
+                            Vista Principal
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="container text-center">
+                                <div class="row">
+                                    <div class="col-3 Formato-de-columna-texto">
+                                        <p>Vistas de la pagina principal y el menu desplegado.</p>
+                                    </div>
+
+                                    <div class="col-9 contenedor" style="background-color: black;">
+                                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                                            <div class="carousel-indicators">
+                                                <button type="button" data-bs-target="#carouselExampleIndicators"
+                                                    data-bs-slide-to="0" class="active" aria-current="true"
+                                                    aria-label="Slide 1"></button>
+                                                <button type="button" data-bs-target="#carouselExampleIndicators"
+                                                    data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            </div>
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="images/Pag-Prin-01.jpg" class="d-block w-100" alt="...">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="images/Pag-Prin-02.jpg" class="d-block w-100" alt="...">
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button"
+                                                data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button"
+                                                data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed header-background" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                            aria-controls="collapseThree">
+                            Video background
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="container text-center">
+                                <div class="row">
+                                    <div class="col-3 Formato-de-columna-texto">
+                                        <p>El fondo es un video corriendo continuamente, como se ve al lado.</p>
+                                    </div>
+                                    <div class="col-9 contenedor2">
+                                        <video src="images/Background-Section3.mp4" muted loop autoplay></video>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed header-background" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                            aria-controls="collapseFour">
+                            Totalmente responsive
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="container text-center">
+                                <div class="row">
+                                    <div class="col-3 Formato-de-columna-texto">
+                                        <p>Pagina responsive por debajo de los 800px. Se reduce el background, las
+                                            letras y se reajusta el menu cuando se despliega.</p>
+                                    </div>
+                                    <div class="col-9 contenedor">
+                                        <img src="images/Pag-Prin-responsive.jpg" class="img-fluid" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid title-text">
+        <h2>Sección 2 - Página Sign In - Sign Up</h2>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button header-background" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                        Vista Principal
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse show" aria-labelledby="headingFive"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="container text-center">
+                            <div class="row">
+                                <div class="col-3 Formato-de-columna-texto">
+                                    <p>Vista de la pagina para iniciar sesion y para registrarse.</p>
+                                </div>
+
+                                <div class="col-9 contenedor" style="background-color: black;">
+                                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#carouselExampleCaptions"
+                                                data-bs-slide-to="0" class="active" aria-current="true"
+                                                aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carouselExampleCaptions"
+                                                data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="images/Pag-Sign-01.jpg" class="d-block w-100" alt="...">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5>Inicio de sesión</h5>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="images/Pag-Sign-02.jpg" class="d-block w-100" alt="...">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5>Registrarse en la pagina</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button"
+                                            data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button"
+                                            data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSix">
+                        <button class="accordion-button collapsed header-background" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false"
+                            aria-controls="collapseSix">
+                            Video Demo de funcionamiento
+                        </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="container text-center">
+                                <div class="row">
+                                    <div class="col-3 Formato-de-columna-texto">
+                                        <p>Se sigue usando el mismo fondo de la pagina principal, y hay una transicion
+                                            entre ambos formularios.</p>
+                                    </div>
+                                    <div class="col-9 contenedor2">
+                                        <video src="images/Signin Demo.mp4" muted loop autoplay></video>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSeven">
+                        <button class="accordion-button collapsed header-background" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false"
+                            aria-controls="collapseSeven">
+                            Totalmente responsive
+                        </button>
+                    </h2>
+                    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="container text-center">
+                                <div class="row">
+                                    <div class="col-3 Formato-de-columna-texto">
+                                        <p>Pagina responsive por debajo de los 800px. Se reduce el background, las
+                                            letras y se reajusta la nimacion de transicion y se re acomoda todo al ancho
+                                            y alto de la pantalla</p>
+                                    </div>
+                                    <div class="col-9 contenedor2">
+                                        <video src="images/Responsive-demo.mp4" muted loop autoplay></video>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid title-text">
+        <h2>Sección 3 - Página Resident Evil</h2>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingEight">
+                    <button class="accordion-button header-background2" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+                        Inicio de pagina
+                    </button>
+                </h2>
+                <div id="collapseEight" class="accordion-collapse collapse show" aria-labelledby="headingEight"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="container text-center">
+                            <div class="row">
+                                <div class="col-3 Formato-de-columna-texto">
+                                    <p>Vista incial de la pagina del juego Resident Evil, se ve un menu principal y uno
+                                        lateral ese es fijo y a medida que se baja esta anclado al lado derecho de la
+                                        pagina.
+                                        El fondo es un video con escenas del juego.
+                                    </p>
+                                </div>
+
+                                <div class="col-9 contenedor" style="background-color: black;">
+                                    <img src="images/RE01.jpg" class="img-fluid" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingNine">
+                        <button class="accordion-button collapsed header-background2" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false"
+                            aria-controls="collapseNine">
+                            Video usado de fondo
+                        </button>
+                    </h2>
+                    <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="container text-center">
+                                <div class="row">
+                                    <div class="col-3 Formato-de-columna-texto">
+                                        <p>Se usa un video con escena de los diferentes juegos, el mismo es de youtube y
+                                            fue hecho por Capcom que es el desarrollador del juego.</p>
+                                    </div>
+                                    <div class="col-9 contenedor2">
+                                        <video src="images/Resident-Evil.mp4" muted loop autoplay></video>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTen">
+                        <button class="accordion-button collapsed header-background2" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false"
+                            aria-controls="collapseTen">
+                            Seccion Games
+                        </button>
+                    </h2>
+                    <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="container text-center">
+                                <div class="row">
+                                    <div class="col-3 Formato-de-columna-texto">
+                                        <p>Se usa un carrousel infinito que corre solo y muestra las portadas de todos
+                                            los juegos hechos.</p>
+                                    </div>
+                                    <div class="col-9 contenedor2">
+                                        <img src="images/RE02.jpg" class="img-fluid" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingEleven">
+                        <button class="accordion-button collapsed header-background2" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false"
+                            aria-controls="collapseEleven">
+                            Seccion Historia
+                        </button>
+                    </h2>
+                    <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="container text-center">
+                                <div class="row">
+                                    <div class="col-3 Formato-de-columna-texto">
+                                        <p>Se usa una transicion en el scroll que consiste que 2 elementos salen de un
+                                            lado y se juntan en el medio. En la demo se puede ver mas claramente. Se
+                                            pasa de un fondo de video a uno estatico para luego pasar de nuevo al video
+                                            en la siguiente seccion.</p>
+                                    </div>
+                                    <div class="col-9 contenedor2">
+                                        <video src="images/REanimation.mp4" muted loop autoplay></video>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwelve">
+                        <button class="accordion-button collapsed header-background2" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false"
+                            aria-controls="collapseTwelve">
+                            Seccion Personajes
+                        </button>
+                    </h2>
+                    <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="container text-center">
+                                <div class="row">
+                                    <div class="col-3 Formato-de-columna-texto">
+                                        <p>Se usa un carrousel automatico y manual, a los pocos segundos pasa al
+                                            siguiente slide. Al colocar el mouse arriba de la imagen aparecen las
+                                            flechas para pasar a la siguiente imagen o volver atras.</p>
+                                    </div>
+                                    <div class="col-9 contenedor2">
+                                        <img src="images/RE03.jpg" class="img-fluid" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThirteen">
+                        <button class="accordion-button collapsed header-background2" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseThirteen" aria-expanded="false"
+                            aria-controls="collapseThirteen">
+                            Seccion BIO-WEAPONS
+                        </button>
+                    </h2>
+                    <div id="collapseThirteen" class="accordion-collapse collapse" aria-labelledby="headingThirteen"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="container text-center">
+                                <div class="row">
+                                    <div class="col-3 Formato-de-columna-texto">
+                                        <p>Se usa un carrousel manual que va mostrando los diferentes monstruos que
+                                            aparecen a lo largo de la saga. Se puede ver tambien el menu lateral que te
+                                            acompana a lo largo de toda la pagina y te permite navegar con las
+                                            diferentes secciones de la pagina.</p>
+                                    </div>
+                                    <div class="col-9 contenedor2">
+                                        <img src="images/RE04.jpg" class="img-fluid" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFourteen">
+                        <button class="accordion-button collapsed header-background2" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseFourteen" aria-expanded="false"
+                            aria-controls="collapseFourteen">
+                            Pagina Responsive
+                        </button>
+                    </h2>
+                    <div id="collapseFourteen" class="accordion-collapse collapse" aria-labelledby="headingFourteen"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="container text-center">
+                                <div class="row">
+                                    <div class="col-3 Formato-de-columna-texto">
+                                        <p>En el video se muestra que la pagina es totalmente responsive, desaparecen imagenes, el menu lateral y se reajusta todos los elementos como carrouseles y textos a la pantalla en la que se esta corriedno la pagina.</p>
+                                    </div>
+                                    <div class="col-9 contenedor2">
+                                        <video src="images/RE-Responsive.mp4" muted loop autoplay></video>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
