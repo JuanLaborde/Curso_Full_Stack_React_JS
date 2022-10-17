@@ -190,9 +190,11 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  visibility: hidden;
 }
 
 .menu.active {
+  visibility: visible;
   z-index: 3;
 }
 
