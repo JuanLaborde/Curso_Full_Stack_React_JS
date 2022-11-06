@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+</head>
+
+<body>
+    <script>
+        Distance = parseInt(prompt('Indicate the distance to be traveled:', ''));
+
+        if (Distance >= 0 && Distance <= 1000 ) { // || OR
+            document.write('You can go on foot.');
+        } else if (Distance >= 1000 && Distance <= 10000) {
+            document.write('You can go on bike');
+        } else if (Distance >= 10000 && Distance <= 30000) {
+            document.write('You can go on bus.');
+        } else if (Distance >= 30000 && Distance <= 100000) {
+            document.write('You can go on car.');
+        } else {
+            document.write('You can go on Airplane.');
+        }
+    </script>
+
+</body>
+
+</html>
+
+
+<!-- 0 a 1000 metros = pie
+
+1000 a 10000 metros = bicicleta
+
+10000 a 30000 metros = colectivo
+
+30000 a 100000 metros = auto
+
++100000 = avion -->

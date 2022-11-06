@@ -1,0 +1,1606 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&family=Roboto+Condensed:wght@300;400;700&display=swap');
+@import url('http://fonts.cdnfonts.com/css/eurostile-extended');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&family=Poppins:wght@200;300;400;500;600;700;800&family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+/*-----------------------------GENERAL CONFIGURATION-----------------------------------*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media screen and(prefers-reduce-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    background: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #880808;
+    border-radius: 6px;
+}
+
+/*==============================================LOADER========================================*/
+.loader {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader>img {
+    width: 100%;
+}
+
+.loader.hidden {
+    animation: fadeOut 2.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.thumb {
+    height: 100px;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+/*-----------------------------BACKGROUND VIDEO FORMAT-----------------------------------*/
+
+body #Video-Background {
+    z-index: 0 !important;
+    background-attachment: fixed;
+    color: black;
+}
+
+.Format-Video-Box {
+    color: rgb(255, 255, 255);
+    text-size-adjust: 100%;
+    visibility: visible;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+video {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    z-index: 0;
+    border: none;
+}
+
+/*-----------------------------OLD GAME TRIBUTE LOGO-----------------------------------*/
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.back-text {
+    width: max-content;
+    position: relative;
+    left: 33%;
+    transform: translate(-50%, -50%);
+}
+
+.back-text span {
+    display: inline-block;
+    font-size: 45px;
+    font-weight: 700;
+    -webkit-text-stroke: 1px rgba(116, 251, 172, 1);
+    -webkit-text-fill-color: transparent;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: transform 1s, opacity 0.5s;
+    font-family: 'Poppins', sans-serif;
+}
+
+.back-text span.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.back-text span:nth-child(1) {
+    transition-delay: 0, 5s;
+}
+
+.back-text span:nth-child(2) {
+    transition-delay: 1s;
+}
+
+.back-text span:nth-child(3) {
+    transition-delay: 1.5s;
+}
+
+.back-text span:nth-child(4) {
+    transition-delay: 2s;
+}
+
+.back-text span:nth-child(5) {
+    transition-delay: 2.5s;
+}
+
+.back-text span:nth-child(6) {
+    transition-delay: 3s;
+}
+
+.back-text span:nth-child(7) {
+    transition-delay: 3.5s;
+}
+
+.logo {
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.logo h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 1px;
+    color: white;
+}
+
+/*-----------------------------LATERAL PAGE MENU-----------------------------------*/
+a {
+    text-decoration: none;
+}
+
+.global-nav {
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: transparent;
+    z-index: 6;
+}
+
+.global-nav-btn {
+    cursor: pointer;
+    height: 5vw;
+    position: fixed;
+    right: 5vw;
+    top: 5vw;
+    width: 11vw;
+    z-index: 7;
+}
+
+.global-nav-btn .label {
+    color: #FFF;
+    font-size: 4.25926vw;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    padding: .75vw 0;
+    top: calc(100% + .5em);
+    width: 100%;
+}
+
+.global-nav-btn .label .open {
+    display: none;
+}
+
+.global-nav-list li {
+    font-size: 4.44444vw;
+    font-family: 'Oswald', sans-serif;
+    text-align: right;
+}
+
+.global-nav-list li a {
+    color: #FFF;
+    display: inline-block;
+    transition: color .25s ease-in, opacity .25s ease-in, text-shadow .25s ease-in;
+}
+
+.global-nav-list li:not(.current):not(.link-btn) a:hover {
+    opacity: .8;
+}
+
+.global-nav-list li:not(:last-child) {
+    margin-bottom: 8vw;
+}
+
+.global-nav-list li:not(.link-btn) a::after {
+    color: #880808;
+    content: "\02014";
+    display: inline-block;
+    font-weight: 700;
+    margin-left: 0.25em;
+}
+
+.global-nav-list li.link-btn a {
+    border: 1px solid #52B6A7;
+    color: #52B6A7;
+    padding: 2vw;
+    position: relative;
+    text-align: center;
+    text-shadow: 2px 2px 8px #880808, 2px -2px 8px #880808, -2px 2px 8px #880808, -2px -2px 8px #880808;
+    transition: box-shadow .25s ease-in;
+}
+
+.global-nav-list li.nav-mutual-link {
+    background: rgba(0, 0, 0, 0.5);
+    margin-left: auto;
+    width: 60%;
+}
+
+/*-----------------------------INITIAL PAGE MENU-----------------------------------*/
+
+.portal-top {
+
+    display: block;
+    opacity: 1;
+    width: 100%;
+}
+
+.Initial-page {
+    vertical-align: baseline;
+    position: relative;
+    width: 100%;
+    height: calc(100vh + 100px);
+    overflow: hidden;
+}
+
+.nav-top {
+    padding: 340px 200px 200px 198px;
+    font: inherit;
+    vertical-align: baseline;
+    position: absolute;
+    bottom: 20vh;
+    z-index: 10;
+}
+
+.nav-top ul {
+    list-style: none;
+}
+
+.nav-top li {
+    vertical-align: baseline;
+    position: relative;
+    margin: 0 0 1.5vh;
+    color: #fff;
+    font-size: 2.3rem;
+    font-weight: lighter;
+    text-shadow: 0 0 5px #000, 0 0 5px #000, 0 0 5px #000;
+    line-height: 1.5;
+    opacity: 1;
+
+}
+
+.nav-top li a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.nav-top li a:hover {
+    color: rgb(202, 7, 7);
+    font-size: 35px;
+}
+
+.underline-hover-efect {
+    padding-bottom: 0.25rem;
+    position: relative;
+}
+
+.underline-hover-efect::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #880808;
+    transition: width 0.25s ease-out;
+}
+
+.underline-hover-efect:hover::before {
+    width: 100%;
+    left: 0;
+    right: auto;
+}
+
+/*-----------------------------UMBRELLA CORP: BANNER-----------------------------------*/
+
+.banner-Umbrella {
+    vertical-align: baseline;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 224.5px;
+    border-top: 1px solid #111;
+    background: linear-gradient(to right, black 25%, #880808 75%);
+    align-content: center;
+    z-index: 2;
+}
+
+.banner-Umbrella img {
+    width: 769.5px;
+    height: 224.5px;
+    margin: 0px 0px 0px 30px;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    float: left;
+}
+
+.banner-Umbrella h6 {
+    font-family: 'Eurostile Extended', sans-serif;
+    margin-top: 80px;
+    margin-right: 100px;
+    color: white;
+    font-weight: bold;
+    font-size: 60px;
+    float: right;
+    font-style: italic;
+}
+
+/*-----------------------------CONTENT SECTIONS AND GAME SECTION-----------------------------------*/
+
+.contents-page {
+    vertical-align: baseline;
+    position: relative;
+    padding: 0;
+    background: transparent;
+    width: 100%;
+}
+
+.contents-page .section-games {
+    vertical-align: baseline;
+    width: 100%;
+    padding: 120px 0 80px;
+    border-bottom: 1px solid #3a3a3a;
+    overflow: hidden;
+}
+
+.contents-page .section-games .inner-game {
+    vertical-align: baseline;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1190px;
+    margin: 0 auto;
+
+}
+
+.contents-page .section-games .inner-game h3 {
+    vertical-align: baseline;
+    position: relative;
+    margin: 0 0 2vh;
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: .05em;
+    text-shadow: 0 0 5px #000;
+    opacity: 1;
+}
+
+.contents-page .section-games .inner-game h3 span {
+    text-shadow: 0 0 5px #000;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    display: block;
+    margin: 2px 0 0 6px;
+    color: #e7e7e7;
+    font-size: 1.0rem;
+    line-height: 2;
+    letter-spacing: 0em;
+}
+
+.game-images {
+    vertical-align: baseline;
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background: transparent;
+}
+
+#imageSlide {
+    display: flex;
+    position: relative;
+    width: 100%;
+    min-width: 1200px;
+    height: 462px;
+    overflow: hidden
+}
+
+ul {
+    list-style: none;
+}
+
+#imageSlide .imageSlide__slider {
+    display: flex;
+    width: 6850px;
+    -webkit-animation: imageSlide 20s linear 0s infinite normal;
+    animation: imageSlide 20s linear 0s infinite normal
+}
+
+#imageSlide .imageSlide__slider li {
+    width: 460px;
+    line-height: 1
+}
+
+#imageSlide .imageSlide__slider li img {
+    width: 460px;
+    height: 460px;
+}
+
+#imageSlide .imageSlide__description {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 50%;
+    width: 1070px;
+    height: 450px;
+    margin: 0 auto;
+    background: url(/residentevil/pc/img/integration/slider_circle-en.png) no-repeat right center/40%;
+    transform: translateX(50%)
+}
+
+/*----------------------------------------HISTORY SECTION------------------------------------------*/
+
+.contents-page .history-section {
+    visibility: visible;
+    margin: 0px;
+    border: 0;
+    vertical-align: baseline;
+    position: relative;
+    border-bottom: 1px solid #3a3a3a;
+    background: #000;
+    width: 100%;
+    overflow: hidden;
+}
+
+.contents-page .history-section {
+    background-image: url("../img/Resident-Evil/Spencer-manor.jpg");
+    background-repeat: no-repeat;
+    z-index: 0 !important;
+    background-attachment: fixed;
+    color: black;
+    background-size: cover;
+}
+
+.contents-page .history-section .inner-history {
+    vertical-align: baseline;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1190px;
+    margin: 0 auto;
+    padding: 120px 0 80px;
+}
+
+
+.contents-page .history-section .inner-history h3 {
+
+    vertical-align: baseline;
+    position: relative;
+    margin: 0 0 2vh;
+    color: #fff;
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: .05em;
+    text-shadow: 0 0 5px #000;
+    opacity: 1;
+}
+
+.contents-page .history-section .inner-history h3 span {
+    display: block;
+    width: 690px;
+    margin: 2px 0 0 6px;
+    color: #e7e7e7;
+    font-size: 1.0rem;
+    line-height: 2;
+    text-shadow: 0 0 5px #000;
+    letter-spacing: 0em;
+}
+
+section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 100px;
+    color: #fff;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.main-title {
+    font-size: 4em;
+    margin-bottom: 50px;
+}
+
+.content {
+    position: relative;
+    width: 1150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .image {
+    position: relative;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.content .image img {
+    z-index: 111;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.content .text-box {
+    z-index: 222;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    padding: 40px;
+    max-width: 400px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transform: translate(-80px, 50px);
+}
+
+.content .image2 {
+    position: relative;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.content .image2 img {
+    z-index: 111;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.content .text-box2 {
+    z-index: 222;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    padding: 40px;
+    max-width: 400px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transform: translate(80px, 50px);
+}
+
+.content .text-box2 h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.content .text-box h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.section-title {
+    font-size: 3em;
+    margin-top: 80px;
+}
+
+.info-title {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.info {
+    width: 700px;
+    margin-left: 50px;
+}
+
+
+/*----------------------------------------CHARACTER SECTION------------------------------------------*/
+
+.characters-section {
+    display: block;
+    width: 100%;
+    padding: 120px 0 80px;
+    border-bottom: 1px solid #3a3a3a;
+    overflow: hidden;
+    position: relative;
+}
+
+.characters-section .inner-characters {
+    vertical-align: baseline;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1190px;
+    margin: 0 auto;
+}
+
+.characters-section .inner-characters h3 {
+    vertical-align: baseline;
+    position: relative;
+    margin: 0 0 2vh;
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: .05em;
+    text-shadow: 0 0 5px #000;
+    opacity: 1;
+}
+
+.characters-section .inner-characters h3 span {
+    display: block;
+    width: 690px;
+    margin: 2px 0 0 6px;
+    font-size: 1.0rem;
+    line-height: 2;
+    text-shadow: 0 0 5px #000;
+    letter-spacing: 0em;
+}
+
+.slider-ch {
+    position: relative;
+    background: transparent;
+    width: 800px;
+    min-height: 500px;
+    margin: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slider-ch .slide-ch {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(0% at 0 50%);
+}
+
+.slider-ch .slide-ch.active {
+    clip-path: circle(150% at 0 50%);
+    transition: 2s;
+}
+
+.slider-ch .slide-ch img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider-ch .slide-ch .info-ch {
+    position: absolute;
+    color: #222;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    margin-top: 352px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 25px rgb(1 1 1 / 5%);
+    color: white;
+}
+
+.slider-ch .slide-ch .info-ch h2 {
+    font-size: 2em;
+    font-weight: 800;
+}
+
+.slider-ch .slide-ch .info-ch h2 span {
+    color: rgb(230, 11, 11);
+}
+
+.slider-ch .slide-ch .info-ch p {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.navigation-ch {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 0;
+    transition: opacity 0.9s ease;
+}
+
+.slider-ch:hover .navigation-ch {
+    opacity: 1;
+}
+
+.prev-btn,
+.next-btn {
+    z-index: 999;
+    font-size: 2em;
+    color: #222;
+    background: rgba(136, 8, 8, 0.8);
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.prev-btn {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.next-btn {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.navigation-visibility {
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-visibility .slide-icon {
+    z-index: 999;
+    background: rgba(255, 255, 255, 0.5);
+    width: 20px;
+    height: 10px;
+    transform: translateY(-50px);
+    margin: 0 6px;
+    border-radius: 2px;
+    box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+}
+
+.navigation-visibility .slide-icon.active {
+    background: #4285F4;
+}
+
+/*----------------------------------------BIO-WEAPON SECTION------------------------------------------*/
+
+.bioweapon-section {
+    display: block;
+    width: 100%;
+    padding: 120px 0 80px;
+    border-bottom: 1px solid #3a3a3a;
+    overflow: hidden;
+    position: relative;
+}
+
+.bioweapon-section {
+    background-image: url("../img/Resident-Evil/Wallpaper-RE2.1080.jpg");
+    background-repeat: no-repeat;
+    z-index: 0 !important;
+    background-attachment: fixed;
+    color: black;
+    background-size: cover;
+}
+
+.bioweapon-section .inner-bioweapon {
+    vertical-align: baseline;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1190px;
+    margin: 0 auto;
+}
+
+.bioweapon-section .inner-bioweapon h3 {
+    display: block;
+    position: relative;
+    margin: 0 0 2vh;
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: .05em;
+    text-shadow: 0 0 5px #000;
+    opacity: 1;
+    color: white;
+}
+
+.bioweapon-section .inner-bioweapon h3 span {
+    display: block;
+    width: 690px;
+    margin: 2px 0 0 6px;
+    font-size: 1.0rem;
+    line-height: 2;
+    text-shadow: 0 0 5px #000;
+    letter-spacing: 0em;
+}
+
+.BOW-slider {
+    padding: 0;
+    min-height: 100%;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.bow-logo {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.card-bow {
+    padding: 2em;
+    width: 90vw;
+    height: 80vh;
+    min-height: 38em;
+    max-width: 1050px;
+    position: relative;
+}
+
+.panel-1,
+.panel-2 {
+    position: absolute;
+    box-shadow: 0 0 4em 1em rgba(0, 0, 0, 0.4);
+    border-radius: 2em;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.panel-1 {
+    background: url(../img/Resident-Evil/Bio-weapon/virus.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    right: 0;
+    width: 80%;
+    height: 90%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.panel-1::before {
+    content: '';
+    background: linear-gradient(45deg, #29191e 0%, #0c1c29 40%, rgba(12, 31, 45, 0.9) 100%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.panel-2 {
+    background: linear-gradient(45deg, #880808 0%, black 40%, rgba(12, 31, 45, 0.9) 100%);
+    left: 0;
+    width: 50%;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.panel-2::before {
+    content: '';
+    background: url(../img/Resident-Evil/Bio-weapon/Umbrella.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: -5em;
+    transform: translateY(-50%) rotate(-90deg);
+    z-index: 2;
+}
+
+.BOW {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+.BOW-image {
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    display: flex;
+}
+
+.BOW-image img {
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(0 0 1em rgba(0, 0, 0, 0.7));
+}
+
+.BOW-details {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.BOW h1 {
+    font-size: 2.8em;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+
+.arrow-left,
+.arrow-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4em;
+    height: 4em;
+    background: #880808;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 4.2em;
+    z-index: 2;
+    transition: 0.3s;
+    cursor: pointer;
+    color: white;
+}
+
+.arrow-left i,
+.arrow-right i {
+    font-size: 1.5em;
+}
+
+.arrow-left {
+    left: -1em;
+}
+
+.arrow-right {
+    right: -1em;
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+    background: #000;
+    color: #fff;
+}
+
+.fade-in {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/*=======================================FOOTER==========================================*/
+
+#footer-SH {
+    position: relative;
+    width: 100%;
+    border-top: 1px solid #3a3a3a;
+    background: black;
+    visibility: visible !important;
+    opacity: 1 !important;
+    transition: visibility .3s, opacity .3s;
+    z-index: 3;
+    overflow-x: visible;
+}
+
+#footer-SH>section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    min-width: 900px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 0 0;
+}
+
+
+#footer-SH .footer-SH_copy {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    padding: 1px 0 0;
+    border-top: 1px solid #5a5a5a;
+    background-image: url("../img/Resident-Evil/window.png");
+    background-repeat: no-repeat;
+    background-size: 1100px 400px;
+    background-position: calc(50% + 650px) 0;
+    color: #8e8e8e;
+    overflow: hidden;
+}
+
+#footer-SH .footer-SH_copy .footer-SH_copy-left {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+}
+
+#footer-SH .footer-SH_copy .footer-SH_copy-left .logo-footer {
+    background: url(../img/Logo2TOG2.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin-left: 150px;
+}
+
+#footer-SH .footer-SH_copy .footer-SH_copy-left.flex-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+}
+
+#footer-SH .footer-SH_copy .footer-SH_copy-left .content-footer {
+    align-items: center;
+    padding: 0 0 0 45px;
+    border-left: 2px solid #cb0101;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 25px;
+    margin-right: 350px;
+    margin-bottom: 25px;
+    margin-left: 600px;
+    float: left;
+}
+
+#footer-SH .footer-SH_copy .footer-SH_copy-left .content-footer dt {
+    font-size: 30px;
+}
+
+#footer-SH .footer-SH_copy .footer-SH_copy-left .content-footer li {
+    font-size: 20px;
+    list-style-type: none;
+}
+
+#footer-SH .footer-SH_copy .footer-SH_copy-left .content-footer li a {
+    text-decoration: none;
+    color: white;
+}
+
+#footer-SH .footer-SH_copy .footer-SH_copy-left .content-footer li a:hover {
+    color: #cb0101;
+}
+
+#footer-SH .footer-SH_copy .footer-SH_copy-left .contact-footer {
+    align-items: center;
+    padding: 0 0 0 45px;
+    border-left: 2px solid #cb0101;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 65px;
+    margin-right: 250px;
+    margin-bottom: 25px;
+    float: right;
+}
+
+#footer-SH .footer-SH_copy .footer-SH_copy-left .contact-footer dt {
+    font-size: 30px;
+}
+
+#footer-SH .footer-SH_copy .footer-SH_copy-left .contact-footer li {
+    font-size: 20px;
+    list-style-type: none;
+}
+
+#footer-SH .footer-SH_copy .footer-SH_copy-left .contact-footer li a {
+    text-decoration: none;
+    color: white;
+}
+
+#footer-SH .footer-SH_copy .footer-SH_copy-left .contact-footer li a:hover {
+    color: #cb0101;
+}
+
+.contact-footer {
+    line-height: 2;
+}
+
+.content-footer {
+    line-height: 2.5;
+}
+
+.Social {
+
+    bottom: 5px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Social li {
+    list-style: none;
+}
+
+.Social li a {
+    display: inline-block;
+    filter: invert(1);
+    margin-right: 20px;
+    transform: scale(0.5);
+    transition: 0.5s;
+}
+
+.Social li a:hover {
+    transform: scale(0.5) translateY(-15px);
+}
+
+/*========================================MEDIA=======================================*/
+
+@media (max-width: 800px) {
+
+    .showcase,
+    .showcase header {
+        padding: 40px;
+    }
+
+    .nav-top {
+        padding: 50px 100px 100px 80px;
+        bottom: 35vh;
+        z-index: 10;
+    }
+
+    .nav-top p img {
+        width: 100%;
+        height: auto;
+    }
+
+    .nav-top li {
+        font-size: 2rem;
+    }
+
+    .banner-Umbrella {
+        width: 100%;
+        height: auto;
+    }
+
+    .banner-Umbrella img {
+        width: 80%;
+        height: auto;
+        margin: 0px 0px 0px 15px;
+    }
+
+    .banner-Umbrella h6 {
+        display: none;
+    }
+
+    .contents-page .section-games .inner-game h3 {
+        margin-left: 25%;
+        font-size: 3.2rem;
+        font-weight: 400;
+    }
+
+    .contents-page .history-section .inner-history h3 {
+        margin-left: 25%;
+        font-size: 3.2rem;
+        font-weight: 400;
+    }
+
+    .image,
+    .image2 {
+        display: none;
+    }
+
+    .characters-section .inner-characters h3 {
+        margin-left: 2.1%;
+        font-size: 3.2rem;
+        font-weight: 400;
+    }
+
+    .bioweapon-section .inner-bioweapon h3 {
+        margin-left: 2.1%;
+        font-size: 3.2rem;
+        font-weight: 400;
+    }
+
+    #footer-SH .footer-SH_copy .footer-SH_copy-left .content-footer li {
+        font-size: 15px;
+    }
+
+    #footer-SH .footer-SH_copy .footer-SH_copy-left .contact-footer dt {
+        font-size: 20px;
+    }
+
+    #footer-SH .footer-SH_copy .footer-SH_copy-left .content-footer dt {
+        font-size: 20px;
+    }
+
+    .logo-footer img {
+        display: none;
+    }
+
+    #footer-SH .footer-SH_copy .footer-SH_copy-left .contact-footer {
+        margin-top: 30px;
+        margin-right: 0px;
+        margin-bottom: 25px;
+        margin-left: 100px;
+    }
+
+    #footer-SH .footer-SH_copy .footer-SH_copy-left .content-footer {
+        margin-top: 15px;
+        margin-right: 0px;
+        margin-bottom: 25px;
+        margin-left: 50px;
+    }
+
+    #footer-SH .footer-SH_copy .footer-SH_copy-left .logo-footer {
+        background: url(../img/Logo3TOG2.png);
+        background-position: right;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        transform: rotate(90deg);
+        margin-left: 350px;
+        margin-bottom: 350px;
+    }
+}
+
+@media (max-width: 800px) {
+    .slider-ch {
+        width: 100%;
+    }
+
+    .slider-ch .slide-ch .info-ch {
+        position: relative;
+        width: 100%;
+        height: auto;
+
+    }
+
+    .slider-ch .slide-ch .info-ch h2 {
+        font-size: 1.8em;
+        line-height: 40px;
+    }
+
+    .slider-ch .slide-ch .info-ch p {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 500px) {
+    .slider-ch .slide-ch .info-ch h2 {
+        font-size: 1.8em;
+        line-height: 40px;
+    }
+
+    .slider-ch .slide-ch .info-ch p {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .arrow-left {
+        left: -2em;
+    }
+
+    .arrow-right {
+        right: -2em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .panel-1,
+    .panel-2 {
+        display: none;
+    }
+
+    .card-bow {
+        background: linear-gradient(45deg, #29191e 0%, #0c1c29 40%, rgba(12, 31, 45, 0.9) 100%);
+        text-align: center;
+        height: initial;
+        padding: 3em 2em 1em 2em;
+        border-radius: 2em;
+    }
+
+    .card-bow h1 {
+        margin-top: 1em;
+    }
+
+    .BOW-details {
+        justify-content: center;
+    }
+
+    .BOW {
+        grid-template-columns: 1fr;
+    }
+
+    .BOW-image img {
+        width: 50%;
+    }
+
+    .arrow-left {
+        left: -2em;
+    }
+
+    .arrow-right {
+        right: -2em;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .BOW-slider {
+        font-size: 13px;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .global-nav {
+        right: 0;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .global-nav-btn {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .global-nav-box {
+        background: rgba(0, 0, 0, 0.8);
+        height: 100vh;
+        overflow-y: auto;
+        padding: 4vw 0;
+        position: relative;
+        transition: width .25s ease-in;
+        width: 0;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .global-nav-list {
+        padding-top: 20vw;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .global-nav-list li {
+        margin-right: -52vw;
+        position: relative;
+        transition: margin-right .25s ease-in .1s;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .global-nav-list li {
+        font-size: 1.1347vw;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .global-nav-list li:not(:last-child) {
+        margin-bottom: 2vw;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .global-nav-list li.link-btn a {
+        margin-right: 5.4vw;
+        margin-left: auto;
+        width: 30%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .global-nav-list li.link-btn a {
+        margin: 0 1.2vw 0 0;
+        padding: .5vw;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .global-nav-list li.nav-mutual-link {
+        margin-top: 4vw;
+        max-width: 120px;
+        width: 100%;
+    }
+}
+
+@-webkit-keyframes imageSlide {
+    0% {
+        transform: translateX(0)
+    }
+
+    100% {
+        transform: translateX(-5980px)
+    }
+}
+
+@keyframes imageSlide {
+    0% {
+        transform: translateX(0)
+    }
+
+    100% {
+        transform: translateX(-5980px)
+    }
+}
+
+
+@media (max-width: 800px) {
+
+    .showcase,
+    .showcase header {
+        padding: 40px;
+    }
+
+    .nav-top {
+        padding: 50px 100px 100px 80px;
+        bottom: 35vh;
+        z-index: 10;
+    }
+
+    .nav-top p img {
+        width: 100%;
+        height: auto;
+    }
+
+    .nav-top li {
+        font-size: 2rem;
+    }
+
+    .banner-Umbrella {
+        width: 100%;
+        height: auto;
+    }
+
+    .banner-Umbrella img {
+        width: 80%;
+        height: auto;
+        margin: 0px 0px 0px 15px;
+    }
+
+    .banner-Umbrella h6 {
+        display: none;
+    }
+
+    .contents-page .section-games .inner-game h3 {
+        margin-left: 25%;
+        font-size: 3.2rem;
+        font-weight: 400;
+    }
+
+    .contents-page .history-section .inner-history h3 {
+        margin-left: 25%;
+        font-size: 3.2rem;
+        font-weight: 400;
+    }
+
+    .image,
+    .image2 {
+        display: none;
+    }
+
+    .characters-section .inner-characters h3 {
+        margin-left: 2.1%;
+        font-size: 3.2rem;
+        font-weight: 400;
+    }
+
+    .bioweapon-section .inner-bioweapon h3 {
+        margin-left: 2.1%;
+        font-size: 3.2rem;
+        font-weight: 400;
+    }
+
+    #footer-SH .footer-SH_copy .footer-SH_copy-left .content-footer li {
+        font-size: 15px;
+    }
+
+    #footer-SH .footer-SH_copy .footer-SH_copy-left .contact-footer dt {
+        font-size: 20px;
+    }
+
+    #footer-SH .footer-SH_copy .footer-SH_copy-left .content-footer dt {
+        font-size: 20px;
+    }
+
+    .logo-footer img {
+        display: none;
+    }
+
+    #footer-SH .footer-SH_copy .footer-SH_copy-left .contact-footer {
+        margin-top: 30px;
+        margin-right: 0px;
+        margin-bottom: 25px;
+        margin-left: 100px;
+    }
+
+    #footer-SH .footer-SH_copy .footer-SH_copy-left .content-footer {
+        margin-top: 15px;
+        margin-right: 0px;
+        margin-bottom: 25px;
+        margin-left: 50px;
+    }
+
+    #footer-SH .footer-SH_copy .footer-SH_copy-left .logo-footer {
+        background: url(../img/Logo3TOG2.png);
+        background-position: right;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        transform: rotate(90deg);
+        margin-left: 350px;
+        margin-bottom: 350px;
+    }
+}

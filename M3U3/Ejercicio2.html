@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+</head>
+
+<body>
+	<script>
+		let x = 1;
+		const numbers = 5;
+		const arr = [];
+
+		while (x <= numbers) {
+			const valor = parseInt(prompt(`Add a number to the list ${x}  of ${numbers}:`, ''));
+			arr.push(valor);
+			x++;
+		}
+		var largest = arr[0];
+		for (var i = 0; i < arr.length; i++) {
+            if (largest < arr[i]) {
+                largest = arr[i];
+            }
+        }
+		document.write(`The largest number is: ${largest}<br/>`);
+	</script>
+</body>
+
+</html>
