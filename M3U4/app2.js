@@ -53,32 +53,33 @@ var alumnos = [
 ];
 
 var approved = [];
-var disapproved = [];
-
 for (i = 0; i < alumnos.length; i++) {
     if (alumnos[i].nota >= 7) {
         approved.push(alumnos[i])
     }
 }
 
+for (i = 0; i < approved.length; i++) {
+    var myobj = approved[i];
+    for (var property in myobj) {       
+        document.getElementById("approved").innerHTML += property + ": " + myobj[property] + "</br>";
+    }
+    
+}
+
+var disapproved = [];
 for (i = 0; i < alumnos.length; i++) {
     if (alumnos[i].nota < 7) {
         disapproved.push(alumnos[i])
     }
 }
 
-for (i = 0; i < approved.length; i++) {
-    var myobj = approved[i];
-    for (var property in myobj) {
-        console.log(property + ": " + myobj[property])        
-        document.getElementById("approved").innerHTML += property + ": " + myobj[property] + "</br>";
-    }
-}
-
 for (i = 0; i < disapproved.length; i++) {
     var myobj2 = disapproved[i];
-    for (var property2 in myobj2) {
-        console.log(property2 + ": " + myobj2[property2])        
+    for (var property2 in myobj2) {       
         document.getElementById("disapproved").innerHTML += property2 + ": " + myobj2[property2] + "</br>";
     }
 }
+
+console.log(approved);
+console.log(disapproved) ;
