@@ -1,0 +1,83 @@
+.contacto {
+    display: flex;
+    gap: 25px;
+}
+
+.contacto div {
+    width: 100%;
+}
+
+
+.columna {
+    width: 50%;
+    padding: 0.625em;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.columna.contacto {
+    border-right: 1px solid #ddd;
+    float: left;
+}
+
+.datos {
+    float: right;
+}
+
+.datos p{
+    font-size: 14px;
+}
+
+.datos ul li {
+    font-size: 13px;
+}
+
+.formulario p{
+    display: flex;
+}
+
+.formulario p label{
+    min-width: 80px;
+}
+
+.formulario label {
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+}
+
+.formulario input, 
+.formulario textarea {
+    background: #ddd;
+    border-radius: 5px;
+    border: 1px solid #999;
+    font-size: 0.8em;
+    padding: 0.4em 0.6em;
+    width: 90%;
+}
+
+.formulario textarea {
+    resize: none;
+    height: 18em;
+}
+
+.formulario .acciones {
+    text-align: center;
+}
+
+.formulario p:nth-child(4) {
+    align-items: start; 
+}
+
+.formulario input[type="submit"] {
+    background: #9da9ed;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    color: white;
+    font-size: 1em;
+    padding: 0.4em 0.2em;
+    text-align: center;
+    width: auto;
+    position: relative;
+    left: 100px;
+    cursor: pointer;
+}

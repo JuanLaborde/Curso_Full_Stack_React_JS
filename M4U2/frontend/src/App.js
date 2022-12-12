@@ -12,7 +12,7 @@ import NovedadesPage from "./pages/NovedadesPage";
 
 function App() {
   return (
-    <div ClassName="App">
+    <div className="App">
       <Header />
       <BrowserRouter>
         <Nav />
@@ -29,3 +29,4 @@ function App() {
 }
 
 export default App;
+
