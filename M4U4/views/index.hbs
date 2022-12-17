@@ -1,0 +1,15 @@
+<h1>{{title}}</h1>
+{{#if conocido}}
+<img src="/images/Gifs-de-Hola-1.gif" alt="">
+<br>
+<p>{{nombre}} gracias por pasar a saludar!!!</p>
+<p>Si quieres salir selecciona el boton de abajo.</p>
+<button><a href="/salir">Salir</a></button>
+{{/if}}
+
+{{#unless conocido}}
+<p>No te conozco, si quieres que te salude debes presentarte primero.</p>
+<form action="/ingresar" method="post">
+    <input type="text" name="nombre"><button>ingresar</button>
+</form>
+{{/unless}}
