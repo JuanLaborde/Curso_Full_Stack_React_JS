@@ -1,26 +1,28 @@
 import React from 'react';
-import VideoBackground from '../Images/Background-Section3.mp4'
-let spanTexts = document.getElementsByTagName("span");
-        window.onload = function () {
-            for (spanTexts of spanTexts) {
-                spanTexts.classList.add("active");
-            }
-        }
+import VideoBackground from '../Images/Background-Section3.mp4';
+
 
 const HomePage = (props) => {
+    let spanTexts = document.getElementsByTagName("span");
+    window.onload = function () {
+        for (spanTexts of spanTexts) {
+            spanTexts.classList.add("active");
+        }
+    };
+
     return (
-        <section class="showcase">
+        <section className="showcase">
             <header>
                 <div className="logo">
                     <h2>OLD GAME</h2>
                     <div className="back-text">
-                        <span classNme="LetraT">T</span>
-                        <span classNme="LetraR">R</span>
-                        <span classNme="LetraI">I</span>
-                        <span classNme="LetraB">B</span>
-                        <span classNme="LetraU">U</span>
-                        <span classNme="LetraT2">T</span>
-                        <span classNme="LetraE">E</span>
+                        <span>T</span>
+                        <span>R</span>
+                        <span>I</span>
+                        <span>B</span>
+                        <span>U</span>
+                        <span>T</span>
+                        <span>E</span>
                     </div>
                 </div>
                 <div className="toggle"></div>
@@ -39,9 +41,11 @@ const HomePage = (props) => {
                     <div className="layer layer-3"></div>
                 </div>
             </section>
-
+          
         </section>
-    )
+       
+    );
 }
+
 
 export default HomePage;

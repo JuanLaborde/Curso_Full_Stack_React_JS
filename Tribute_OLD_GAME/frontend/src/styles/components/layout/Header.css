@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+header {
+    background-color: black;
+    padding: 1em 0;
+    font-family: 'Poppins', sans-serif;
+    z-index: 5; 
+    height: 100px;
+}
+
+.logo{
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-left: 7%;
+    margin-top: 5px;
+    color: white;
+    font-size: 15px;
+}
+
+.logo h1{
+   margin-left: 1%;
+}
+
+.back-text{
+    width: max-content;
+    position: relative;  
+    left: 5.4%;
+    transform: translate(-50%, -50%);
+}
+
+.back-text span{
+    display: inline-block;  
+    font-size: 45px;
+    font-weight: 700;
+    -webkit-text-stroke: 1px rgba(116,251,172,1);
+    -webkit-text-fill-color: transparent;
+    transform: translateY(50px);
+    opacity:0;
+    transition: transform 1s, opacity 0.5s;
+}
+
+.back-text span.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.back-text span:nth-child(1){
+   transition-delay: 0,5s;
+}
+
+.back-text span:nth-child(2){
+    transition-delay: 1s;
+ }
+
+ .back-text span:nth-child(3){
+    transition-delay: 1.5s;
+ }
+
+ .back-text span:nth-child(4){
+    transition-delay: 2s;
+ }
+ 
+ .back-text span:nth-child(5){
+    transition-delay: 2.5s;
+ }
+
+ .back-text span:nth-child(6){
+    transition-delay: 3s;
+ }
+
+ .back-text span:nth-child(7){
+    transition-delay: 3.5s;
+ }

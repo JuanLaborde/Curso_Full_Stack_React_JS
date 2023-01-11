@@ -24,10 +24,6 @@
     overflow: hidden;
 }
 
-.menu.active{
-    z-index: 3;
-}
-
 .showcase header{
     position: absolute;
     top: 0;

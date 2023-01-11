@@ -4,18 +4,20 @@ import './App.css';
 import Nav from "./components/Nav";
 import AssassinsCreed from "./pages/ACPage";
 import Contact from "./pages/ContactPage";
-import HomePage from './pages/HomePage';
+// import HomePage from './pages/HomePage';
 import Login from "./pages/LoginPage";
 import News from "./pages/NovedadesPage";
 import ResidentEvil from "./pages/ResidentEvilPage";
 import SilentHill from "./pages/SilentHillPage";
+import Header from "./components/header"
 
 
 function App() {
 
   return (
     <div className = "App">
-       <HomePage />
+       {/* <HomePage /> */}
+      <Header />
       <BrowserRouter>
         <Nav />
         <Routes>

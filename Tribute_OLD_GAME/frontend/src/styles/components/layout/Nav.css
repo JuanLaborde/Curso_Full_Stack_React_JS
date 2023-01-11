@@ -1,0 +1,51 @@
+nav {
+    background-color: black;
+    margin-bottom: 2em;
+    z-index: 10;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    width: 16.3%;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.2em 0.4em;
+    display: block;
+    position: relative;
+}
+
+nav ul li a:hover {
+    color: rgba(116,251,172,1);
+}
+
+.underline-hover-efect {
+    padding-bottom: 0.25rem;
+    position: relative;
+}
+
+.underline-hover-efect::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgba(116,251,172,1);
+    transition: width 0.25s ease-out;
+}
+
+.underline-hover-efect:hover::before {
+    width: 100%;
+    left: 0;
+    right: auto;
+}
