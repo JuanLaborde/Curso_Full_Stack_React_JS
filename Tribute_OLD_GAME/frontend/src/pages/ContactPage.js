@@ -1,14 +1,15 @@
 import React from 'react';
 import '../styles/components/pages/ContactPage.css';
-import VideoBackground from '../ImagesVideos/videos/Homevideo.mp4';
-import facebookicon from '../ImagesVideos/images/facebook.png';
-import twittericon from '../ImagesVideos/images/twitter.png';
-import instagramicon from '../ImagesVideos/images/instagram.png';
+// import VideoBackground from '../ImagesVideos/videos/Homevideo.mp4';
+// import facebookicon from '../ImagesVideos/images/facebook.png';
+// import twittericon from '../ImagesVideos/images/twitter.png';
+// import instagramicon from '../ImagesVideos/images/instagram.png';
+
 
 const ContactoPage = (props) => {
     return (
         <main className="showcase">
-            <video src={VideoBackground} autoPlay loop muted />
+            <video src="ImagesVideos/videos/Homevideo.mp4" autoPlay loop muted />
             <div className="container">
                 <span className="big-circle"></span>
                 <span className="small-cicle"></span>
@@ -23,9 +24,9 @@ const ContactoPage = (props) => {
                         <div className="social-media">
                             <p>Connect with us :</p>
                             <ul className="Social">
-                                <li><a href=""><img src={facebookicon} alt="" /></a></li>
-                                <li><a href=""><img src={twittericon} alt="" /></a></li>
-                                <li><a href=""><img src={instagramicon} alt="" /></a></li>
+                                <li><a href="https://www.facebook.com/"><img src="ImagesVideos/images/facebook.png" alt="" /></a></li>
+                                <li><a href="https://twitter.com/?lang=es"><img src="ImagesVideos/images/twitter.png" alt="" /></a></li>
+                                <li><a href="https://www.instagram.com/"><img src="ImagesVideos/images/instagram.png" alt="" /></a></li>
                             </ul>
                         </div>
                     </div>

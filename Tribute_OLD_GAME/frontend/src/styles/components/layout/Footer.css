@@ -1,14 +1,88 @@
-footer {
-    background: #ccc;
-    clear:both;
-    color:#333;
-    padding: 3em 0;
-    margin-top: 2em;
+#footer-SH {
+    position: relative;
+    width: 100%;
+    border-top: 1px solid #3a3a3a;
+    background: black;
+    visibility: visible !important;
+    opacity: 1 !important;
+    transition: visibility .3s, opacity .3s;
+    z-index: 3;
+    overflow-x: visible;
 }
 
-footer p {
-    font-size: 0.7em;
-    font-style: italic;
+#footer-SH>section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    min-width: 900px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 0 0;
+}
+
+
+#footer-SH .footer-SH_copy {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    padding: 1px 0 0;
+    border-top: 1px solid #5a5a5a;
+    background-image: url(../../../ImagesCSS/window.png); 
+    background-repeat: no-repeat;
+    background-size: 1100px 400px;
+    background-position: calc(50% + 650px) 0;
+    color: #8e8e8e;
+    overflow: hidden;
+}
+
+#footer-SH .footer-SH_copy .footer-SH_copy-left {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+}
+
+#footer-SH .footer-SH_copy .footer-SH_copy-left .logo-footer img {
+    margin-left: 150px;
+}
+
+#footer-SH .footer-SH_copy .footer-SH_copy-left.flex-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+}
+
+#footer-SH .footer-SH_copy .footer-SH_copy-left .contact-footer {
+    align-items: center;
+    padding: 0 0 0 45px;
+    border-left: 2px solid #cb0101;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 65px;
+    margin-right: 0px;
+    margin-bottom: 100px;
+    margin-left: 200px;
+    margin-top: 150px;
+    float: right;
+}
+
+#footer-SH .footer-SH_copy .footer-SH_copy-left .contact-footer p {
+    font-size: 15px;
     text-align: center;
-    margin: 0;
+}
+
+.contact-footer {
+    line-height: 2;
+}
+
+.content-footer {
+    line-height: 2.5;
 }

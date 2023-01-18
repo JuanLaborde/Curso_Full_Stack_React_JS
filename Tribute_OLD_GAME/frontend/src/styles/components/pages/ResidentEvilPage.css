@@ -90,6 +90,7 @@ video {
     position: absolute;
     bottom: 20vh;
     z-index: 10;
+    font-family: 'Oswald', sans-serif;
 }
 
 .nav-top ul {
@@ -169,7 +170,7 @@ video {
 }
 
 .banner-Umbrella h6 {
-    font-family: 'Eurostile Extended', sans-serif;
+    font-family: 'Oswald', sans-serif;
     margin-top: 80px;
     margin-right: 100px;
     color: white;
@@ -218,6 +219,7 @@ video {
     text-shadow: 0 0 5px #000;
     opacity: 1;
     color: white;
+    font-family: 'Oswald', sans-serif;
 }
 
 .contents-page .section-games .inner-game h3 span {
@@ -231,6 +233,7 @@ video {
     font-size: 1.0rem;
     line-height: 2;
     letter-spacing: 0em;
+    font-family: 'Oswald', sans-serif;
 }
 
 .game-images {
@@ -339,3 +342,876 @@ ul {
 
 
 /*----------------------------------------HISTORY SECTION------------------------------------------*/
+
+.contents-page .history-section {
+    visibility: visible;
+    margin: 0px;
+    border: 0;
+    vertical-align: baseline;
+    position: relative;
+    border-bottom: 1px solid #3a3a3a;
+    background: #000;
+    width: 100%;
+    overflow: hidden;
+}
+
+.contents-page .history-section {
+    background-image: url("../../../ImagesCSS/Spencer-manor.jpg");
+    background-repeat: no-repeat;
+    z-index: 0 !important;
+    background-attachment: fixed;
+    color: black;
+    background-size: cover;
+}
+
+.contents-page .history-section .inner-history {
+    vertical-align: baseline;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1190px;
+    margin: 0 auto;
+    padding: 120px 0 80px;
+}
+
+
+.contents-page .history-section .inner-history h3 {
+
+    vertical-align: baseline;
+    position: relative;
+    margin: 0 0 2vh;
+    color: #fff;
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: .05em;
+    text-shadow: 0 0 5px #000;
+    opacity: 1;
+    font-family: 'Oswald', sans-serif;
+}
+
+.contents-page .history-section .inner-history h3 span {
+    display: block;
+    width: 690px;
+    margin: 2px 0 0 6px;
+    color: #e7e7e7;
+    font-size: 1.0rem;
+    line-height: 2;
+    text-shadow: 0 0 5px #000;
+    letter-spacing: 0em;
+    font-family: 'Oswald', sans-serif;
+}
+
+section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 100px;
+    color: #fff;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.main-title {
+    font-size: 4em;
+    margin-bottom: 50px;
+}
+
+.content {
+    position: relative;
+    width: 1150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .image {
+    position: relative;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.content .image img {
+    z-index: 111;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.content .text-box {
+    z-index: 222;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    padding: 40px;
+    max-width: 400px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transform: translate(-80px, 50px);
+}
+
+.content .image2 {
+    position: relative;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.content .image2 img {
+    z-index: 111;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.content .text-box2 {
+    z-index: 222;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    padding: 40px;
+    max-width: 400px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transform: translate(80px, 50px);
+    font-family: 'Oswald', sans-serif;
+}
+
+.content .text-box2 h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.content .text-box2 p {
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-family: 'Oswald', sans-serif;
+}
+.content .text-box h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.content .text-box p {
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.section-title {
+    font-size: 3em;
+    margin-top: 80px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.info-title {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.info {
+    width: 700px;
+    margin-left: 50px;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+/*----------------------------------------CHARACTER SECTION------------------------------------------*/
+
+.characters-section {
+    display: block;
+    width: 100%;
+    padding: 120px 0 80px;
+    border-bottom: 1px solid #3a3a3a;
+    overflow: hidden;
+    position: relative;
+}
+
+.characters-section .inner-characters {
+    vertical-align: baseline;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1190px;
+    margin: 0 auto;
+}
+
+.characters-section .inner-characters h3 {
+    vertical-align: baseline;
+    position: relative;
+    margin: 0 0 2vh;
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: .05em;
+    text-shadow: 0 0 5px #000;
+    opacity: 1;
+    font-family: 'Oswald', sans-serif;
+}
+
+.characters-section .inner-characters h3 span {
+    display: block;
+    width: 690px;
+    margin: 2px 0 0 6px;
+    font-size: 1.0rem;
+    line-height: 2;
+    text-shadow: 0 0 5px #000;
+    letter-spacing: 0em;
+    font-family: 'Oswald', sans-serif;
+}
+
+.slider-ch {
+    position: relative;
+    background: transparent;
+    width: 50%;
+    margin: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slider-ch .slide-ch {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(0% at 0 50%);
+}
+
+.slider-ch .slide-ch.active {
+    clip-path: circle(150% at 0 50%);
+    transition: 2s;
+}
+
+.slider-ch .slide-ch img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider-ch .slide-ch .info-ch {
+    position: absolute;
+    color: #222;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    margin-top: 352px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 25px rgb(1 1 1 / 5%);
+    color: white;
+}
+
+.slider-ch .slide-ch .info-ch h2 {
+    font-size: 2em;
+    font-weight: 800;
+    font-family: 'Oswald', sans-serif;
+}
+
+.slider-ch .slide-ch .info-ch h2 span {
+    color: rgb(230, 11, 11);
+}
+
+.slider-ch .slide-ch .info-ch p {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+}
+
+.navigation-ch {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 0;
+    transition: opacity 0.9s ease;
+}
+
+.slider-ch:hover .navigation-ch {
+    opacity: 1;
+}
+
+.prev-btn,
+.next-btn {
+    z-index: 999;
+    font-size: 2em;
+    color: #222;
+    background: rgba(136, 8, 8, 0.8);
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.prev-btn {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.next-btn {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.navigation-visibility {
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-visibility .slide-icon {
+    z-index: 999;
+    background: rgba(255, 255, 255, 0.5);
+    width: 20px;
+    height: 10px;
+    transform: translateY(-50px);
+    margin: 0 6px;
+    border-radius: 2px;
+    box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+}
+
+.navigation-visibility .slide-icon.active {
+    background: #4285F4;
+}
+/*----------------------------------------BIO-WEAPON SECTION------------------------------------------*/
+
+.bioweapon-section {
+    display: block;
+    width: 100%;
+    padding: 120px 0 80px;
+    border-bottom: 1px solid #3a3a3a;
+    overflow: hidden;
+    position: relative;
+}
+
+.bioweapon-section {
+    background-image: url("../../../ImagesCSS/RE2Police.jpg");
+    background-repeat: no-repeat;
+    z-index: 0 !important;
+    background-attachment: fixed;
+    color: black;
+    background-size: cover;
+}
+
+.bioweapon-section .inner-bioweapon {
+    vertical-align: baseline;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1190px;
+    margin: 0 auto;
+}
+
+.bioweapon-section .inner-bioweapon h3 {
+    display: block;
+    position: relative;
+    margin: 0 0 2vh;
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: .05em;
+    text-shadow: 0 0 5px #000;
+    opacity: 1;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+
+.bioweapon-section .inner-bioweapon h3 span {
+    display: block;
+    width: 690px;
+    margin: 2px 0 0 6px;
+    font-size: 1.0rem;
+    line-height: 2;
+    text-shadow: 0 0 5px #000;
+    letter-spacing: 0em;
+    font-family: 'Oswald', sans-serif;
+}
+
+.BOW-slider {
+    padding: 0;
+    min-height: 100%;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.bow-logo {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.card-bow {
+    padding: 2em;
+    width: 90vw;
+    height: 80vh;
+    min-height: 38em;
+    max-width: 1050px;
+    position: relative;
+}
+
+.panel-1,
+.panel-2 {
+    position: absolute;
+    box-shadow: 0 0 4em 1em rgba(0, 0, 0, 0.4);
+    border-radius: 2em;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.panel-1 {
+    background: url("../../../ImagesCSS/virus.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    right: 0;
+    width: 80%;
+    height: 90%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.panel-1::before {
+    content: '';
+    background: linear-gradient(45deg, #29191e 0%, #0c1c29 40%, rgba(12, 31, 45, 0.9) 100%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.panel-2 {
+    background: linear-gradient(45deg, #880808 0%, black 40%, rgba(12, 31, 45, 0.9) 100%);
+    left: 0;
+    width: 50%;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.panel-2::before {
+    content: '';
+    background-image: url("../../../ImagesCSS/Umbrella.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: -5em;
+    transform: translateY(-50%) rotate(-90deg);
+    z-index: 2;
+}
+
+.BOW {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+.BOW-image {
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    display: flex;
+}
+
+.BOW-image img {
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(0 0 1em rgba(0, 0, 0, 0.7));
+}
+
+.BOW-details {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+.BOW-description{
+    font-family: 'Oswald', sans-serif;
+}
+
+.BOW h1 {
+    font-size: 2.8em;
+    margin: 0;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+}
+
+.arrow-left,
+.arrow-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4em;
+    height: 4em;
+    background: #880808;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 4.2em;
+    z-index: 2;
+    transition: 0.3s;
+    cursor: pointer;
+    color: white;
+}
+
+.arrow-left i,
+.arrow-right i {
+    font-size: 1.5em;
+}
+
+.arrow-left {
+    left: -1em;
+}
+
+.arrow-right {
+    right: -1em;
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+    background: #000;
+    color: #fff;
+}
+
+.fade-in {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/*=======================================FOOTER==========================================*/
+
+#footer-SH {
+    position: relative;
+    width: 100%;
+    border-top: 1px solid #3a3a3a;
+    background: black;
+    visibility: visible !important;
+    opacity: 1 !important;
+    transition: visibility .3s, opacity .3s;
+    z-index: 3;
+    overflow-x: visible;
+}
+
+#footer-SH>section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    min-width: 900px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 0 0;
+}
+
+
+#footer-SH .footer-SH_copy {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    padding: 1px 0 0;
+    border-top: 1px solid #5a5a5a;
+    background-image: url(../../../ImagesCSS/window.png); 
+    background-repeat: no-repeat;
+    background-size: 1100px 400px;
+    background-position: calc(50% + 650px) 0;
+    color: #8e8e8e;
+    overflow: hidden;
+}
+
+#footer-SH .footer-SH_copy .footer-SH_copy-left {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+}
+
+#footer-SH .footer-SH_copy .footer-SH_copy-left .logo-footer img {
+    margin-left: 150px;
+}
+
+#footer-SH .footer-SH_copy .footer-SH_copy-left.flex-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+}
+
+#footer-SH .footer-SH_copy .footer-SH_copy-left .contact-footer {
+    align-items: center;
+    padding: 0 0 0 45px;
+    border-left: 2px solid #cb0101;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 65px;
+    margin-right: 0px;
+    margin-bottom: 100px;
+    margin-left: 200px;
+    margin-top: 150px;
+    float: right;
+}
+
+#footer-SH .footer-SH_copy .footer-SH_copy-left .contact-footer p {
+    font-size: 15px;
+    text-align: center;
+}
+
+.contact-footer {
+    line-height: 2;
+}
+
+.content-footer {
+    line-height: 2.5;
+}
+
+
+
+/*========================================MEDIA=======================================*/
+
+@media screen and (max-width: 800px) {
+    .nav-top {
+        padding: 5px 100px 100px 80px;
+        bottom: 20vh;
+        z-index: 10;
+    }
+
+    .nav-top p img {
+        width: 100%;
+        height: auto;
+    }
+
+    .nav-top li {
+        font-size: 2rem;
+    }
+
+    .banner-Umbrella {
+        width: 100%;
+        height: auto;
+    }
+
+    .banner-Umbrella img {
+        width: 80%;
+        height: auto;
+        margin: 0px 0px 0px 15px;
+    }
+
+    .banner-Umbrella h6 {
+        display: none;
+    }
+
+    .contents-page .section-games .inner-game h3 {
+        margin-left: 25%;
+        font-size: 3.2rem;
+        font-weight: 400;
+    }
+
+    .contents-page .history-section .inner-history h3 {
+        margin-left: 45%;
+        font-size: 3.2rem;
+        font-weight: 400;
+    }
+
+    .image,
+    .image2 {
+        display: none;
+    }
+
+    .text-box2 {
+        margin-right: 27%;
+    }
+
+    .characters-section .inner-characters h3 {    
+        margin-left: 11%;
+        font-size: 3.2rem;
+        font-weight: 400;
+    }
+
+    .slider-ch {
+        width: 100%;
+    }
+
+    .slider-ch .slide-ch .info-ch {
+        position: relative;
+        width: 100%;
+        height: auto;
+        
+    }
+    .slider-ch .slide-ch .info-ch h2 {
+        font-size: 1.8em;
+        line-height: 40px;
+    }
+
+    .slider-ch .slide-ch .info-ch p {
+        font-size: 0.9em;
+    }
+
+    .slider-ch .slide-ch img {
+        object-fit: cover;
+    }
+
+    .bioweapon-section .inner-bioweapon h3{
+        margin-left: 11%;
+        font-size: 3.2rem;
+        font-weight: 400;
+    }
+
+    .panel-1,
+    .panel-2 {
+        display: none;
+    }
+
+    .card-bow {
+        background: linear-gradient(45deg, #29191e 0%, #0c1c29 40%, rgba(12, 31, 45, 0.9) 100%);
+        text-align: center;
+        height: initial;
+        padding: 3em 2em 1em 2em;
+        border-radius: 2em;
+    }
+
+    .card-bow h1 {
+        margin-top: 1em;
+    }
+
+    .BOW-details {
+        justify-content: center;
+    }   
+
+    .BOW {
+        grid-template-columns: 1fr;
+    }
+
+    .BOW-image img {
+        width: 50%;
+    }
+
+    .arrow-left {
+        left: -2em;
+    }
+
+    .arrow-right {
+        right: -2em;
+    }
+    .BOW-slider {
+        font-size: 13px;
+    }
+
+    #footer-SH .footer-SH_copy .footer-SH_copy-left .logo-footer img {
+        margin-left: 30px;
+        width: 75%;
+        margin-top: 25px;
+    }
+
+    #footer-SH .footer-SH_copy .footer-SH_copy-left .content-footer {
+        font-size: 10px;
+        margin-left: 50px;
+    }
+
+    #footer-SH .footer-SH_copy .footer-SH_copy-left .contact-footer {
+        font-size: 10px;
+        margin-top: -250px;
+        margin-right: 20px;
+    }
+  
+}
+
+@media screen and (max-width: 500px) { 
+    .nav-top {
+        padding: 5px 100px 100px 80px;
+        bottom: 20vh;
+        z-index: 10;
+    }
+
+    .nav-top p img {
+        width: 100%;
+        height: auto;
+    }
+
+    .nav-top li {
+        font-size: 2rem;
+    }
+    .contents-page .section-games .inner-game h3 {
+        margin-left: 45%;
+        font-size: 3.2rem;
+        font-weight: 400;
+    }
+
+    .format-section-ch {
+        width: 100%;
+    }
+
+    .format-section-ch.slider-ch {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .slider-ch .slide-ch .info-ch h2 {
+        font-size: 1.8em;
+        line-height: 40px;
+    }
+
+    .slider-ch .slide-ch .info-ch p {
+        display: none;
+    }
+
+    #footer-SH .footer-SH_copy .footer-SH_copy-left .logo-footer img {
+        margin-left: 35px;
+        width: 55%;
+        margin-top: 25px;
+    }
+
+    #footer-SH .footer-SH_copy .footer-SH_copy-left .content-footer {
+        font-size: 5px;
+        margin-left: 50px;
+        width: 100%;
+    }
+
+    #footer-SH .footer-SH_copy .footer-SH_copy-left .contact-footer {
+        font-size: 5px;
+        margin-top: -225px;
+        margin-right: 20px;
+    }
+
+    #footer-SH .footer-SH_copy .footer-SH_copy-left .content-footer dt {
+        font-size: 20px;
+    }
+
+    #footer-SH .footer-SH_copy .footer-SH_copy-left .contact-footer dt {
+        font-size: 20px;
+    }
+}

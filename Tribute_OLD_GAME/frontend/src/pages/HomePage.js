@@ -1,11 +1,11 @@
 import React from 'react';
 import '../styles/components/pages/HomePage.css';
-import VideoBackground from '../ImagesVideos/videos/Homevideo.mp4';
+// import VideoBackground from '../ImagesVideos/videos/Homevideo.mp4';
 
 const HomePage = (props) => {
     return (
         <main className="showcase">
-            <video src={VideoBackground} autoPlay loop muted />
+            <video src="ImagesVideos//videos/Homevideo.mp4" autoPlay loop muted />
             <div className="text-principal-page">
                 <h2>Tribute Game</h2>
                 <h3>Games that marked your childhood</h3>

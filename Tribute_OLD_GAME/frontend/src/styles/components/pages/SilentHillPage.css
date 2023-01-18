@@ -1,47 +1,1356 @@
-.historia p {
-    font-size: 0.8em;
+@import url('http://fonts.cdnfonts.com/css/silent-hell-of-cheryl?styles=2504,2502,2503');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+/*=====================================BACKGROUND IMAGE FORMAT=================================*/
+
+#Image-Background {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+    z-index: 0 !important;
+    background-attachment: fixed;
 }
 
-.persona {
-    width: 18%;
+.Format-Image-BoxSH {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+}
+
+.Image-cover {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    z-index: 0;
+    border: none;
+}
+
+.fog {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: #fff;
+}
+
+.fog-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.fog-img {
+    position: absolute;
+    height: 100vh;
+    width: 300vw;
+    z-index: 3;
+}
+
+.fog-img-first {
+    background: url("../../../ImagesCSS/fog-1.png");
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-position: center;
+    animation: marquee 60s linear infinite;
+}
+
+.fog-img-second {
+    background: url("../../../ImagesCSS/fog-2.png");
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-position: center;
+    animation: marquee 30s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-200vw, 0, 0);
+    }
+}
+
+
+/*-----------------------------INITIAL PAGE MENU-----------------------------------*/
+
+.portal-topSH {
+    display: block;
+    opacity: 1;
+    width: 100%;
+}
+
+.Initial-pageSH {
+    vertical-align: baseline;
+    position: relative;
+    width: 100%;
+    height: calc(100vh + 100px);
+    overflow: hidden;
+}
+
+.nav-topSh {
+    padding: 340px 200px 200px 198px;
+    font: inherit;
+    vertical-align: baseline;
+    position: absolute;
+    bottom: 8vh;
+    z-index: 3;
+}
+
+.image-stick {
+
+    top: 160px;
+    left: 190px;
+}
+
+.nav-topSh ul {
+    list-style: none;
+}
+
+.nav-topSh li {
+    vertical-align: baseline;
+    position: relative;
+    margin: 0 0 1vh;
+    color: #fff;
+    font-size: 2.3rem;
+    font-weight: lighter;
+    text-shadow: 0 0 5px #000, 0 0 5px #000, 0 0 5px #000;
+    line-height: 1.5;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.nav-topSh li a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-family: 'Silent Hell of Cheryl', sans-serif;
+}
+
+.nav-topSh li a::before,
+.nav-topSh li a::after {
+    content: attr(data-glich);
+    position: absolute;
+    left: 0;
+    top: 14px;
+    opacity: .8;
+    font-size: 25.5px;
+}
+
+.nav-topSh li a::before {
+    z-index: -1;
+    color: #17f8f8;
+    transform: translate(0, 0);
+    filter: contrast(200%);
+    animation: wiggles 0.5s ease-in-out infinite;
+}
+
+.nav-topSh li a::after {
+    z-index: -2;
+    color: #ff2575;
+    transform: translate(0, 0);
+    filter: contrast(200%);
+    animation: wiggles .4s .2s ease-in-out infinite;
+}
+
+.nav-topSh li a:hover:before {
+    visibility: hidden;
+}
+
+.nav-topSh li a:hover::after {
+    visibility: hidden;
+}
+
+@keyframes wiggles {
+
+    0%,
+    30%,
+    60%,
+    90%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    15% {
+        transform: translate(-2.5%, -4%);
+    }
+
+    45% {
+        transform: translate(2.5%, 4%);
+    }
+
+    75% {
+        transform: translate(-2%, -3%);
+    }
+}
+
+.nav-topSh li a:hover {
+    color: #CB0101;
+    font-size: 40px;
+}
+
+/*-----------------------------SECTION THE CULT-----------------------------------*/
+
+.contents-pageSH {
+    vertical-align: baseline;
+    position: relative;
+    padding: 0;
+    background: transparent;
+    width: 100%;
+}
+
+.contents-pageSH .Cult-section {
+    visibility: visible;
+    margin: 0px;
+    border: 0;
+    vertical-align: baseline;
+    position: relative;
+    border-bottom: 1px solid #3a3a3a;
+    background: #000;
+    width: 100%;
+    overflow: hidden;
+}
+
+.contents-pageSH .Cult-section {
+    background-image: url("../../../ImagesCSS/cult.gif");
+    background-repeat: no-repeat;
+    z-index: 0 !important;
+    background-attachment: fixed;
+    color: black;
+    background-size: 40%;
+    background-position: center;
+}
+
+.contents-pageSH .Cult-section .inner-cult {
+    vertical-align: baseline;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1190px;
+    margin: 0 auto;
+    padding: 120px 0 80px;
+}
+
+
+.contents-pageSH .Cult-section .inner-cult h3 {
+
+    vertical-align: baseline;
+    position: relative;
+    margin: 0 0 2vh;
+    color: #fff;
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: .05em;
+    text-shadow: 0 0 5px #000;
+    opacity: 1;
+    font-family: 'Silent Hell of Cheryl', sans-serif;
+}
+
+.h3-section-title::before,
+.h3-section-title::after {
+    content: attr(data-glich2);
+    position: absolute;
+    top: 0px;
+    opacity: .8;
+    font-size: 3.2rem;
+    font-weight: 0;
+    line-height: 1;
+    letter-spacing: .02em;
+}
+
+.h3-section-title::before {
+    z-index: -1;
+    color: #17f8f8;
+    transform: translate(0, 0);
+    filter: contrast(200%);
+    animation: wiggles2 0.5s ease-in-out infinite;
+}
+
+.h3-section-title::after {
+    z-index: -2;
+    color: #ff2575;
+    transform: translate(0, 0);
+    filter: contrast(200%);
+    animation: wiggles .4s .2s ease-in-out infinite;
+}
+
+.h3-section-title:hover:before {
+    visibility: hidden;
+}
+
+.h3-section-title:hover::after {
+    visibility: hidden;
+}
+
+@keyframes wiggles2 {
+
+    0%,
+    30%,
+    60%,
+    90%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    15% {
+        transform: translate(-2.5%, -4%);
+    }
+
+    45% {
+        transform: translate(2.5%, 4%);
+    }
+
+    75% {
+        transform: translate(-2%, -3%);
+    }
+}
+
+.contents-pageSH .Cult-section .inner-cult h3 span {
+    display: block;
+    width: 690px;
+    margin: 2px 0 0 6px;
+    color: #e7e7e7;
+    font-size: 1.0rem;
+    line-height: 2;
+    text-shadow: 0 0 5px #000;
+    letter-spacing: 0em;
+    font-family: 'Silent Hell of Cheryl', sans-serif;
+}
+
+.l-firespark {
+    position: absolute;
+    -webkit-transition: opacity .5s ease;
+    transition: opacity .5s ease;
+    opacity: 0;
+    mix-blend-mode: screen;
+    z-index: 100;
+}
+
+.l-firespark.tranparency {
+    opacity: 1
+}
+
+.videoInner {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.History-cult {
+    vertical-align: baseline;
+    position: relative;
+    color: white;
+    font-size: 25px;
+    margin-top: 50px;   
+    text-align: justify;
+}
+
+.History-cult .Image-cult {
+    margin-left: 15px;
+    float: right;
+    shape-outside: margin-box;
+}
+
+.History-cult .Image-metatron {
+    margin-left: 5px;
+    float: right;
+    shape-outside: circle(50%);
+}
+
+.History-cult img {
+    width: 15%;
+    height: 15%;
+    margin-right: 10px;
     float: left;
-    margin-left: 2.25%;
-    border: 1px solid #ddd;
-    border-radius: border-box;
+    shape-outside: circle(50%);
+} 
+
+.Text-Format-Cult p {
+    font-family: 'Silent Hell of Cheryl', sans-serif;
 }
 
-.persona {
-    text-align: center;
+/* -----------------------------SECTION HISTORY----------------------------------- */
+
+.contents-pageSH .history-section-sh {
+    visibility: visible;
+    margin: 0px;
+    border: 0;
+    vertical-align: baseline;
+    position: relative;
+    border-bottom: 1px solid #3a3a3a;
+    background: #000;
+    width: 100%;
+    overflow: hidden;
 }
 
-.persona img {
-    border-radius: 50%;
-    box-shadow: 0 0 50px rgba(0,0,0,0.5);
-    margin: 0.8em 0 1em;
+.contents-pageSH .history-section-sh {
+    background-image: url("../../../ImagesCSS/Town.jpg");
+    background-repeat: no-repeat;
+    z-index: 0 !important;
+    background-attachment: fixed;
+    color: black;
+    background-size: cover;
 }
 
-.persona h5, .persona h6 {
-    font-weight: normal;
-    color: #2e64a1;
+.contents-pageSH .history-section-sh .inner-history-sh {
+    vertical-align: baseline;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1190px;
+    margin: 0 auto;
+    padding: 120px 0 80px;
+}
+
+
+.contents-pageSH .history-section-sh .inner-history-sh h3 {
+
+    vertical-align: baseline;
+    position: relative;
+    margin: 0 0 2vh;
+    color: #fff;
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: .05em;
+    text-shadow: 0 0 5px #000;
+    opacity: 1;
+    font-family: 'Silent Hell of Cheryl', sans-serif;
+}
+
+.h3-section-title-h::before,
+.h3-section-title-h::after {
+    content: attr(data-glich2);
+    position: absolute;
+    top: 0px;
+    opacity: .8;
+    font-size: 3.2rem;
+    font-weight: 0;
+    line-height: 1;
+    letter-spacing: -0.01em;
+}
+
+.h3-section-title-h::before {
+    z-index: -1;
+    color: #17f8f8;
+    transform: translate(0, 0);
+    filter: contrast(200%);
+    animation: wiggles3 0.5s ease-in-out infinite;
+}
+
+.h3-section-title-h::after {
+    z-index: -2;
+    color: #ff2575;
+    transform: translate(0, 0);
+    filter: contrast(200%);
+    animation: wiggles .4s .2s ease-in-out infinite;
+}
+
+.h3-section-title-h:hover:before {
+    visibility: hidden;
+}
+
+.h3-section-title-h:hover::after {
+    visibility: hidden;
+}
+
+@keyframes wiggles3 {
+
+    0%,
+    30%,
+    60%,
+    90%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    15% {
+        transform: translate(-2.5%, -4%);
+    }
+
+    45% {
+        transform: translate(2.5%, 4%);
+    }
+
+    75% {
+        transform: translate(-2%, -3%);
+    }
+}
+
+
+.contents-pageSH .history-section-sh .inner-history-sh h3 span {
+    display: block;
+    width: 690px;
+    margin: 2px 0 0 6px;
+    color: #e7e7e7;
+    font-size: 1.0rem;
+    line-height: 2;
+    text-shadow: 0 0 5px #000;
+    letter-spacing: 0em;
+    font-family: 'Silent Hell of Cheryl', sans-serif;
+}
+
+
+.contents-pageSH .history-section-sh .Content-Slider-HIS {
+    margin-top: 100px;
+    position: relative;
+    font-size: 100%;
+    font-weight: 400;
+    min-height: 70vh;
+    font-family: 'Silent Hell of Cheryl', sans-serif;
+}
+
+.Content-Slider-HIS {
+    width: 100%;
+    height: 100%;
+}
+
+.flex__container_HIS {
+    position: absolute;
+    top: 110px;
+    left: 20px;
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    -webkit-flex-flow: row wrap;
+    -moz-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    -o-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-justify-content: flex-start;
+    -moz-justify-content: flex-start;
+    -ms-justify-content: flex-start;
+    -o-justify-content: flex-start;
+    justify-content: flex-start;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.flex__container_HIS.flex--active-HIS {
+    z-index: 2;
+}
+
+.text--sub--HIS {
+    font-size: 25px;
+    letter-spacing: 0.5rem;
+    margin-bottom: 0px;
+    font-family: 'Silent Hell of Cheryl', sans-serif;
+}
+
+.text--normal--HIS {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 22px;
+    margin-top: 15px;
+    font-family: 'Silent Hell of Cheryl', sans-serif;
+}
+
+.flex__item_HIS {
+    height: 100vh;
+    color: #fff;
+    transition: transform 0.1s linear;
+}
+
+.flex__item_HIS--left {
+    display: inline-flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    width: 50%;
+    height: 400px;
+    transform-origin: left bottom;
+    transition: transform 0.1s linear 0.4s;
+    opacity: 0;
+    position: relative;
+    overflow: hidden;
+    background: black;
+}
+
+.flex__item_HIS--right {
+    display: inline-flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    width: 50%;
+    transform-origin: right center;
+    transition: transform 0.1s linear 0s;
+    opacity: 0;
+    background: transparent;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.flex__item_HIS--right img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: translate3d(0, 0, 0);
+    transition: opacity 0.43s 0.6s, transform 0.4s 0.65s cubic-bezier(0, 0.88, 0.4, 0.93);
+    object-fit: cover;
+    box-shadow: inset 40px 0 40px -16px;
+}
+
+.flex--preStart-HIS .flex__item_HIS--left,
+.flex--preStart-HIS .flex__item_HIS--right,
+.flex--active-HIS .flex__item_HIS--left,
+.flex--active-HIS .flex__item_HIS--right {
+    opacity: 1;
+}
+
+
+
+.flex__content_HIS {
+    margin-left: 80px;
+    margin-bottom: 20px;
+    width: 70%;
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition: transform 0.2s linear 0.2s, opacity 0.1s linear 0.2s;
+} 
+
+/* Animate-START point */
+
+.flex__container_HIS.animate--start--HIS .flex__content_HIS {
+    transform: translate3d(0, -200%, 0);
+    opacity: 0;
+}
+
+.flex__container_HIS.animate--start--HIS .SH__img_HIS {
+    transform: translate3d(-200px, 0, 0);
+    opacity: 0;
+} 
+
+/* Animate-END point */
+
+.flex__container_HIS.animate--end-HIS .flex__item_HIS--left {
+    transform: scaleY(0);
+}
+
+.flex__container_HIS.animate--end-HIS .flex__item_HIS--right {
+    transform: scaleX(0);
+}
+
+.flex__container_HIS.animate--end-HIS .flex__content_HIS {
+    transform: translate3d(0, 200%, 0);
+    opacity: 0;
+}
+
+.flex__container_HIS.animate--end-HIS .SH__img_HIS {
+    transform: translate3d(200px, 0, 0);
+    opacity: 0;
+}
+
+
+.prev-btn-HIS,
+.next-btn-HIS {
+    z-index: 999;
+    font-size: 2em;
+    color: #222;
+    background: rgba(136, 8, 8, 0.8);
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.slider__navi_HIS {
+    position: absolute;
+    top: 0;
+    left: 72%;
+    display: flex;
+    transform: translateX(-50%);
+}
+
+.slider__navi_HIS figure {
+    height: 75px;
+    width: 150px;
+    margin: 0 3px;
+    cursor: pointer;
+    transition: border 0.4s ease-in-out, bottom 0.4s ease-in-out, filter 0.4s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    backface-visibility: hidden;
+    bottom: -1.24rem;
+}
+
+
+.btn-image1 {
+    background-image: url("../../../ImagesCSS/SH-Town-day.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
+}
+
+.btn-image1:hover {
+    filter: grayscale(50%);
+}
+
+.btn-image1.active {
+    filter: grayscale(0%);
+    bottom: 0;
+    border-bottom: 2px solid red;
+}
+
+.btn-image2 {
+    background-image: url("../../../ImagesCSS/Silent-hill-gas.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
+    height: 50px;
+}
+
+.btn-image2:hover {
+    filter: grayscale(50%);
+}
+
+.btn-image2.active {
+    filter: grayscale(0%);
+    bottom: 0;
+    height: 75px;
+    border-bottom: 2px solid red;
+}
+
+.btn-image3 {
+    background-image: url("../../../ImagesCSS/Alchemilla-Hospital.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
+    height: 50px;
+}
+
+.btn-image3:hover {
+    filter: grayscale(50%);
+}
+
+.btn-image3.active {
+    filter: grayscale(0%);
+    bottom: 0;
+    height: 75px;
+    border-bottom: 2px solid red;
+}
+
+.btn-image4 {
+    background-image: url("../../../ImagesCSS/Lakeside-Amusement-Park.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
+    height: 50px;
+}
+
+.btn-image4:hover {
+    filter: grayscale(50%);
+}
+
+.btn-image4.active {
+    filter: grayscale(0%);
+    bottom: 0;
+    height: 75px;
+    border-bottom: 2px solid red;
+}
+
+.btn-image5 {
+    background-image: url("../../../ImagesCSS/Midwich-Elementary-School.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
+    height: 50px;
+}
+
+.btn-image5:hover {
+    filter: grayscale(50%);
+}
+
+.btn-image5.active {
+    filter: grayscale(0%);
+    bottom: 0;
+    height: 75px;
+    border-bottom: 2px solid red;
+}
+
+.btn-image6 {
+    background-image: url("../../../ImagesCSS/OtherWorld.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
+    height: 50px;
+}
+
+.btn-image6:hover {
+    filter: grayscale(50%);
+}
+
+.btn-image6.active {
+    filter: grayscale(0%);
+    bottom: 0;
+    height: 75px;
+    border-bottom: 2px solid red;
+}
+
+.faded {
+    position: relative;
+    display: inline-block;
+    color: black;
+}
+
+.faded:after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-collapse: separate;
+}
+
+.faded.faded-left:after {
+    box-shadow: inset 100px 0 100px -16px;
+}   
+
+/*-----------------------------SECTION GAMES-----------------------------------*/
+
+.contents-pageSH .games-section-sh {
+    visibility: visible;
+    margin: 0px;
+    border: 0;
+    vertical-align: baseline;
+    position: relative;
+    border-bottom: 1px solid #3a3a3a;
+    background: #000;
+    width: 100%;
+    overflow: hidden;
+}
+
+.contents-pageSH .games-section-sh {
+    background-image: url("../../../ImagesCSS/Games-section.jpg");
+    background-repeat: no-repeat;
+    z-index: 0 !important;
+    background-attachment: fixed;
+    color: black;
+    background-size: cover;
+}
+
+.contents-pageSH .games-section-sh .inner-games-sh {
+    vertical-align: baseline;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1190px;
+    margin: 0 auto;
+    padding: 120px 0 80px;
+}
+
+
+.contents-pageSH .games-section-sh .inner-games-sh h3 {
+
+    vertical-align: baseline;
+    position: relative;
+    margin: 0 0 2vh;
+    color: #fff;
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: .05em;
+    text-shadow: 0 0 5px #000;
+    opacity: 1;
+    font-family: 'Silent Hell of Cheryl', sans-serif;
+}
+
+.contents-pageSH .games-section-sh .inner-games-sh h3 span {
+    display: block;
+    width: 690px;
+    margin: 2px 0 0 6px;
+    color: #e7e7e7;
+    font-size: 1.0rem;
+    line-height: 2;
+    text-shadow: 0 0 5px #000;
+    letter-spacing: 0em;
+    font-family: 'Silent Hell of Cheryl', sans-serif;
+}
+
+.SH-slider {
+    display: flex;
+    margin-left: 550px;
+    margin-top: 250px;
+    min-height: 40vh;
+}
+
+.box-games-sh {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: animate 120s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: perspective(1000px) rotateY(0deg);
+    }
+
+    100% {
+        transform: perspective(1000px) rotateY(3600deg);
+    }
+}
+
+.box-games-sh span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i)* 45deg)) translateZ(400px);
+    -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0004);
+}
+
+.box-games-sh span img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} 
+
+/*-----------------------------SECTION CHARACTERS-----------------------------------*/
+
+ .contents-pageSH .characters-section-sh {
+    visibility: visible;
+    margin: 0px;
+    border: 0;
+    vertical-align: baseline;
+    position: relative;
+    border-bottom: 1px solid #3a3a3a;
+    background: #000;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.contents-pageSH .characters-section-sh {
+    background-image: url("../../../ImagesCSS/Characters-section.jpg");
+    background-repeat: no-repeat;
+    z-index: 0 !important;
+    background-attachment: fixed;
+    color: black;
+    background-size: cover;
+}
+
+.contents-pageSH .characters-section-sh .inner-characters-sh {
+    vertical-align: baseline;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1190px;
+    margin: 0 auto;
+    padding: 120px 0 80px;
+}
+
+.contents-pageSH .characters-section-sh .inner-characters-sh h3 {
+
+    vertical-align: baseline;
+    position: relative;
+    margin: 0 0 2vh;
+    color: #fff;
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: .05em;
+    text-shadow: 0 0 5px #000;
+    opacity: 1;
+    font-family: 'Silent Hell of Cheryl', sans-serif;
+}
+
+.contents-pageSH .characters-section-sh .inner-characters-sh h3 span {
+    display: block;
+    width: 690px;
+    margin: 2px 0 0 6px;
+    color: #e7e7e7;
+    font-size: 1.0rem;
+    line-height: 2;
+    text-shadow: 0 0 5px #000;
+    letter-spacing: 0em;
+    font-family: 'Silent Hell of Cheryl', sans-serif;
+}
+
+.format-section-ch-sh {
+    width: 100%;
+}
+
+.slider-ch-sh {
+    position: relative;
+    background: transparent;
+    width: 100%;
+    margin: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slider-ch-sh .slide-ch-sh {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(0% at 0 50%);
+}
+
+.slider-ch-sh .slide-ch-sh.active {
+    clip-path: circle(150% at 0 50%);
+    transition: 2s;
+}
+
+.slider-ch-sh .slide-ch-sh img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider-ch-sh .slide-ch-sh .info-ch-sh {
+    position: absolute;
+    color: #222;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    margin-top: 352px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 25px rgb(1 1 1 / 5%);
+    color: white;
+}
+
+.slider-ch-sh .slide-ch-sh .info-ch-sh h2 {
+    font-size: 2em;
+    font-weight: 800;
+    font-family: 'Silent Hell of Cheryl', sans-serif;
+}
+
+.slider-ch-sh .slide-ch-sh .info-ch-sh h2 span {
+    color: rgb(230, 11, 11);
+    font-family: 'Silent Hell of Cheryl', sans-serif;
+}
+
+.slider-ch-sh .slide-ch-sh .info-ch-sh p {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Silent Hell of Cheryl', sans-serif;
+}
+
+.navigation-ch-sh {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 0;
+    transition: opacity 0.9s ease;
+}
+
+.slider-ch-sh:hover .navigation-ch-sh {
+    opacity: 1;
+}
+
+.prev-btn,
+.next-btn {
+    z-index: 999;
+    font-size: 2em;
+    color: #222;
+    background: rgba(136, 8, 8, 0.8);
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.prev-btn {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.next-btn {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.navigation-visibility {
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-visibility .slide-icon {
+    z-index: 999;
+    background: rgba(255, 255, 255, 0.5);
+    width: 20px;
+    height: 10px;
+    transform: translateY(-50px);
+    margin: 0 6px;
+    border-radius: 2px;
+    box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+}
+
+.navigation-visibility .slide-icon.active {
+    background: #4285F4;
+}
+
+/*-----------------------------SECTION MONSTERS-----------------------------------*/
+
+.contents-pageSH .monsters-section-sh {
+    visibility: visible;
+    margin: 0px;
+    border: 0;
+    vertical-align: baseline;
+    position: relative;
+    border-bottom: 1px solid #3a3a3a;
+    background: #000;
+    width: 100%;
+    overflow: hidden;
+}
+
+.contents-pageSH .monsters-section-sh {
+    background-image: url("../../../ImagesCSS/Monsters-section.jpg");
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 1);
+    z-index: 0 !important;
+    background-attachment: fixed;
+    color: black;
+    background-size: cover;
+}
+
+.contents-pageSH .monsters-section-sh .inner-monsters-sh {
+    vertical-align: baseline;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1190px;
+    margin: 0 auto;
+    padding: 120px 0 80px;
+}
+
+
+.contents-pageSH .monsters-section-sh .inner-monsters-sh h3 {
+
+    vertical-align: baseline;
+    position: relative;
+    margin: 0 0 2vh;
+    color: #fff;
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: .05em;
+    text-shadow: 0 0 5px #000;
+    opacity: 1;
+    font-family: 'Silent Hell of Cheryl', sans-serif;
+}
+
+.contents-pageSH .monsters-section-sh .inner-monsters-sh h3 span {
+    display: block;
+    width: 690px;
+    margin: 2px 0 0 6px;
+    color: #e7e7e7;
+    font-size: 1.0rem;
+    line-height: 2;
+    text-shadow: 0 0 5px #000;
+    letter-spacing: 0em;
+    font-family: 'Silent Hell of Cheryl', sans-serif;
+}
+
+.SH-Monster-slider {
+    padding: 0;
+    min-height: 100%;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.Monster-logo {
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+  
+    right: 0;
+    transform: translateY(20%);
+    transform: translateX(40%);
+    
+}
+
+.card-Monster-sh {
+    padding: 2em;
+    width: 90vw;
+    height: 80vh;
+    min-height: 38em;
+    max-width: 1050px;
+    position: relative;
+}
+
+.panel-1,
+.panel-2 {
+    position: absolute;
+    box-shadow: 0 0 4em 1em rgba(0, 0, 0, 0.4);
+    border-radius: 2em;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.panel-1 {
+    background: url("../../../ImagesCSS/SH-Monster-SL.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    right: 0;
+    width: 80%;
+    height: 90%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.panel-1::before {
+    content: '';
+    background: linear-gradient(45deg, #29191e 0%, #0c1c29 40%, rgba(12, 31, 45, 0.9) 100%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.panel-2 {
+    background: linear-gradient(45deg, #880808 0%, black 40%, rgba(12, 31, 45, 0.9) 100%);
+    left: 0;
+    width: 50%;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.panel-2::before {
+    content: '';
+    background-image: url("../../../ImagesCSS/Seal-metatron.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0em;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.Monster-SH {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+.SH-Monster-image {
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    display: flex;
+}
+
+.SH-Monster-image img {
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(0 0 1em rgba(0, 0, 0, 0.7));
+}
+
+.Monster-details {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+.Monster-description{
+    font-family: 'Silent Hell of Cheryl', sans-serif;
+}
+
+.Monster-SH h1 {
+    font-size: 2.8em;
     margin: 0;
+    text-transform: uppercase;
+    font-family: 'Silent Hell of Cheryl', sans-serif;
 }
 
-.persona h5 {
-    font-size: 0.9em;
+.arrow-left,
+.arrow-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4em;
+    height: 4em;
+    background: #880808;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 4.2em;
+    z-index: 2;
+    transition: 0.3s;
+    cursor: pointer;
+    color: white;
 }
 
-.persona h6 {
-    font-size: 0.8em;
-    font-style: italic;
-    margin-bottom: 1em;
+.arrow-left i,
+.arrow-right i {
+    font-size: 1.5em;
 }
 
-.persona p {
-    font-size: 0.7em;
-    margin: 0 1em 1em;
-    color: #444;
+.arrow-left {
+    left: -1em;
 }
 
-.persona:first-child {
-    margin-left: 0;
+.arrow-right {
+    right: -1em;
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+    background: #000;
+    color: #fff;
+}
+
+.fade-in {
+    animation: fadeIn 0.8s ease-in-out;
 }
