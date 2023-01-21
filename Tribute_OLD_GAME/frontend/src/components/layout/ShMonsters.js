@@ -125,7 +125,7 @@ function SliderSH() {
                 <img src="ImagesVideos/images/Silent-Hill/Halo-of-sun.png"alt="" className="Monster-logo" />
                 <div className="card-Monster-sh">
                     <div className="panel-1"></div>
-                    <div className="panel-2"></div>
+                    <div className="panel-22"></div>
                     <div className="Monster-SH">
                         <div className="SH-Monster-image">
                             

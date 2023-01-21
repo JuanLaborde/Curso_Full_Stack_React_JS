@@ -675,18 +675,6 @@
     opacity: 0;
 }
 
-
-.prev-btn-HIS,
-.next-btn-HIS {
-    z-index: 999;
-    font-size: 2em;
-    color: #222;
-    background: rgba(136, 8, 8, 0.8);
-    padding: 10px;
-    cursor: pointer;
-    color: white;
-}
-
 .slider__navi_HIS {
     position: absolute;
     top: 0;
@@ -1220,7 +1208,7 @@
 }
 
 .panel-1,
-.panel-2 {
+.panel-22 {
     position: absolute;
     box-shadow: 0 0 4em 1em rgba(0, 0, 0, 0.4);
     border-radius: 2em;
@@ -1250,27 +1238,13 @@
     height: 100%;
 }
 
-.panel-2 {
+.panel-22 {
     background: linear-gradient(45deg, #880808 0%, black 40%, rgba(12, 31, 45, 0.9) 100%);
     left: 0;
     width: 50%;
     height: 100%;
     z-index: 0;
     overflow: hidden;
-}
-
-.panel-2::before {
-    content: '';
-    background-image: url("../../../ImagesCSS/Seal-metatron.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 50%;
-    left: 0em;
-    transform: translateY(-50%);
-    z-index: 2;
 }
 
 .Monster-SH {

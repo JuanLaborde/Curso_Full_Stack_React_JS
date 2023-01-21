@@ -1,12 +1,35 @@
-import React from 'react';
-import '../styles/components/pages/ContactPage.css';
-// import VideoBackground from '../ImagesVideos/videos/Homevideo.mp4';
-// import facebookicon from '../ImagesVideos/images/facebook.png';
-// import twittericon from '../ImagesVideos/images/twitter.png';
-// import instagramicon from '../ImagesVideos/images/instagram.png';
 
+import React, { useEffect } from 'react';
+import '../styles/components/pages/ContactPage.css';
 
 const ContactoPage = (props) => {
+    useEffect(() => {
+        const inputs = document.querySelectorAll(".input");
+
+        function focusFunc() {
+            let parent = this.parentNode;
+            parent.classList.add("focus");
+        }
+
+        function blurFunc() {
+            let parent = this.parentNode;
+            if (this.value === "") {
+                parent.classList.remove("focus");
+            }
+        }
+
+        inputs.forEach((input) => {
+            input.addEventListener("focus", focusFunc);
+            input.addEventListener("blur", blurFunc);
+        });
+
+        return () => {
+            inputs.forEach((input) => {
+                input.removeEventListener("focus", focusFunc);
+                input.removeEventListener("blur", blurFunc);
+            });
+        }
+    }, []);
     return (
         <main className="showcase">
             <video src="ImagesVideos/videos/Homevideo.mp4" autoPlay loop muted />
