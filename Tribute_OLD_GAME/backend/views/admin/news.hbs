@@ -1,6 +1,45 @@
-<div class="containernews" style="margin-top: 50px;">
-    <div class="row">
-        <p class="text-end">Hola {{user}} <a href="/admin/login/logout" class="btn btn-danger">Close <i
+<div class="news-section">
+    <div class="exit-news">
+        <p class="text-end text-format-news">Hola {{user}} <a href="/admin/login/logout" class="btn btn-danger">Close <i
                     class="fas fa-sign-out-alt"></i></a></p>
+    </div>
+
+    <div class="containernews">
+        <h3>News List - Administrator</h3>
+        <div class="New-document">
+            <div class="newbtn">
+                <a href="/admin/news/add" class="btn btn-sucess"><i class="fa fa-plus" aria-hidden="true"></i> New</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <table class="table">
+                    <thead>
+                        <tr class="table-dark">
+                            <th class="col-1" scope="col">#</th>
+                            <th class="col-2" scope="col">Image</th>
+                            <th class="col-3" scope="col">Title</th>
+                            <th class="col-4" scope="col">Description</th>
+                            <th class="col-5">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#each news }}
+                        <tr class="table-info">
+                            <th scope="row">{{id}}</th>
+                            <th>{{image}}</th>
+                            <th>{{title}}</th>
+                            <th>{{description}}</th>
+                            <th>
+                                <a href="/admin/news/modify/{{id}}" class="btn2 btn-secondary"><i class="fa fa-pencil"
+                                        aria-hidden="true"></i></a>
+                                <a href="/admin/news/delete/{{id}}" class="btn2 btn-secondary"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                            </th>
+                        </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
 </div>
