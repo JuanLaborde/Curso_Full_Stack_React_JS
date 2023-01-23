@@ -24,18 +24,6 @@
     overflow: hidden;
 }
 
-.showcase header{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 40px 100px;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
 .text-principal-page{
     position: fixed;
     z-index: 2;

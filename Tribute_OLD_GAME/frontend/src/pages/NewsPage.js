@@ -1,40 +1,129 @@
 import React from 'react';
-import '../styles/components/pages/ResidentEvilPage.css';
+import '../styles/components/pages/newsPage.css';
+import Footer from '../components/layout/Footer';
 
 const NewsPage = (props) => {
     return (
-        <main className="holder">
-            <div className="historia">
-                <h2>Historia</h2>
-                <p>In the year 1998, the Raccoon City Police Department dispatched their elite unit
-                    S.T.A.R.S. Bravo
-                    Team to investigate a series of bizarre murders on the outskirts of the
-                    Midwestern
-                    city.
-                    While en route, the team's helicopter is forced to make an emergency landing
-                    falling
-                    a sudden
-                    engine failure. The team set out from the crash site only to discover that the
-                    forest where they
-                    landed hid an overturned military vehicle, dead soldiers, and orders for the
-                    transport of Billy
-                    Coen, a prisoner who had been sentenced to death.
-                </p>
-            </div>
-            <div className="staff">
-                <h2>Staff</h2>
-                <div className="personas">
-                    <div className="persona">
-                        <img src="" alt=""/>
-                        <h5>Chris Redfield</h5>
-                        <h6>S.T.A.R.S Memeber</h6>
-                        <p>Captain of an American operator in the Bioterrorism Security Assessment Alliance and
-                            ex-member of the
-                            Special Tactics and Rescue Service assigned to S.T.A.R.S. Alfa team.
-                        </p>
+        <main className="portal-top-news">
+            <article className="Initial-page-news">
+                <div className="Format-Video-Box-news">
+                    <video id="Video-Background-news" src="ImagesVideos/videos/newsback.mp4" autoPlay loop muted></video>
+                </div>
+                <h1 className='Title-news'>OLD GAME TRIBUTE - NEWS</h1>
+            <section className="FormatSectionNews">
+                <div className="card-news">
+                    <div className="ImgBx">
+                        <img src="ImagesVideos/images/Logo2TOG2.png" alt="" />
+                    </div>
+                    <div className="content">
+                        <div className='details'>
+                            <h2>Page release</h2>
+                            <div className='data'>
+                                <p>We announce the launch of this page, made with love for games and players. On this page you can see things about your favorite games and if you like you can to share data about them. We hope you like it.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+                <div className="card-news">
+                    <div className="ImgBx">
+                        <img src="ImagesVideos/images/Silent-Hill/SHLogo.png" alt="" />
+                    </div>
+                    <div className="content">
+                        <div className='details'>
+                            <h2>Face your worst nightmares</h2>
+                            <div className='data'>
+                                <p>The acclaimed psychological horror game is here. Delve into the streets of Silent Hill reviewing its history throughout the tribute page to this great game.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="card-news">
+                    <div className="ImgBx">
+                        <img src="ImagesVideos/images/re2_logo.png" alt="" />
+                    </div>
+                    <div className="content">
+                        <div className='details'>
+                            <h2>Page release</h2>
+                            <div className='data'>
+                                <p>We announce the launch of this page, made with love for games and players. On this page you can see things about your favorite games and if you like to share data about them. We hope you like it.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="card-news">
+                    <div className="ImgBx">
+                        <img src="ImagesVideos/images/re2_logo.png" alt="" />
+                    </div>
+                    <div className="content">
+                        <div className='details'>
+                            <h2>Page release</h2>
+                            <div className='data'>
+                                <p>We announce the launch of this page, made with love for games and players. On this page you can see things about your favorite games and if you like to share data about them. We hope you like it.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <section className="FormatSectionNews2">
+                <div className="card-news">
+                    <div className="ImgBx">
+                        <img src="ImagesVideos/images/Logo2TOG2.png" alt="" />
+                    </div>
+                    <div className="content">
+                        <div className='details'>
+                            <h2>Page release</h2>
+                            <div className='data'>
+                                <p>We announce the launch of this page, made with love for games and players. On this page you can see things about your favorite games and if you like you can to share data about them. We hope you like it.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="card-news">
+                    <div className="ImgBx">
+                        <img src="ImagesVideos/images/Silent-Hill/SHLogo.png" alt="" />
+                    </div>
+                    <div className="content">
+                        <div className='details'>
+                            <h2>Page release</h2>
+                            <div className='data'>
+                                <p>We announce the launch of this page, made with love for games and players. On this page you can see things about your favorite games and if you like to share data about them. We hope you like it.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="card-news">
+                    <div className="ImgBx">
+                        <img src="ImagesVideos/images/re2_logo.png" alt="" />
+                    </div>
+                    <div className="content">
+                        <div className='details'>
+                            <h2>Page release</h2>
+                            <div className='data'>
+                                <p>We announce the launch of this page, made with love for games and players. On this page you can see things about your favorite games and if you like to share data about them. We hope you like it.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="card-news">
+                    <div className="ImgBx">
+                        <img src="ImagesVideos/images/re2_logo.png" alt="" />
+                    </div>
+                    <div className="content">
+                        <div className='details'>
+                            <h2>Page release</h2>
+                            <div className='data'>
+                                <p>We announce the launch of this page, made with love for games and players. On this page you can see things about your favorite games and if you like to share data about them. We hope you like it.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            </article>
+            
+            <Footer />
+
         </main>
     );
 }

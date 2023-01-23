@@ -58,26 +58,26 @@ const ContactoPage = (props) => {
                         <span className="circle one"></span>
                         <span className="circle two"></span>
 
-                        <form action="index.html" autocomplete="off">
+                        <form action="index.html" autoComplete="off">
                             <h3 className="title">Contact us</h3>
                             <div className="input-container">
                                 <input type="text" name="name" className="input" />
-                                <label for="">Username</label>
+                                <label htmlFor="">Username</label>
                                 <span>Username</span>
                             </div>
                             <div className="input-container">
                                 <input type="email" name="email" className="input" />
-                                <label for="">Email</label>
+                                <label htmlFor="">Email</label>
                                 <span>Email</span>
                             </div>
-                            <div class="input-container">
+                            <div className="input-container">
                                 <input type="tel" name="phone" className="input" />
-                                <label for="">Favorite game</label>
+                                <label htmlFor="">Favorite game</label>
                                 <span>Favorite game</span>
                             </div>
-                            <div class="input-container textarea">
-                                <textarea name="message" class="input"></textarea>
-                                <label for="">Message</label>
+                            <div className="input-container textarea">
+                                <textarea name="message" className="input"></textarea>
+                                <label htmlFor="">Message</label>
                                 <span>Message</span>
                             </div>
                             <input type="submit" value="Send" className="btn" />
