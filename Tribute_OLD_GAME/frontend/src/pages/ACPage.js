@@ -6,6 +6,9 @@ import SliderAC from '../components/layout/AcSliderCH';
 import Footer from '../components/layout/Footer';
 import FirstCivilization from '../components/layout/AcCivilization';
 import ACHistory from '../components/layout/ACHistory';
+import Lateraltop from '../components/layout/Lateral-top';
+import TemplarSlider from '../components/layout/Ac-TemplarSlider'
+
 
 const ACPage = (props) => {
     return (
@@ -13,7 +16,7 @@ const ACPage = (props) => {
             <Splash />
             <article className="Initial-page-ac">
                 <aside className="nav-top-ac">
-                    <p className="logo-position-ac"><img src="ImagesVideos/images/ACImages/Assassins-Creed-Logo.png" width="450"
+                    <p className="logo-position-ac"><img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675099360/Assassins%20Creed/Assassins-Creed-Logo_vpy2i2.png" width="450"
                         height="220" loading="lazy" alt="" /></p>
                     <br />
                     <ul className="Nav-move">
@@ -145,7 +148,7 @@ const ACPage = (props) => {
                         <h3 id="Templars-section">TEMPLARS
                             <span>May the father of understanding guide us</span>
                         </h3>
-                        <SliderAC />
+                        <TemplarSlider />
                     </div>
                 </section>
                 <section className="history-section">
@@ -158,6 +161,7 @@ const ACPage = (props) => {
                 </section>
                 <Footer />
             </article>
+            <Lateraltop />
         </main>
     );
 }

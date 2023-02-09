@@ -25,7 +25,7 @@
 }
 
 .text-principal-page{
-    position: fixed;
+    position: relative;
     z-index: 2;
     text-align: left;
     margin-top: -150px;
@@ -36,6 +36,11 @@
     font-weight: 800;
     line-height: 1em;
     text-transform: uppercase;
+}
+
+.text-principal-page h2 span {
+    -webkit-text-stroke: 1px rgba(116,251,172,1);
+    -webkit-text-fill-color: transparent;
 }
 
 .text-principal-page h3{

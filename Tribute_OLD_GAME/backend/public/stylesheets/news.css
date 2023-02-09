@@ -60,6 +60,10 @@ h3 {
     width: 20%;
 }
 
+.col-2 {
+    width: 20%;
+}
+
 .col-3 {
     width: 20%;
 }
@@ -123,3 +127,4 @@ h3 {
 .text-end {
     float: right;
 }
+

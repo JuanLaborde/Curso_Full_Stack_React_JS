@@ -363,6 +363,10 @@
     transform: translate(181%, 11%);
     opacity: 0.2;
   }
+
+  .message-send {
+    font-weight: bold;
+  }
   
   @media (max-width: 800px) {
     .form {

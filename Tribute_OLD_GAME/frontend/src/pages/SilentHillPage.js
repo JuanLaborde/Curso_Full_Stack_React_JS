@@ -5,6 +5,7 @@ import ShHistory from '../components/layout/SHHistory';
 import SliderCHSH from '../components/layout/SliderChSH';
 import SliderSH from '../components/layout/ShMonsters';
 import Footer from '../components/layout/Footer';
+import Lateraltop from '../components/layout/Lateral-top';
 
 const SHPage = (props) => {
     return (
@@ -22,7 +23,7 @@ const SHPage = (props) => {
                 </div>
                 <aside className="nav-topSh">
                     <div className="image-stick">
-                        <p className="logo-position"><img src="ImagesVideos/images/Silent-Hill/Silent_Hill_Downpour.png" width="600"
+                        <p className="logo-position"><img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675079604/Silent-Hill-Characters/SH-Cult/Silent_Hill_Downpour_auds9z.png" width="600"
                             height="200" loading="lazy" alt="" /></p>
                     </div>
 
@@ -61,21 +62,21 @@ const SHPage = (props) => {
                         </h3>
                         <div className="SH-slider">
                             <div className="box-games-sh">
-                                <span className="image-left" style={{ '--i': 1 }}><img
-                                    src="Images-video/Silent-Hill/SH-shattered-memories.jpg" alt="" /></span>
-                                <span className="image-left" style={{ '--i': 2 }}><img src="Images-video/Silent-Hill/SH-Origins.jpg"
+                                <span className="image-left" style={{ '--i': 1 }}><img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675031312/Silent-Hill-Characters/SH-shattered-memories_gngjye.jpg"
                                     alt="" /></span>
-                                <span className="image-left" style={{ '--i': 3 }}><img src="Images-video/Silent-Hill/SH-Downpour.jpg"
+                                <span className="image-left" style={{ '--i': 2 }}><img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675031312/Silent-Hill-Characters/SH-Origins_e5pvx2.jpg"
                                     alt="" /></span>
-                                <span className="image-left" style={{ '--i': 4 }}><img src="Images-video/Silent-Hill/SH-Homecoming.jpg"
+                                <span className="image-left" style={{ '--i': 3 }}><img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675031313/Silent-Hill-Characters/SH-Downpour_jr60ln.png"
                                     alt="" /></span>
-                                <span className="image-right" style={{ '--i': 5 }}><img src="Images-video/Silent-Hill/SH-The-Room.jpg"
+                                <span className="image-left" style={{ '--i': 4 }}><img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675031312/Silent-Hill-Characters/SH-Homecoming_mnchce.webp"
                                     alt="" /></span>
-                                <span className="image-right" style={{ '--i': 6 }}><img src="Images-video/Silent-Hill/SH-3.jpg"
+                                <span className="image-right" style={{ '--i': 5 }}><img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675031312/Silent-Hill-Characters/SH-The-Room_vhniuw.jpg"
                                     alt="" /></span>
-                                <span className="image-right" style={{ '--i': 7 }}><img src="Images-video/Silent-Hill/SH-2.jpg"
+                                <span className="image-right" style={{ '--i': 6 }}><img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675031312/Silent-Hill-Characters/SH-3_otuol3.png"
                                     alt="" /></span>
-                                <span className="image-right" style={{ '--i': 8 }}><img src="Images-video/Silent-Hill/SH-1.jpg"
+                                <span className="image-right" style={{ '--i': 7 }}><img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675031313/Silent-Hill-Characters/SH-2_gtmjob.webp"
+                                    alt="" /></span>
+                                <span className="image-right" style={{ '--i': 8 }}><img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675031311/Silent-Hill-Characters/SH-1_uk1leu.jpg"
                                     alt="" /></span>
                             </div>
                         </div>
@@ -106,6 +107,7 @@ const SHPage = (props) => {
                 </div>
                 <Footer />
             </article>
+            <Lateraltop />
         </main>
     );
 }

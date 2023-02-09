@@ -6,6 +6,7 @@ import Nav from './components/layout/Nav';
 
 import HomePage from './pages/HomePage';
 import REPage from './pages/ResidentEvilPage';
+import FFPage from './pages/FinalFantasyPage';
 import SHPage from './pages/SilentHillPage';
 import ContactoPage from './pages/ContactPage';
 import ACPage from './pages/ACPage';
@@ -24,6 +25,7 @@ function App() {
           <Route path="/silenthill" element={<SHPage />} />
           <Route path="/contact" element={<ContactoPage />} />
           <Route path="/assassinscreed" element={<ACPage />} />
+          <Route path="/finalfantasy7" element={<FFPage />} />
           <Route path="/news" element={<NewsPage />} />
         </Routes>
       </BrowserRouter>

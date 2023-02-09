@@ -16,24 +16,31 @@
                 <span class="circle one"></span>
                 <span class="circle two"></span>
 
-                <form class="general-form" action="/admin/news/modify" autocomplete="off" method="post">
+                <form class="general-form" action="/admin/news/modify" autocomplete="off" method="post"
+                    enctype="multipart/form-data">
                     <input type="hidden" value="{{news.id}}" name="id" />
                     <div class="containerTest">
                         <h3 class="title">Modify new form</h3>
-                        <div class="input-container">
-                            <input type="text" name="image" value="{{news.image}}"class="input" />
-                            
+                        <div class="addimageformat">
+                            <p>
+                                <label>Image: <input type="file" name="image" id="image" /></label>
+                            </p>
+                            <p>
+                                <label><input type="checkbox" name="img_delete" id="img_delete" value="1">
+                                    Delete current image?</label>
+                                <input type="hidden" name="img_original" value="{{news.img_id}}">
+                            </p>
                         </div>
                         <div class="input-container">
                             <input type="text" name="title" value="{{news.title}}" class="input" />
-                           
+
                         </div>
 
                         <div class="input-container textarea">
                             <textarea name="description" class="input">{{news.description}}</textarea>
-                            
+
                         </div>
-                        <input type="submit" value = "Modify" class="btn" />
+                        <input type="submit" value="Modify" class="btn" />
                     </div>
                 </form>
                 {{#if error}}

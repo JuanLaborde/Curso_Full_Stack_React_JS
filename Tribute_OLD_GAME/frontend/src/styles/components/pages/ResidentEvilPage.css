@@ -38,7 +38,7 @@ html {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.8;
+    opacity: 1;
     z-index: 0 !important;
     background-attachment: fixed;
 }
@@ -236,6 +236,8 @@ video {
     letter-spacing: 0em;
     font-family: 'Oswald', sans-serif;
 }
+
+
 
 .game-images {
     vertical-align: baseline;
@@ -773,7 +775,7 @@ section {
     position: relative;
 }
 
-.panel-1,
+.panel-1RE,
 .panel-2 {
     position: absolute;
     box-shadow: 0 0 4em 1em rgba(0, 0, 0, 0.4);
@@ -782,7 +784,7 @@ section {
     transform: translateY(-50%);
 }
 
-.panel-1 {
+.panel-1RE {
     background: url("../../../ImagesCSS/virus.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -794,7 +796,7 @@ section {
     z-index: 1;
 }
 
-.panel-1::before {
+.panel-1RE::before {
     content: '';
     background: linear-gradient(45deg, #29191e 0%, #0c1c29 40%, rgba(12, 31, 45, 0.9) 100%);
     position: absolute;
@@ -815,7 +817,7 @@ section {
 
 .panel-2::before {
     content: '';
-    background-image: url("../../../ImagesCSS/Umbrella.png");
+    background-image: url("https://res.cloudinary.com/dqhtvtptp/image/upload/v1675086880/Resident%20Evil/Umbrella_wa8q1k.png");
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
@@ -860,6 +862,7 @@ section {
 
 .BOW-description{
     font-family: 'Oswald', sans-serif;
+    margin-right: 5px;
 }
 
 .BOW h1 {
@@ -874,8 +877,8 @@ section {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 4em;
-    height: 4em;
+    width: 3em;
+    height: 3em;
     background: #880808;
     border-radius: 50%;
     text-align: center;

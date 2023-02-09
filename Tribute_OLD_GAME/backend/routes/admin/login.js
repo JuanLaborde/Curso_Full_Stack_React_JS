@@ -18,12 +18,10 @@ router.get('/logout', function (req, res, next){
 
 router.post('/', async (req, res, next) => {
     try {
-        console.log(req.body);
         var user = req.body.user;
         var password = req.body.password;
 
         var data = await userModels.getUserByUsernameAndPassword(user, password);
-
         if (data != undefined) {
             req.session.id_user = data.id;
             req.session.name = data.user;

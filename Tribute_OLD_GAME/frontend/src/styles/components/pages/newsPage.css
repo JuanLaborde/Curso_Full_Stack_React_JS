@@ -117,10 +117,10 @@ video {
 .ImgBx {
     position: absolute;
     left: 50%;
-    top: -10px;
+    top: -40px;
     transform: translateX(-50%);
-    width: 360px;
-    height: 80px;
+    width: 300px;
+    height: 100px;
     background-color: transparent;
     transition: 0.5s;
 }
@@ -131,12 +131,12 @@ video {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    background: cover;
 }
 
 .card-news:hover .ImgBx  {
     width: 450px;
-    height: 100px;
+    height: 150px;
 }
 
 .card-news .content {
@@ -175,3 +175,11 @@ video {
     line-height: 1.2em;
     font-weight: 600;
 }
+
+.newsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 0.5fr);
+    grid-template-rows: repeat(3, 0.5fr);
+    grid-gap: 2px;
+    margin-top: 250px;
+    }

@@ -11,7 +11,7 @@ const Header = (props) => {
     return (
 
         <header>
-            <div className="logo">
+            <div className="logo" id="Logo-top">
                 <h1>OLD GAME</h1>
                 <div className="back-text">
                     <span>T</span>

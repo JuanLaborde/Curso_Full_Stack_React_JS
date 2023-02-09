@@ -22,7 +22,7 @@ function SliderCH() {
         <section className="format-section-ch">
             <div className="slider-ch">
                 <div className="slide-ch active">
-                    <img src="Images-video/Resident-Evil/CH-images/Chris.jpg" alt="" />
+                    <img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675081462/Resident%20Evil/Characters/Chris_bzzyi3.jpg" alt="" />
                     <div className="info-ch">
                         <h2><span>C</span>hris <span>R</span>edfield</h2>
                         <p>Captain of an American operator in the Bioterrorism Security Assessment Alliance and
@@ -31,7 +31,7 @@ function SliderCH() {
                     </div>
                 </div>
                 <div className="slide-ch">
-                    <img src="Images-video/Resident-Evil/CH-images/Jill.jpg" alt="" />
+                    <img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675081465/Resident%20Evil/Characters/Jill_ghatk0.jpg" alt="" />
                     <div className="info-ch">
                         <h2><span>J</span>ill <span>V</span>alentine</h2>
                         <p>Is an American Special Operations Agent of the Bioterrorism Security Assessment
@@ -41,7 +41,7 @@ function SliderCH() {
                     </div>
                 </div>
                 <div className="slide-ch">
-                    <img src="Images-video/Resident-Evil/CH-images/Barry.jpg" alt="" />
+                    <img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675081462/Resident%20Evil/Characters/Barry_acyrhp.webp" alt="" />
                     <div className="info-ch">
                         <h2><span>B</span>arry <span>B</span>urton</h2>
                         <p>Is a consultant and combat specialist for the Bioterrorism Security Assessment
@@ -51,7 +51,7 @@ function SliderCH() {
                     </div>
                 </div>
                 <div className="slide-ch">
-                    <img src="Images-video/Resident-Evil/CH-images/rebr0.jpg" alt="" />
+                    <img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675081466/Resident%20Evil/Characters/rebr0_oavqnu.jpg" alt="" />
                     <div className="info-ch">
                         <h2><span>R</span>ebeca <span>C</span>hambers</h2>
                         <p>Member of the Special Tactics and Rescue Service assigned to S.T.A.R.S. Bravo team
@@ -60,7 +60,7 @@ function SliderCH() {
                     </div>
                 </div>
                 <div className="slide-ch">
-                    <img src="Images-video/Resident-Evil/CH-images/billr0.jpg" alt="" />
+                    <img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675081462/Resident%20Evil/Characters/billr0_glqcop.jpg" alt="" />
                     <div className="info-ch">
                         <h2><span>B</span>illy <span>C</span>oen</h2>
                         <p>Was a U.S. Marine Corps Second Lieutenant-turned death-row inmate that escaped into
@@ -69,7 +69,7 @@ function SliderCH() {
                     </div>
                 </div>
                 <div className="slide-ch">
-                    <img src="Images-video/Resident-Evil/CH-images/Leon.jpg" alt="" />
+                    <img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675081465/Resident%20Evil/Characters/Leon_yucsps.webp" alt="" />
                     <div className="info-ch">
                         <h2><span>L</span>eon <span>K</span>ennedy</h2>
                         <p>Is an American federal agent by the Division of Security Operations, a
@@ -80,7 +80,7 @@ function SliderCH() {
                     </div>
                 </div>
                 <div className="slide-ch">
-                    <img src="Images-video/Resident-Evil/CH-images/Claire.jpg" alt="" />
+                    <img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675081464/Resident%20Evil/Characters/Claire_qumwrn.jpg" alt="" />
                     <div className="info-ch">
                         <h2><span>C</span>laire <span>R</span>edfield</h2>
                         <p>Is a current member of the human rights organization, TerraSave. Survivor of the
@@ -89,7 +89,7 @@ function SliderCH() {
                     </div>
                 </div>
                 <div className="slide-ch">
-                    <img src="Images-video/Resident-Evil/CH-images/Ada.jpg" alt="" />
+                    <img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675081462/Resident%20Evil/Characters/Ada_dzwper.jpg" alt="" />
                     <div className="info-ch">
                         <h2><span>A</span>da <span>W</span>ong</h2>
                         <p>Is the pseudonym of an enigmatic unnamed spy of Asian-American descen. She acted
@@ -98,7 +98,7 @@ function SliderCH() {
                     </div>
                 </div>
                 <div className="slide-ch">
-                    <img src="Images-video/Resident-Evil/CH-images/Sherry.jpg" alt="" />
+                    <img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675081467/Resident%20Evil/Characters/Sherry_nbbg4c.jpg" alt="" />
                     <div className="info-ch">
                         <h2><span>S</span>herry <span>B</span>irkin</h2>
                         <p>Is an American federal agent attached to the Division of Security Operations. As
@@ -107,7 +107,7 @@ function SliderCH() {
                     </div>
                 </div>
                 <div className="slide-ch">
-                    <img src="Images-video/Resident-Evil/CH-images/Annette.jpg" alt="" />
+                    <img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675081465/Resident%20Evil/Characters/Annette_mtvng2.jpg" alt="" />
                     <div className="info-ch">
                         <h2><span>A</span>nnette <span>B</span>irkin</h2>
                         <p>Was a virologist employed by Umbrella U.S.A., and one of the administrators at their
@@ -116,7 +116,7 @@ function SliderCH() {
                     </div>
                 </div>
                 <div className="slide-ch">
-                    <img src="Images-video/Resident-Evil/CH-images/Carlos.jpg" alt="" />
+                    <img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675081463/Resident%20Evil/Characters/Carlos_dctpvu.jpg" alt="" />
                     <div className="info-ch">
                         <h2><span>C</span>arlos <span>O</span>livera</h2>
                         <p>Was a mercenary for the Umbrella Biohazard Countermeasure Service. is also one of the
@@ -125,7 +125,7 @@ function SliderCH() {
                     </div>
                 </div>
                 <div className="slide-ch">
-                    <img src="Images-video/Resident-Evil/CH-images/Brad.jpg" alt="" />
+                    <img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675081462/Resident%20Evil/Characters/Brad_h8nzf7.jpg" alt="" />
                     <div className="info-ch">
                         <h2><span>B</span>rad <span>V</span>ickers</h2>
                         <p>Was a member of the Raccoon Police Department's S.T.A.R.S. Alpha Team. He was cruelly
@@ -134,7 +134,7 @@ function SliderCH() {
                     </div>
                 </div>
                 <div className="slide-ch">
-                    <img src="Images-video/Resident-Evil/CH-images/Ashley.jpg" alt="" />
+                    <img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675081462/Resident%20Evil/Characters/Ashley_bbfzdb.webp" alt="" />
                     <div className="info-ch">
                         <h2><span>A</span>shley <span>G</span>raham</h2>
                         <p>Is the daughter of former US President Graham. She was briefly held captive by the
@@ -143,7 +143,7 @@ function SliderCH() {
                     </div>
                 </div>
                 <div className="slide-ch">
-                    <img src="Images-video/Resident-Evil/CH-images/Luis.jpg" alt="" />
+                    <img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675081465/Resident%20Evil/Characters/Luis_c8itmk.webp" alt="" />
                     <div className="info-ch">
                         <h2><span>L</span>uis <span>S</span>era</h2>
                         <p>Was a biologist. He was recruited into Los Iluminados' research department to
@@ -153,7 +153,7 @@ function SliderCH() {
                     </div>
                 </div>
                 <div className="slide-ch">
-                    <img src="Images-video/Resident-Evil/CH-images/Sheva.jpg" alt="" />
+                    <img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675081467/Resident%20Evil/Characters/Sheva_ostmdg.webp" alt="" />
                     <div className="info-ch">
                         <h2><span>S</span>heva <span>A</span>lomar</h2>
                         <p>Is an agent for the Bioterrorism Security Assessment Alliance, operating as part of
@@ -162,7 +162,7 @@ function SliderCH() {
                     </div>
                 </div>
                 <div className="slide-ch">
-                    <img src="Images-video/Resident-Evil/CH-images/Jake.jpg" alt="" />
+                    <img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675081464/Resident%20Evil/Characters/Jake_nrkg09.jpg" alt="" />
                     <div className="info-ch">
                         <h2><span>J</span>ake <span>M</span>uller</h2>
                         <p>Was a mercenary raised in Eastern Europe. The son of bioweapons developer Dr. Albert
@@ -171,7 +171,7 @@ function SliderCH() {
                     </div>
                 </div>
                 <div className="slide-ch">
-                    <img src="Images-video/Resident-Evil/CH-images/Ethan.jpg" alt="" />
+                    <img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675081464/Resident%20Evil/Characters/Ethan_hxi7uy.jpg" alt="" />
                     <div className="info-ch">
                         <h2><span>E</span>than <span>W</span>inters</h2>
                         <p>Was an American mutant trained as systems engineer. One of many mutant victims of
@@ -180,7 +180,7 @@ function SliderCH() {
                     </div>
                 </div>
                 <div className="slide-ch">
-                    <img src="Images-video/Resident-Evil/CH-images/Mia.jpg" alt="" />
+                    <img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675081466/Resident%20Evil/Characters/Mia_wz4n0r.jpg" alt="" />
                     <div className="info-ch">
                         <h2><span>M</span>ia <span>W</span>inters</h2>
                         <p>Former operative for The Connections who worked covertly in the birth of Eveline, her
@@ -189,7 +189,7 @@ function SliderCH() {
                     </div>
                 </div>
                 <div className="slide-ch">
-                    <img src="Images-video/Resident-Evil/CH-images/Weskerre0.jpg" alt="" />
+                    <img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675081468/Resident%20Evil/Characters/Weskerre0_k7pymz.jpg" alt="" />
                     <div className="info-ch">
                         <h2><span>A</span>lbert <span>W</span>esker</h2>
                         <p>Was an accomplished virologist notorious for his work with groups affiliated with the
@@ -198,7 +198,7 @@ function SliderCH() {
                     </div>
                 </div>
                 <div className="slide-ch">
-                    <img src="Images-video/Resident-Evil/CH-images/Marcus.jpg" alt="" />
+                    <img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675081466/Resident%20Evil/Characters/Marcus_rwyoux.jpg" alt="" />
                     <div className="info-ch">
                         <h2><span>J</span>ames <span>M</span>arcus</h2>
                         <p>One of the founders of Umbrella Pharmaceuticals and was among those responsible for
@@ -207,7 +207,7 @@ function SliderCH() {
                     </div>
                 </div>
                 <div className="slide-ch">
-                    <img src="Images-video/Resident-Evil/CH-images/Birkin.jpg" alt="" />
+                    <img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675081463/Resident%20Evil/Characters/Birkin_dt6c5d.webp" alt="" />
                     <div className="info-ch">
                         <h2><span>W</span>illiam <span>B</span>irkin</h2>
                         <p>Was a virologist who worked for Umbrella. One of the leading scientists behind the
@@ -216,7 +216,7 @@ function SliderCH() {
                     </div>
                 </div>
                 <div className="slide-ch">
-                    <img src="Images-video/Resident-Evil/CH-images/Oswell.jpg" alt="" />
+                    <img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675081466/Resident%20Evil/Characters/Oswell_knousl.webp" alt="" />
                     <div className="info-ch">
                         <h2><span>O</span>well <span>S</span>pencer</h2>
                         <p>Was an aristocratic British billionaire, virologist and eugenicist. One of the
@@ -225,7 +225,7 @@ function SliderCH() {
                     </div>
                 </div>
                 <div className="slide-ch">
-                    <img src="Images-video/Resident-Evil/CH-images/Brian.jpg" alt="" />
+                    <img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675081464/Resident%20Evil/Characters/Brian_txswkb.jpg" alt="" />
                     <div className="info-ch">
                         <h2><span>B</span>rian <span>I</span>rons</h2>
                         <p>Was ther chief of Police of the Raccoon Police Department. Involved in corporate
@@ -235,7 +235,7 @@ function SliderCH() {
                     </div>
                 </div>
                 <div className="slide-ch">
-                    <img src="Images-video/Resident-Evil/CH-images/Nikolai.jpg" alt="" />
+                    <img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675081466/Resident%20Evil/Characters/Nikolai_b1wlne.webp" alt="" />
                     <div className="info-ch">
                         <h2><span>N</span>ikolai <span>Z</span>inoviev</h2>
                         <p>Codenamed "Silver Wolf", is a Soviet Army veteran who served in Umbrella's
@@ -244,7 +244,7 @@ function SliderCH() {
                     </div>
                 </div>
                 <div className="slide-ch">
-                    <img src="Images-video/Resident-Evil/CH-images/Ramon.jpg" alt="" />
+                    <img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675081467/Resident%20Evil/Characters/Ramon_okqupm.jpg" alt="" />
                     <div className="info-ch">
                         <h2><span>R</span>amon <span>S</span>alazar</h2>
                         <p>Was a nobleman from an unnamed rural region in Spain who converted to Los Iluminados,
@@ -254,7 +254,7 @@ function SliderCH() {
                     </div>
                 </div>
                 <div className="slide-ch">
-                    <img src="Images-video/Resident-Evil/CH-images/Jackk.jpg" alt="" />
+                    <img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675081466/Resident%20Evil/Characters/Jackk_zynnwm.jpg" alt="" />
                     <div className="info-ch">
                         <h2><span>J</span>ack <span>K</span>rauser</h2>
                         <p>Was an agent for the 3rd Organization during the War on Terror, and a supporter of
@@ -263,7 +263,7 @@ function SliderCH() {
                     </div>
                 </div>
                 <div className="slide-ch">
-                    <img src="Images-video/Resident-Evil/CH-images/Osmund.jpg" alt="" />
+                    <img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675081466/Resident%20Evil/Characters/Osmund_et8eae.jpg" alt="" />
                     <div className="info-ch">
                         <h2><span>O</span>smund <span>S</span>addler</h2>
                         <p>Was the leader of Los Iluminados, a neopagan cult and paramilitary organisation. He
@@ -272,7 +272,7 @@ function SliderCH() {
                     </div>
                 </div>
                 <div className="slide-ch">
-                    <img src="Images-video/Resident-Evil/CH-images/Ricardo.jpg" alt="" />
+                    <img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675081467/Resident%20Evil/Characters/Ricardo_oeqe3n.jpg" alt="" />
                     <div className="info-ch">
                         <h2><span>R</span>icardo <span>I</span>rving</h2>
                         <p>Was an American black market dealer of bio-weapons. He was a senior partner in
@@ -282,7 +282,7 @@ function SliderCH() {
                     </div>
                 </div>
                 <div className="slide-ch">
-                    <img src="Images-video/Resident-Evil/CH-images/Excella.jpg" alt="" />
+                    <img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675081464/Resident%20Evil/Characters/Excella_srowzw.jpg" alt="" />
                     <div className="info-ch">
                         <h2><span>E</span>xcella <span>G</span>ionne</h2>
                         <p>Was a British-Italian businesswoman. She is known for her leadership of Tricell,
@@ -291,7 +291,7 @@ function SliderCH() {
                     </div>
                 </div>
                 <div className="slide-ch">
-                    <img src="Images-video/Resident-Evil/CH-images/Dereck.jpg" alt="" />
+                    <img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675081463/Resident%20Evil/Characters/Dereck_f3e1zk.webp" alt="" />
                     <div className="info-ch">
                         <h2><span>D</span>ereck <span>S</span>immons</h2>
                         <p>Was the National Security Advisor to Adam Benford and the one responsible for the
@@ -301,7 +301,7 @@ function SliderCH() {
                     </div>
                 </div>
                 <div className="slide-ch">
-                    <img src="Images-video/Resident-Evil/CH-images/Carla.jpg" alt="" />
+                    <img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675081463/Resident%20Evil/Characters/Carla_x3ppzz.jpg" alt="" />
                     <div className="info-ch">
                         <h2><span>C</span>arla <span>R</span>adames</h2>
                         <p>Was a genius researcher and the one responsible for the discovery and creation of the
@@ -310,7 +310,7 @@ function SliderCH() {
                     </div>
                 </div>
                 <div className="slide-ch">
-                    <img src="Images-video/Resident-Evil/CH-images/Evelin.jpg" alt="" />
+                    <img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675081465/Resident%20Evil/Characters/Evelin_opa9xv.jpg" alt="" />
                     <div className="info-ch">
                         <h2><span>E</span>veline <span>E</span>-001</h2>
                         <p>Codenamed E-001, was a genetically-modified human conceived as part of the next
@@ -319,7 +319,7 @@ function SliderCH() {
                     </div>
                 </div>
                 <div className="slide-ch">
-                    <img src="Images-video/Resident-Evil/CH-images/JackB.jpg" alt="" />
+                    <img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675081464/Resident%20Evil/Characters/JackB_buvpwn.jpg" alt="" />
                     <div className="info-ch">
                         <h2><span>J</span>ack <span>B</span>acker</h2>
                         <p>Was an American serial killer who kidnapped, murdered and ate over a hundred men and
@@ -328,7 +328,7 @@ function SliderCH() {
                     </div>
                 </div>
                 <div className="slide-ch">
-                    <img src="Images-video/Resident-Evil/CH-images/Lucas.jpg" alt="" />
+                    <img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675081466/Resident%20Evil/Characters/Lucas_piebm1.webp" alt="" />
                     <div className="info-ch">
                         <h2><span>L</span>ucas <span>B</span>acker</h2>
                         <p>Was a resident of the Baker ranch. He was the son of Jack and Marguerite Baker, and
@@ -337,7 +337,7 @@ function SliderCH() {
                     </div>
                 </div>
                 <div className="slide-ch">
-                    <img src="Images-video/Resident-Evil/CH-images/Marguerite.jpg" alt="" />
+                    <img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675081466/Resident%20Evil/Characters/Marguerite_dv1vws.jpg" alt="" />
                     <div className="info-ch">
                         <h2><span>M</span>arguerite <span>B</span>acker</h2>
                         <p>Was a resident of the Baker ranch household. Wife of Jack Baker and she to was
@@ -346,7 +346,7 @@ function SliderCH() {
                     </div>
                 </div>
                 <div className="slide-ch">
-                    <img src="Images-video/Resident-Evil/CH-images/Alcina.jpg" alt="" />
+                    <img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675081462/Resident%20Evil/Characters/Alcina_jfgdj4.jpg" alt="" />
                     <div className="info-ch">
                         <h2><span>A</span>lcina <span>D</span>imitrescu</h2>
                         <p>Was a mutant human aristocrat.She maintained a pseudo-feudal rule over the peasantry
@@ -355,7 +355,7 @@ function SliderCH() {
                     </div>
                 </div>
                 <div className="slide-ch">
-                    <img src="Images-video/Resident-Evil/CH-images/Karl.jpg" alt="" />
+                    <img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675081465/Resident%20Evil/Characters/Karl_xz0uqc.jpg" alt="" />
                     <div className="info-ch">
                         <h2><span>K</span>arl <span>H</span>eisenberg</h2>
                         <p>Was a human mutant who lived in an Eastern European mountain range. A genius in
@@ -364,7 +364,7 @@ function SliderCH() {
                     </div>
                 </div>
                 <div className="slide-ch">
-                    <img src="Images-video/Resident-Evil/CH-images/Salvatore.jpg" alt="" />
+                    <img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675081467/Resident%20Evil/Characters/Salvatore_gqlle6.webp" alt="" />
                     <div className="info-ch">
                         <h2><span>S</span>alvatore <span>M</span>oreau</h2>
                         <p>Was a mutant human who lived in an Eastern European mountain range. Presumably the
@@ -373,7 +373,7 @@ function SliderCH() {
                     </div>
                 </div>
                 <div className="slide-ch">
-                    <img src="Images-video/Resident-Evil/CH-images/Donna.jpg" alt="" />
+                    <img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675081464/Resident%20Evil/Characters/Donna_vcjbol.jpg" alt="" />
                     <div className="info-ch">
                         <h2><span>D</span>onna <span>B</span>eneviento</h2>
                         <p>Was a mutant human doll-maker who resided in an Eastern European mountain range.
@@ -383,7 +383,7 @@ function SliderCH() {
                     </div>
                 </div>
                 <div className="slide-ch">
-                    <img src="Images-video/Resident-Evil/CH-images/Miranda.jpg" alt="" />
+                    <img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675081466/Resident%20Evil/Characters/Miranda_ta4zon.jpg" alt="" />
                     <div className="info-ch">
                         <h2><span>M</span>other <span>M</span>iranda</h2>
                         <p>Was an biologist and cult leader. After losing her only daughter to the Spanish flu,

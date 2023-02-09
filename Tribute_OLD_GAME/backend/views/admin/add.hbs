@@ -16,26 +16,28 @@
                 <span class="circle one"></span>
                 <span class="circle two"></span>
 
-                <form class="general-form" action="/admin/news/add" autocomplete="off" method="post">
+                <form class="general-form" action="/admin/news/add" autocomplete="off" method="post"
+                    enctype="multipart/form-data">
                     <div class="containerTest">
                         <h3 class="title">News form</h3>
-                        <div class="input-container">
-                            <input type="text" name="image" class="input" />
-                            <label for="">Image</label>
-                            <span>Image</span>
+                        <div class="addimageformat">
+                            <label class="LabelFormat">Image: <input type="file" name="image" id="image"
+                                    class="input-image" /></label>
                         </div>
-                        <div class="input-container">
-                            <input type="text" name="title" class="input" />
-                            <label for="">Title</label>
-                            <span>Title</span>
-                        </div>
+                        <div class="formatarea">
+                            <div class="input-container">
+                                <input type="text" name="title" class="input" />
+                                <label for="">Title</label>
+                                <span>Title</span>
+                            </div>
 
-                        <div class="input-container textarea">
-                            <textarea name="description" class="input"></textarea>
-                            <label for="">Description</label>
-                            <span>Description</span>
+                            <div class="input-container textarea">
+                                <textarea name="description" class="input"></textarea>
+                                <label for="">Description</label>
+                                <span>Description</span>
+                            </div>
+                            <input type="submit" class="btn" />
                         </div>
-                        <input type="submit" class="btn" />
                     </div>
                 </form>
                 {{#if error}}
@@ -45,3 +47,24 @@
         </div>
     </div>
 </div>
+
+<script>
+    const inputs = document.querySelectorAll(".input");
+
+function focusFunc() {
+  let parent = this.parentNode;
+  parent.classList.add("focus");
+}
+
+function blurFunc() {
+  let parent = this.parentNode;
+  if (this.value == "") {
+    parent.classList.remove("focus");
+  }
+}
+
+inputs.forEach((input) => {
+  input.addEventListener("focus", focusFunc);
+  input.addEventListener("blur", blurFunc);
+});
+</script>

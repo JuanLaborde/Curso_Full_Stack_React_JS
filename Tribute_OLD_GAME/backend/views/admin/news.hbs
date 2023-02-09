@@ -1,6 +1,6 @@
 <div class="news-section">
     <div class="exit-news">
-        <p class="text-end text-format-news">Hola {{user}} <a href="/admin/login/logout" class="btn btn-danger">Close <i
+        <p class="text-end text-format-news">Hello {{user}} <a href="/admin/login/logout" class="btn btn-danger">Close <i
                     class="fas fa-sign-out-alt"></i></a></p>
     </div>
 
@@ -27,7 +27,7 @@
                         {{#each news }}
                         <tr class="table-info">
                             <th scope="row">{{id}}</th>
-                            <th>{{image}}</th>
+                            <th>{{{image}}}</th>
                             <th>{{title}}</th>
                             <th>{{description}}</th>
                             <th>

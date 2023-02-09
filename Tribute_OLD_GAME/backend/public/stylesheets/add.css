@@ -115,6 +115,16 @@
     border-radius: 25px;
     transition: 0.3s;
   }
+
+  .addimageformat {
+    width: 100%;
+    outline: none;
+    background: none;
+    padding: 0.7rem 1.2rem;
+    margin-top: 20px;
+    margin-left: -10px;
+    color: white;
+  }
   
   textarea.input {
     padding: 0.8rem 1.2rem;
@@ -122,6 +132,10 @@
     border-radius: 22px;
     resize: none;
     overflow-y: auto;
+  }
+
+  .formatarea {
+    margin-top: 30px;
   }
   
   .input-container label {

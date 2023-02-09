@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&family=Poppins:wght@200;300;400;500;600;700;800&family=Roboto+Condensed:wght@300;400;700&display=swap');
+.global-nav {
+    position: fixed;
+    right: 0;
+    top: 500px;
+    background: transparent;
+    z-index: 6;
+}
+
+.global-nav-btn {
+    cursor: pointer;
+    height: 5vw;
+    position: fixed;
+    right: 5vw;
+    top: 5vw;
+    width: 11vw;
+    z-index: 7;
+}
+
+.global-nav-btn .label {
+    color: #FFF;
+    font-size: 4.25926vw;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    padding: .75vw 0;
+    top: calc(100% + .5em);
+    width: 100%;
+}
+
+.global-nav-btn .label .open {
+    display: none;
+}
+
+.global-nav-list li {
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+    text-align: right;
+}
+
+.global-nav-list li a {
+    color: #FFF;
+    display: inline-block;
+    transition: color .25s ease-in, opacity .25s ease-in, text-shadow .25s ease-in;
+}
+
+.global-nav-list li:not(.current):not(.link-btn) a:hover {
+    opacity: .8;
+}
+
+.global-nav-list li:not(:last-child) {
+    margin-bottom: 8vw;
+}
+
+.global-nav-list li:not(.link-btn) a::after {
+    color: #880808;
+    content: "\02014";
+    display: inline-block;
+    font-weight: 700;
+    margin-left: 0.25em;
+}
+
+.global-nav-list li.link-btn a {
+    border: 1px solid #52B6A7;
+    color: #52B6A7;
+    padding: 2vw;
+    position: relative;
+    text-align: center;
+    text-shadow: 2px 2px 8px #880808, 2px -2px 8px #880808, -2px 2px 8px #880808, -2px -2px 8px #880808;
+    transition: box-shadow .25s ease-in;
+    text-decoration: none;
+}
+
+.global-nav-list li.nav-mutual-link {
+    background: rgba(0, 0, 0, 0.5);
+    margin-left: auto;
+    width: 60%;
+}

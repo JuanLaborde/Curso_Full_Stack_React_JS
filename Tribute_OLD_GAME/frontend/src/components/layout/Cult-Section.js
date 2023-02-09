@@ -57,7 +57,7 @@ const CultHistory = () => {
     return (
         <div className="History-cult">
             <div className="Text-Format-Cult">
-                <img className="Image-metatron" src="ImagesVideos/images/Silent-Hill/Seal-metatron.png" alt="" />
+                <img className="Image-metatron" src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675078739/Silent-Hill-Characters/SH-Cult/Seal-metatron_lezld6.png" alt="" />
                 <p className="text-from-left1">When Silent Hill became a tourist location around the 1900s, the
                     Order was formed at the same
                     time, and were despised by most of the local citizens, thus their union was carried out in
@@ -77,7 +77,7 @@ const CultHistory = () => {
                     deceits and false truths. It is ambiguous if this is true, or if it is make-believe fantasy
                     manifested by the ancient power of Silent Hill.</p>
                 <br />
-                <img className="Halo-of-Sun" src="ImagesVideos/images/Silent-Hill/Halo-of-sun.png" alt="" />
+                <img className="Halo-of-Sun" src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675078741/Silent-Hill-Characters/SH-Cult/Halo-of-sun_j2ufno.png" alt="" />
                 <p className="text-from-right">The cult's official seal is known as the Halo of the Sun and is often
                     used or seen in the
                     presence of cult members, particularly while conducting rituals. The Order is involved with
@@ -99,7 +99,7 @@ const CultHistory = () => {
                     Claudia believes that happy people are most often the cruelest and humanity has been
                     contaminated by greedy and earthly material and base desires.</p>
                 <br />
-                <img className="Image-cult" src="ImagesVideos/images/Silent-Hill/Myth4.png" alt="" />
+                <img className="Image-cult" src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675078738/Silent-Hill-Characters/SH-Cult/Myth4_jbcwmg.webp" alt="" />
                 <p className="text-from-left">The Order's main goal, as many of its members state, is to usher in
                     the apocalypse and
                     deliver

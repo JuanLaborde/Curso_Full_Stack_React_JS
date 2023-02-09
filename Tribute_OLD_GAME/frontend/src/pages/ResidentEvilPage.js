@@ -5,6 +5,7 @@ import "aos/dist/aos.css";
 import Slider from '../components/layout/REBowSlider';
 import ReCharacterSlider from '../components/layout/ChRESlider';
 import Footer from '../components/layout/Footer';
+import Lateraltop from '../components/layout/Lateral-top';
 
 const REPage = (props) => {
     useEffect(() => {
@@ -19,7 +20,7 @@ const REPage = (props) => {
                     <video id="Video-Background" src="ImagesVideos/videos/Resident-Evil.mp4" autoPlay loop muted></video>
                 </div>
                 <aside className="nav-top" >
-                    <p className="logo-position" data-aos="fade" data-aos-delay="500"><img src="ImagesVideos/images/re2_logo.png" width="450" height="120"
+                    <p className="logo-position" data-aos="fade" data-aos-delay="500"><img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675080156/Resident%20Evil/re2_logo_aitrxu.png" width="450" height="120"
                         loading="lazy" alt="" /></p>
                     <br />
                     <ul data-aos="fade-right">
@@ -30,7 +31,7 @@ const REPage = (props) => {
                     </ul>
                 </aside>
                 <div className="banner-Umbrella">
-                    <img className="Umbrella-Logo" data-aos="fade-right" src="ImagesVideos/images/Umbrella-corp.png" alt="" />
+                    <img className="Umbrella-Logo" data-aos="fade-right" src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675080162/Resident%20Evil/Umbrella-corp_gb4j5u.png" alt="" />
                     <h6 className="Umbrella-speech" data-aos="fade-left">Our Business Is Life Itself...</h6>
                 </div>
             </article>
@@ -43,32 +44,32 @@ const REPage = (props) => {
                         <div className="game-images">
                             <section id="imageSlide" className="faded faded-left faded-right">
                                 <ul className="imageSlide__slider">
-                                    <li><img src="Images-video/Resident-Evil/RE0.jpg" alt="" /></li>
-                                    <li><img src="Images-video/Resident-Evil/RE1.jpg" alt="" /></li>
-                                    <li><img src="Images-video/Resident-Evil/RE2.jpg" alt="" /></li>
-                                    <li><img src="Images-video/Resident-Evil/RE3.jpg" alt="" /></li>
-                                    <li><img src="Images-video/Resident-Evil/RE4.jpg" alt="" /></li>
-                                    <li><img src="Images-video/Resident-Evil/RE5.jpg" alt="" /></li>
-                                    <li><img src="Images-video/Resident-Evil/RE6.jpg" alt="" /></li>
-                                    <li><img src="Images-video/Resident-Evil/RE7.jpg" alt="" /></li>
-                                    <li><img src="Images-video/Resident-Evil/RE8.jpg" alt="" /></li>
-                                    <li><img src="Images-video/Resident-Evil/RE-Resistance.jpg" alt="" /></li>
-                                    <li><img src="Images-video/Resident-Evil/RE_ORC.jpg" alt="" /></li>
-                                    <li><img src="Images-video/Resident-Evil/RE_OUTBREAK2_Home.jpg" alt="" /></li>
-                                    <li><img src="Images-video/Resident-Evil/RE_OUTBREAK_Home.jpg" alt="" /></li>
-                                    <li><img src="Images-video/Resident-Evil/RE0.jpg" alt="" /></li>
-                                    <li><img src="Images-video/Resident-Evil/RE1.jpg" alt="" /></li>
-                                    <li><img src="Images-video/Resident-Evil/RE2.jpg" alt="" /></li>
-                                    <li><img src="Images-video/Resident-Evil/RE3.jpg" alt="" /></li>
-                                    <li><img src="Images-video/Resident-Evil/RE4.jpg" alt="" /></li>
-                                    <li><img src="Images-video/Resident-Evil/RE5.jpg" alt="" /></li>
-                                    <li><img src="Images-video/Resident-Evil/RE6.jpg" alt="" /></li>
-                                    <li><img src="Images-video/Resident-Evil/RE7.jpg" alt="" /></li>
-                                    <li><img src="Images-video/Resident-Evil/RE8.jpg" alt="" /></li>
-                                    <li><img src="Images-video/Resident-Evil/RE-Resistance.jpg" alt="" /></li>
-                                    <li><img src="Images-video/Resident-Evil/RE_ORC.jpg" alt="" /></li>
-                                    <li><img src="Images-video/Resident-Evil/RE_OUTBREAK2_Home.jpg" alt="" /></li>
-                                    <li><img src="Images-video/Resident-Evil/RE_OUTBREAK_Home.jpg" alt="" /></li>
+                                    <li><img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675080452/Resident%20Evil/Games/RE0_eef1nv.jpg" alt="" /></li>
+                                    <li><img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675080453/Resident%20Evil/Games/RE1_xrg0tb.jpg" alt="" /></li>
+                                    <li><img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675080453/Resident%20Evil/Games/RE2_vs4ths.jpg" alt="" /></li>
+                                    <li><img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675080453/Resident%20Evil/Games/RE3_ftubzt.jpg" alt="" /></li>
+                                    <li><img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675080453/Resident%20Evil/Games/RE4_tqxvax.jpg" alt="" /></li>
+                                    <li><img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675080453/Resident%20Evil/Games/RE5_kn8fes.jpg" alt="" /></li>
+                                    <li><img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675080452/Resident%20Evil/Games/RE6_mwcfni.jpg" alt="" /></li>
+                                    <li><img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675080453/Resident%20Evil/Games/RE7_e03nqd.jpg" alt="" /></li>
+                                    <li><img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675080453/Resident%20Evil/Games/RE8_igxcao.jpg" alt="" /></li>
+                                    <li><img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675080453/Resident%20Evil/Games/RE-Resistance_o416y3.jpg" alt="" /></li>
+                                    <li><img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675080452/Resident%20Evil/Games/RE_ORC_a803ow.webp" alt="" /></li>
+                                    <li><img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675080452/Resident%20Evil/Games/RE_OUTBREAK_Home_kvdo4r.webp" alt="" /></li>
+                                    <li><img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675080452/Resident%20Evil/Games/RE_OUTBREAK2_Home_exdpjm.webp" alt="" /></li>
+                                    <li><img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675080452/Resident%20Evil/Games/RE0_eef1nv.jpg" alt="" /></li>
+                                    <li><img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675080453/Resident%20Evil/Games/RE1_xrg0tb.jpg" alt="" /></li>
+                                    <li><img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675080453/Resident%20Evil/Games/RE2_vs4ths.jpg" alt="" /></li>
+                                    <li><img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675080453/Resident%20Evil/Games/RE3_ftubzt.jpg" alt="" /></li>
+                                    <li><img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675080453/Resident%20Evil/Games/RE4_tqxvax.jpg" alt="" /></li>
+                                    <li><img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675080453/Resident%20Evil/Games/RE5_kn8fes.jpg" alt="" /></li>
+                                    <li><img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675080452/Resident%20Evil/Games/RE6_mwcfni.jpg" alt="" /></li>
+                                    <li><img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675080453/Resident%20Evil/Games/RE7_e03nqd.jpg" alt="" /></li>
+                                    <li><img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675080453/Resident%20Evil/Games/RE8_igxcao.jpg" alt="" /></li>
+                                    <li><img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675080453/Resident%20Evil/Games/RE-Resistance_o416y3.jpg" alt="" /></li>
+                                    <li><img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675080452/Resident%20Evil/Games/RE_ORC_a803ow.webp" alt="" /></li>
+                                    <li><img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675080452/Resident%20Evil/Games/RE_OUTBREAK_Home_kvdo4r.webp" alt="" /></li>
+                                    <li><img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675080452/Resident%20Evil/Games/RE_OUTBREAK2_Home_exdpjm.webp" alt="" /></li>
                                 </ul>
                             </section>
                         </div>
@@ -83,7 +84,7 @@ const REPage = (props) => {
                             <div className="container" data-aos="flip-left">
                                 <div className="content">
                                     <div className="image">
-                                        <img src="ImagesVideos/images/Resident-evil-0.jpg" alt="" />
+                                        <img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675080838/Resident%20Evil/History/Resident-evil-0_sni9zy.webp" alt="" />
                                     </div>
                                     <div className="text-box">
                                         <h4 className="info-title">Resident Evil 0</h4>
@@ -136,7 +137,7 @@ const REPage = (props) => {
                                         </p>
                                     </div>
                                     <div className="image2">
-                                        <img src="Images-video/Resident-Evil/Resident-evil-1.jpg" alt="" data-aos="fade-left" />
+                                        <img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675080838/Resident%20Evil/History/Resident-evil-1_ikfpkv.jpg" alt="" data-aos="fade-left" />
                                     </div>
                                 </div>
                             </div>
@@ -145,7 +146,7 @@ const REPage = (props) => {
                             <div className="container" data-aos="flip-left">
                                 <div className="content">
                                     <div className="image">
-                                        <img src="Images-video/Resident-Evil/Resident-evil-2.jpg" alt="" data-aos="flip-left" />
+                                        <img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675080837/Resident%20Evil/History/Resident-evil-2_mxfbgl.jpg" alt="" data-aos="flip-left" />
                                     </div>
                                     <div className="text-box">
                                         <h4 className="info-title">Resident Evil 2</h4>
@@ -192,7 +193,7 @@ const REPage = (props) => {
                                         </p>
                                     </div>
                                     <div className="image2">
-                                        <img src="Images-video/Resident-Evil/Resident-evil-3.jpg" alt="" />
+                                        <img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675080837/Resident%20Evil/History/Resident-evil-3_fqhkuw.jpg" alt="" />
                                     </div>
                                 </div>
                             </div>
@@ -201,7 +202,7 @@ const REPage = (props) => {
                             <div className="container" data-aos="flip-left">
                                 <div className="content">
                                     <div className="image">
-                                        <img src="Images-video/Resident-Evil/Resident-evil-4.jpg" alt="" data-aos="flip-left" />
+                                        <img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675080838/Resident%20Evil/History/Resident-evil-4_mm7nzq.jpg" alt="" data-aos="flip-left" />
                                     </div>
                                     <div className="text-box">
                                         <h4 className="info-title">Resident Evil 4</h4>
@@ -239,7 +240,7 @@ const REPage = (props) => {
                                         </p>
                                     </div>
                                     <div className="image2">
-                                        <img src="Images-video/Resident-Evil/Resident-evil-5.jpg" alt="" />
+                                        <img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675080837/Resident%20Evil/History/Resident-evil-5_bm42fe.jpg" alt="" />
                                     </div>
                                 </div>
                             </div>
@@ -248,7 +249,7 @@ const REPage = (props) => {
                             <div className="container" data-aos="flip-left">
                                 <div className="content">
                                     <div className="image">
-                                        <img src="Images-video/Resident-Evil/Resident-evil-6.jpg" alt="" data-aos="flip-left" />
+                                        <img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675080838/Resident%20Evil/History/Resident-evil-6_j9xvps.jpg" alt="" data-aos="flip-left" />
                                     </div>
                                     <div className="text-box">
                                         <h4 className="info-title">Resident Evil 6</h4>
@@ -283,7 +284,7 @@ const REPage = (props) => {
                                         </p>
                                     </div>
                                     <div className="image2">
-                                        <img src="Images-video/Resident-Evil/Resident-evil-7.jpg" alt="" />
+                                        <img src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675080838/Resident%20Evil/History/Resident-evil-7_coshic.jpg" alt="" />
                                     </div>
                                 </div>
                             </div>
@@ -291,9 +292,9 @@ const REPage = (props) => {
                         <section className="sec-01">
                             <div className="container" data-aos="flip-left">
                                 <div className="content">
-                                    <div className="image">
+                                    <div className="image" style={{'backgroundColor':'black'}}>
                                         <img
-                                            src="Images-video/Resident-Evil/Resident-evil-8.png" alt="" data-aos="flip-left" />
+                                            src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675080839/Resident%20Evil/History/Resident-evil-8_ib23xa.png" alt="" data-aos="flip-left" />
                                     </div>
                                     <div className="text-box">
                                         <h4 className="info-title">Resident Evil 8</h4>
@@ -331,6 +332,7 @@ const REPage = (props) => {
                 </section>
                 <Footer />
             </article>
+            <Lateraltop />
         </main>
     );
 }

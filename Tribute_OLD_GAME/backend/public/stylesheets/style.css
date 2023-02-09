@@ -6,6 +6,26 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+@media screen and(prefers-reduce-motion: reduce) {
+  html {
+      scroll-behavior: auto;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(-45deg, black, rgba(116, 251, 172, 1));
+  border-radius: 6px;
+}
+
 header {
   background-color: black;
   padding: 1em 0;

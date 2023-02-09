@@ -1,6 +1,8 @@
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../styles/components/pages/ContactPage.css';
+import ScrollReveal from 'scrollreveal';
+import axios from 'axios';
 
 const ContactoPage = (props) => {
     useEffect(() => {
@@ -30,6 +32,80 @@ const ContactoPage = (props) => {
             });
         }
     }, []);
+    useEffect(() => {
+        ScrollReveal({
+            reset: true,
+            distance: '400px',
+            duration: 2000,
+            delay: 400
+        });
+
+        ScrollReveal().reveal('.big-circle', {
+            delay: 400,
+            origin: 'top'
+        });
+
+        ScrollReveal().reveal('.small-cicle', {
+            delay: 500,
+            origin: 'bottom'
+        });
+
+        ScrollReveal().reveal('.Icon1', {
+            delay: 600,
+            origin: 'top'
+        });
+        ScrollReveal().reveal('.Icon2', {
+            delay: 700,
+            origin: 'top'
+        });
+        ScrollReveal().reveal('.Icon3', {
+            delay: 800,
+            origin: 'top'
+        });
+
+        ScrollReveal().reveal('.contact-info', {
+            delay: 200,
+            origin: 'top'
+        });
+        ScrollReveal().reveal('.contact-form', {
+            delay: 300,
+            origin: 'bottom'
+        });
+   
+    }, []);
+
+    const initialForm = {
+        name: '',
+        email: '',
+        game: '',
+        message: ''
+    }
+
+    const [sending, setSending] =useState(false);
+    const [msg, setMsg] = useState('');
+    const [formData, setFormData] = useState(initialForm);
+
+    const handleChange = e => {
+        const { name, value } = e.target;
+        setFormData(oldData => ({
+            ...oldData,
+            [name]: value
+        }));
+    }
+
+    const handleSubmit = async e => {
+        e.preventDefault();
+        setMsg('');
+        setSending(true);
+        const response = await axios.post('http://localhost:3000/api/contact',
+        formData);
+        setSending(false);
+        setMsg(response.data.message);
+        if (response.data.error === false) {
+            setFormData(initialForm)
+        }
+    }
+
     return (
         <main className="showcase">
             <video src="ImagesVideos/videos/Homevideo.mp4" autoPlay loop muted />
@@ -47,9 +123,9 @@ const ContactoPage = (props) => {
                         <div className="social-media">
                             <p>Connect with us :</p>
                             <ul className="Social">
-                                <li><a href="https://www.facebook.com/"><img src="ImagesVideos/images/facebook.png" alt="" /></a></li>
-                                <li><a href="https://twitter.com/?lang=es"><img src="ImagesVideos/images/twitter.png" alt="" /></a></li>
-                                <li><a href="https://www.instagram.com/"><img src="ImagesVideos/images/instagram.png" alt="" /></a></li>
+                                <li className="Icon1"><a href="https://www.facebook.com/"><img src="ImagesVideos/images/facebook.png" alt="" /></a></li>
+                                <li className="Icon2"><a href="https://twitter.com/?lang=es"><img src="ImagesVideos/images/twitter.png" alt="" /></a></li>
+                                <li className="Icon3"><a href="https://www.instagram.com/"><img src="ImagesVideos/images/instagram.png" alt="" /></a></li>
                             </ul>
                         </div>
                     </div>
@@ -58,35 +134,35 @@ const ContactoPage = (props) => {
                         <span className="circle one"></span>
                         <span className="circle two"></span>
 
-                        <form action="index.html" autoComplete="off">
+                        <form action="/contact" method="post" onSubmit={handleSubmit} autoComplete="off">
                             <h3 className="title">Contact us</h3>
                             <div className="input-container">
-                                <input type="text" name="name" className="input" />
+                                <input type="text" name="name" value={formData.name} onChange = {handleChange} className="input" />
                                 <label htmlFor="">Username</label>
                                 <span>Username</span>
                             </div>
                             <div className="input-container">
-                                <input type="email" name="email" className="input" />
+                                <input type="text" name="email" value={formData.email} onChange = {handleChange} className="input" />
                                 <label htmlFor="">Email</label>
                                 <span>Email</span>
                             </div>
                             <div className="input-container">
-                                <input type="tel" name="phone" className="input" />
+                                <input type="text" name="game" value={formData.game} onChange = {handleChange} className="input" />
                                 <label htmlFor="">Favorite game</label>
                                 <span>Favorite game</span>
                             </div>
                             <div className="input-container textarea">
-                                <textarea name="message" className="input"></textarea>
+                                <textarea name="message" value={formData.message} onChange = {handleChange} className="input"></textarea>
                                 <label htmlFor="">Message</label>
                                 <span>Message</span>
                             </div>
                             <input type="submit" value="Send" className="btn" />
+                            {sending ? <p className="message-send">Sending....</p> : null}
+                            {msg ? <p className="message-send">{msg}</p> : null}
                         </form>
                     </div>
                 </div>
             </div>
-
-
         </main>
     );
 }

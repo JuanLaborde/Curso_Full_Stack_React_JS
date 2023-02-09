@@ -76,7 +76,7 @@ function ShHistory() {
                         </div>
                     </div>
                     <div className="flex__item_HIS flex__item_HIS--right faded faded-left">
-                        <img className="SH__img_HIS" src="ImagesVideos/images/Silent-Hill/SH-Town-day.jpg" alt="" />
+                        <img className="SH__img_HIS" src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675077143/Silent-Hill-Characters/SH-History-Section/SH-Town-day_qmqizk.jpg" alt="" />
                     </div>
                 </div>
                 <div className="flex__container_HIS animate--start--HIS" data-slide="2H">
@@ -108,7 +108,7 @@ function ShHistory() {
                         </div>
                     </div>
                     <div className="flex__item_HIS flex__item_HIS--right faded faded-left">
-                        <img className="SH__img_HIS" src="ImagesVideos/images/Silent-Hill/Silent-hill-gas.jpg" alt="" />
+                        <img className="SH__img_HIS" src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675077160/Silent-Hill-Characters/SH-History-Section/Silent-hill-gas_rd7fj0.jpg" alt="" />
                     </div>
                 </div>
                 <div className="flex__container_HIS animate--start--HIS" data-slide="3H">
@@ -144,7 +144,7 @@ function ShHistory() {
                         </div>
                     </div>
                     <div className="flex__item_HIS flex__item_HIS--right faded faded-left">
-                        <img className="SH__img_HIS" src="ImagesVideos/images/Silent-Hill/Alchemilla-Hospital.jpg" alt="" />
+                        <img className="SH__img_HIS" src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675077173/Silent-Hill-Characters/SH-History-Section/Alchemilla-Hospital_niaroe.webp" alt="" />
                     </div>
                 </div>
                 <div className="flex__container_HIS animate--start--HIS" data-slide="4H">
@@ -177,7 +177,7 @@ function ShHistory() {
                         </div>
                     </div>
                     <div className="flex__item_HIS flex__item_HIS--right faded faded-left">
-                        <img className="SH__img_HIS" src="ImagesVideos/images/Silent-Hill/Lakeside-Amusement-Park.jpg" alt="" />
+                        <img className="SH__img_HIS" src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675077192/Silent-Hill-Characters/SH-History-Section/Lakeside-Amusement-Park_xhzbqh.jpg" alt="" />
                     </div>
                 </div>
                 <div className="flex__container_HIS animate--start--HIS" data-slide="5H">
@@ -210,7 +210,7 @@ function ShHistory() {
                         </div>
                     </div>
                     <div className="flex__item_HIS flex__item_HIS--right faded faded-left">
-                        <img className="SH__img_HIS" src="ImagesVideos/images/Silent-Hill/Midwich-Elementary-School.jpg" alt="" />
+                        <img className="SH__img_HIS" src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675077217/Silent-Hill-Characters/SH-History-Section/Midwich-Elementary-School_rbzofp.webp" alt="" />
                     </div>
                 </div>
                 <div className="flex__container_HIS animate--start--HIS" data-slide="6H">
@@ -245,7 +245,7 @@ function ShHistory() {
                         </div>
                     </div>
                     <div className="flex__item_HIS flex__item_HIS--right faded faded-left">
-                        <img className="SH__img_HIS" src="ImagesVideos/images/Silent-Hill/OtherWorld.jpg" alt="" />
+                        <img className="SH__img_HIS" src="https://res.cloudinary.com/dqhtvtptp/image/upload/v1675077253/Silent-Hill-Characters/SH-History-Section/OtherWorld_fciiwe.jpg" alt="" />
                     </div>
                 </div>
 

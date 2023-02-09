@@ -9,6 +9,7 @@ const Nav = (props) => {
                 <ul>
                     <li className="underline-hover-efect"><NavLink activeclassname="activo" to="/">Home</NavLink></li>
                     <li className="underline-hover-efect"><NavLink activeclassname="activo" to="/assassinscreed">Assassins Creed</NavLink></li>
+                    <li className="underline-hover-efect"><NavLink activeclassname="activo" to="/finalfantasy7">Final Fantasy VII</NavLink></li>
                     <li className="underline-hover-efect"><NavLink activeclassname="activo" to="/residentevil">Resident Evil</NavLink></li>
                     <li className="underline-hover-efect"><NavLink activeclassname="activo" to="/silenthill">Silent Hill</NavLink></li>
                     <li className="underline-hover-efect"><NavLink activeclassname="activo" to="/contact">Contact</NavLink></li>

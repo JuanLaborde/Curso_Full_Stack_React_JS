@@ -1,0 +1,1221 @@
+@import url(//db.onlinewebfonts.com/c/d8acf9862ec2f2245c7885adf14f1e7c?family=Runic+MT+Condensed);
+
+/*----------------------------------MENU PAGE------------------------------*/
+
+#Image-BackgroundFF {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+    z-index: 0 !important;
+    background-attachment: fixed;
+}
+
+.portal-topFF {
+    display: block;
+    opacity: 1;
+    width: 100%;
+}
+
+.Initial-pageFF {
+    vertical-align: baseline;
+    position: relative;
+    width: 100%;
+    height: calc(100vh + 100px);
+    overflow: hidden;
+}
+
+.Format-Image-BoxFF {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+}
+
+.fog {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: #fff;
+}
+
+.Image-coverFF {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    z-index: 0;
+    border: none;
+}
+
+.nav-topFF {
+    padding: 100px 200px 200px 198px;
+    font: inherit;
+    vertical-align: baseline;
+    position: absolute;
+
+    z-index: 3;
+}
+
+.nav-topFF ul {
+    list-style: none;
+}
+
+.nav-topFF li {
+    vertical-align: baseline;
+    position: relative;
+    margin: 0 0 1vh;
+    color: #fff;
+    font-size: 2.3rem;
+    font-weight: lighter;
+
+    line-height: 1.5;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.nav-topFF li a {
+    text-decoration: none;
+    color: white;
+    font-size: 45px;
+}
+
+.nav-topFF li a {
+    font-family: 'Runic MT Condensed', sans-serif;
+    background-image: linear-gradient(to right,
+            rgba(116, 251, 172, 1),
+            rgba(116, 251, 172, 1) 50%,
+            white 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-topFF li a:before {
+    content: '';
+    background: rgba(116, 251, 172, 1);
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-topFF li a:hover {
+    background-position: 0;
+    font-weight: bold;
+}
+
+.nav-topFF li a:hover::before {
+    width: 100%;
+}
+
+/*-----------------------------SECTION CHARACTERS-----------------------------------*/
+
+.contents-pageFF {
+    vertical-align: baseline;
+    position: relative;
+    padding: 0;
+    background: transparent;
+    width: 100%;
+}
+
+.contents-pageFF .FF-CH-Section {
+    visibility: visible;
+    margin: 0px;
+    border: 0;
+    vertical-align: baseline;
+    position: relative;
+    border-bottom: 1px solid #3a3a3a;
+    background: #000;
+    width: 100%;
+    overflow: hidden;
+}
+
+.contents-pageFF .FF-CH-Section {
+    background-image: url("../../../ImagesCSS/histroy-section-ff.jpg");
+    background-repeat: no-repeat;
+    z-index: 0 !important;
+    background-attachment: fixed;
+    color: black;
+    background-size: cover;
+}
+
+.contents-pageFF .FF-CH-Section .inner-CH-FF {
+    vertical-align: baseline;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1190px;
+    margin: 0 auto;
+    padding: 120px 0 80px;
+}
+
+.contents-pageFF .FF-CH-Section .inner-CH-FF h3 {
+
+    vertical-align: baseline;
+    position: relative;
+    margin: 0 0 2vh;
+    color: #fff;
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: .05em;
+    text-shadow: 0 0 5px #000;
+    opacity: 1;
+    font-family: 'Runic MT Condensed', sans-serif;
+}
+
+.contents-pageFF .FF-CH-Section .inner-CH-FF h3 span {
+    display: block;
+    width: 690px;
+    margin: 2px 0 0 6px;
+    color: #e7e7e7;
+    font-size: 2rem;
+    line-height: 2;
+    text-shadow: 0 0 5px #000;
+    letter-spacing: 0em;
+    font-family: 'Runic MT Condensed', sans-serif;
+}
+
+.contents-pageFF .FF-CH-Section .Content-Slider-FFCH {
+    margin-top: 100px;
+    position: relative;
+    font-size: 100%;
+    font-weight: 400;
+    min-height: 70vh;
+    font-family: 'Runic MT Condensed', sans-serif;
+}
+
+.Content-Slider-FFCH {
+    width: 100%;
+    height: 100%;
+}
+
+.flex__container_FFCH {
+    position: absolute;
+    top: 110px;
+    left: -120px;
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    -webkit-flex-flow: row wrap;
+    -moz-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    -o-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-justify-content: flex-start;
+    -moz-justify-content: flex-start;
+    -ms-justify-content: flex-start;
+    -o-justify-content: flex-start;
+    justify-content: flex-start;
+    height: 120%;
+    width: 120%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.flex__container_FFCH.flex--active-FFCH {
+    z-index: 2;
+}
+
+.text--sub--FFCH {
+    font-size: 30px;
+    letter-spacing: 0.5rem;
+    margin-bottom: 0px;
+    font-family: 'Runic MT Condensed', sans-serif;
+}
+
+.text--normal--FFCH {
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: justify;
+    line-height: 35px;
+    margin-top: 15px;
+    margin-right: 35px;
+    font-family: 'Runic MT Condensed', sans-serif;
+}
+
+.flex__item_FFCH {
+    height: 100vh;
+    color: #fff;
+    transition: transform 0.1s linear;
+}
+
+.flex__item_FFCH--left {
+    display: inline-flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    width: 50%;
+    height: 350px;
+    transform-origin: left bottom;
+    transition: transform 0.1s linear 0.4s;
+    opacity: 0;
+    position: relative;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    margin-top: 155px;
+    border: 1px solid rgba(116, 251, 172, 1);
+}
+
+.flex__item_FFCH--right {
+    display: inline-flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    width: 50%;
+    transform-origin: right center;
+    transition: transform 0.1s linear 0s;
+    opacity: 0;
+    background: transparent;
+    height: 1000px;
+    position: relative;
+    overflow: hidden;
+}
+
+.flex__item_FFCH--right img {
+    position: absolute;
+    width: 50%;
+    height: auto;
+    margin-left: 100px;
+    transform: translate3d(0, 0, 0);
+    transition: opacity 0.43s 0.6s, transform 0.4s 0.65s cubic-bezier(0, 0.88, 0.4, 0.93);
+    object-fit: cover;
+}
+
+.flex--preStart-FFCH .flex__item_FFCH--left,
+.flex--preStart-FFCH .flex__item_FFCH--right,
+.flex--active-FFCH .flex__item_FFCH--left,
+.flex--active-FFCH .flex__item_FFCH--right {
+    opacity: 1;
+}
+
+
+
+.flex__content_FFCH {
+    margin-left: 80px;
+    margin-bottom: 20px;
+    width: 100%;
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition: transform 0.2s linear 0.2s, opacity 0.1s linear 0.2s;
+}
+
+/* Animate-START point */
+
+.flex__container_FFCH.animate--start--FFCH .flex__content_FFCH {
+    transform: translate3d(0, -200%, 0);
+    opacity: 0;
+}
+
+.flex__container_FFCH.animate--start--FFCH .SH__img_FFCH {
+    transform: translate3d(-200px, 0, 0);
+    opacity: 0;
+}
+
+/* Animate-END point */
+
+.flex__container_FFCH.animate--end-FFCH .flex__item_FFCH--left {
+    transform: scaleY(0);
+}
+
+.flex__container_HIS.animate--end-FFCH .flex__item_FFCH--right {
+    transform: scaleX(0);
+}
+
+.flex__container_FFCH.animate--end-FFCH .flex__content_FFCH {
+    transform: translate3d(0, 200%, 0);
+    opacity: 0;
+}
+
+.flex__container_FFCH.animate--end-FFCH .SH__img_FFCH {
+    transform: translate3d(200px, 0, 0);
+    opacity: 0;
+}
+
+.slider__navi_FFCH {
+    position: absolute;
+    top: 0;
+    left: 65%;
+    display: flex;
+    transform: translateX(-50%);
+}
+
+.slider__navi_FFCH figure {
+    height: 75px;
+    width: 75px;
+    margin: 0 3px;
+    cursor: pointer;
+    transition: border 0.4s ease-in-out, bottom 0.4s ease-in-out, filter 0.4s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    backface-visibility: hidden;
+    bottom: -1.24rem;
+}
+
+
+.btn-image1FFCH {
+    background-image: url("https://fyre.cdn.sewest.net/end-plus/607ef9d8b43f5a0012ac7e0b/chara_thumb_cloud-EOPnEU_rT.png?width=2100&quality=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
+}
+
+.btn-image1FFCH:hover {
+    filter: grayscale(50%);
+}
+
+.btn-image1FFCH.active {
+    filter: grayscale(0%);
+    bottom: 0;
+    border-bottom: 2px solid rgba(116, 251, 172, 1);
+}
+
+.btn-image2FFCH {
+    background-image: url("https://fyre.cdn.sewest.net/end-plus/607efc91b43f5a0012acf2b2/chara_thumb_aerith-qiLprfHPy.png?width=2100&quality=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
+    height: 50px;
+}
+
+.btn-image2FFCH:hover {
+    filter: grayscale(50%);
+}
+
+.btn-image2FFCH.active {
+    filter: grayscale(0%);
+    bottom: 0;
+    height: 75px;
+    border-bottom: 2px solid rgba(116, 251, 172, 1);
+}
+
+.btn-image3FFCH {
+    background-image: url("https://fyre.cdn.sewest.net/end-plus/607efdfcb43f5a0012ad12b4/chara_thumb_tifa-_rlXrQjC7.png?width=2100&quality=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
+    height: 50px;
+}
+
+.btn-image3FFCH:hover {
+    filter: grayscale(50%);
+}
+
+.btn-image3FFCH.active {
+    filter: grayscale(0%);
+    bottom: 0;
+    height: 75px;
+    border-bottom: 2px solid rgba(116, 251, 172, 1);
+}
+
+.btn-image4FFCH {
+    background-image: url("https://fyre.cdn.sewest.net/end-plus/607effe754ca700013dee103/chara_thumb_barret-JQsarTeuO.png?width=2100&quality=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
+    height: 50px;
+}
+
+.btn-image4FFCH:hover {
+    filter: grayscale(50%);
+}
+
+.btn-image4FFCH.active {
+    filter: grayscale(0%);
+    bottom: 0;
+    height: 75px;
+    border-bottom: 2px solid rgba(116, 251, 172, 1);
+}
+
+.btn-image5FFCH {
+    background-image: url("https://fyre.cdn.sewest.net/end-plus/607f01a7b43f5a0012ad2696/chara_thumb_redxiii-x71w8Tqkc.png?width=2100&quality=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
+    height: 50px;
+}
+
+.btn-image5FFCH:hover {
+    filter: grayscale(50%);
+}
+
+.btn-image5FFCH.active {
+    filter: grayscale(0%);
+    bottom: 0;
+    height: 75px;
+    border-bottom: 2px solid rgba(116, 251, 172, 1);
+}
+
+.btn-image6FFCH {
+    background-image: url("https://fyre.cdn.sewest.net/end-plus/608acfdd9063680013122fe7/characters_profile_yuffie-ynvRVnfMA.png?width=2100&quality=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
+    height: 50px;
+}
+
+.btn-image6FFCH:hover {
+    filter: grayscale(50%);
+}
+
+.btn-image6FFCH.active {
+    filter: grayscale(0%);
+    bottom: 0;
+    height: 75px;
+    border-bottom: 2px solid rgba(116, 251, 172, 1);
+}
+
+.btn-image7FFCH {
+    background-image: url("https://fyre.cdn.sewest.net/end-plus/607fed61b43f5a0012ae87bd/chara_thumb_shinra-tScfWQ6JD.png?width=2100&quality=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
+    height: 50px;
+}
+
+.btn-image7FFCH:hover {
+    filter: grayscale(50%);
+}
+
+.btn-image7FFCH.active {
+    filter: grayscale(0%);
+    bottom: 0;
+    height: 75px;
+    border-bottom: 2px solid rgba(116, 251, 172, 1);
+}
+
+.btn-image8FFCH {
+    background-image: url("https://fyre.cdn.sewest.net/end-plus/607fee4a54ca700013e01ed2/chara_thumb_heidegger-xgHTruVmL.png?width=2100&quality=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
+    height: 50px;
+}
+
+.btn-image8FFCH:hover {
+    filter: grayscale(50%);
+}
+
+.btn-image8FFCH.active {
+    filter: grayscale(0%);
+    bottom: 0;
+    height: 75px;
+    border-bottom: 2px solid rgba(116, 251, 172, 1);
+}
+
+.btn-image9FFCH {
+    background-image: url("https://fyre.cdn.sewest.net/end-plus/607feb4454ca700013e0090a/chara_thumb_reno-QCJ8biWR8.png?width=2100&quality=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
+    height: 50px;
+}
+
+.btn-image9FFCH:hover {
+    filter: grayscale(50%);
+}
+
+.btn-image9FFCH.active {
+    filter: grayscale(0%);
+    bottom: 0;
+    height: 75px;
+    border-bottom: 2px solid rgba(116, 251, 172, 1);
+}   
+
+.btn-image10FFCH {
+    background-image: url("https://fyre.cdn.sewest.net/end-plus/607febdbb43f5a0012ae8545/chara_thumb_rude-JvW4Onacs.png?width=2100&quality=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
+    height: 50px;
+}
+
+.btn-image10FFCH:hover {
+    filter: grayscale(50%);
+}
+
+.btn-image10FFCH.active {
+    filter: grayscale(0%);
+    bottom: 0;
+    height: 75px;
+    border-bottom: 2px solid rgba(116, 251, 172, 1);
+}   
+
+.btn-image11FFCH {
+    background-image: url("https://fyre.cdn.sewest.net/end-plus/607fefea54ca700013e03158/chara_thumb_hojo-hduVtwvqT.png?width=2100&quality=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
+    height: 50px;
+}
+
+.btn-image11FFCH:hover {
+    filter: grayscale(50%);
+}
+
+.btn-image11FFCH.active {
+    filter: grayscale(0%);
+    bottom: 0;
+    height: 75px;
+    border-bottom: 2px solid rgba(116, 251, 172, 1);
+}   
+
+.btn-image12FFCH {
+    background-image: url("https://fyre.cdn.sewest.net/end-plus/607fe916b43f5a0012ae6e2e/chara_thumb_sephiroth-jlSIs__PG.png?width=2100&quality=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
+    height: 50px;
+}
+
+.btn-image12FFCH:hover {
+    filter: grayscale(50%);
+}
+
+.btn-image12FFCH.active {
+    filter: grayscale(0%);
+    bottom: 0;
+    height: 75px;
+    border-bottom: 2px solid rgba(116, 251, 172, 1);
+}   
+
+/* -----------------------------SECTION HISTORY----------------------------------- */
+
+.contents-pageFF .history-section-FF {
+    visibility: visible;
+    margin: 0px;
+    border: 0;
+    vertical-align: baseline;
+    position: relative;
+    border-bottom: 1px solid #3a3a3a;
+    background: #000;
+    width: 100%;
+    overflow: hidden;
+}
+
+.contents-pageFF .history-section-FF {
+    background-image: url("../../../ImagesCSS/character-ff.jpg");
+    background-repeat: no-repeat;
+    z-index: 0 !important;
+    background-attachment: fixed;
+    color: black;
+    background-size: cover;
+}
+
+.contents-pageFF .history-section-FF .inner-history-FF {
+    vertical-align: baseline;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1190px;
+    margin: 0 auto;
+    padding: 120px 0 80px;
+}
+
+
+.contents-pageFF .history-section-FF .inner-history-FF h3 {
+    vertical-align: baseline;
+    position: relative;
+    margin: 0 0 2vh;
+    color: #fff;
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: .05em;
+    text-shadow: 0 0 5px #000;
+    opacity: 1;
+    font-family: 'Runic MT Condensed', sans-serif;
+}
+
+.contents-pageFF .history-section-FF .inner-history-FF h3 span {
+    display: block;
+    width: 690px;
+    margin: 2px 0 0 6px;
+    color: #e7e7e7;
+    font-size: 2rem;
+    line-height: 2;
+    text-shadow: 0 0 5px #000;
+    letter-spacing: 0em;
+    font-family: 'Runic MT Condensed', sans-serif;
+}
+
+.contents-pageFF .history-section-FF .Content-Slider-FF {
+    margin-top: 100px;
+    position: relative;
+    font-size: 100%;
+    font-weight: 400;
+    min-height: 70vh;
+    font-family: 'Runic MT Condensed', sans-serif;
+}
+
+.Content-Slider-FF {
+    width: 100%;
+    height: 100%;
+}
+
+.flex__container_FF {
+    position: absolute;
+    top: 110px;
+    left: -120px;
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    -webkit-flex-flow: row wrap;
+    -moz-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    -o-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-justify-content: flex-start;
+    -moz-justify-content: flex-start;
+    -ms-justify-content: flex-start;
+    -o-justify-content: flex-start;
+    justify-content: flex-start;
+    height: 120%;
+    width: 120%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.flex__container_FF.flex--active-FF {
+    z-index: 2;
+}
+
+.text--sub--FF {
+    font-size: 30px;
+    letter-spacing: 0.5rem;
+    margin-bottom: 0px;
+    font-family: 'Runic MT Condensed', sans-serif;
+}
+
+.text--normal--FF {
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 35px;
+    margin-top: 15px;
+    font-family: 'Runic MT Condensed', sans-serif;
+}
+
+.flex__item_FF {
+    height: 100vh;
+    color: #fff;
+    transition: transform 0.1s linear;
+}
+
+.flex__item_FF--left {
+    display: inline-flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    width: 50%;
+    height: 400px;
+    transform-origin: left bottom;
+    transition: transform 0.1s linear 0.4s;
+    opacity: 0;
+    position: relative;
+    overflow: hidden;
+    background: black;
+}
+
+.flex__item_FF--right {
+    display: inline-flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    width: 50%;
+    transform-origin: right center;
+    transition: transform 0.1s linear 0s;
+    opacity: 0;
+    background: transparent;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.flex__item_FF--right img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: translate3d(0, 0, 0);
+    transition: opacity 0.43s 0.6s, transform 0.4s 0.65s cubic-bezier(0, 0.88, 0.4, 0.93);
+    object-fit: cover;
+    box-shadow: inset 40px 0 40px -16px;
+}
+
+.flex--preStart-FF .flex__item_FF--left,
+.flex--preStart-FF .flex__item_FF--right,
+.flex--active-FF .flex__item_FF--left,
+.flex--active-FF .flex__item_FF--right {
+    opacity: 1;
+}
+
+
+
+.flex__content_FF {
+    margin-left: 80px;
+    margin-bottom: 20px;
+    width: 100%;
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition: transform 0.2s linear 0.2s, opacity 0.1s linear 0.2s;
+}
+
+/* Animate-START point */
+
+.flex__container_FF.animate--start--FF .flex__content_FF {
+    transform: translate3d(0, -200%, 0);
+    opacity: 0;
+}
+
+.flex__container_FF.animate--start--FF .SH__img_FF {
+    transform: translate3d(-200px, 0, 0);
+    opacity: 0;
+}
+
+/* Animate-END point */
+
+.flex__container_FF.animate--end-FF .flex__item_FF--left {
+    transform: scaleY(0);
+}
+
+.flex__container_HIS.animate--end-FF .flex__item_FF--right {
+    transform: scaleX(0);
+}
+
+.flex__container_FF.animate--end-FF .flex__content_FF {
+    transform: translate3d(0, 200%, 0);
+    opacity: 0;
+}
+
+.flex__container_FF.animate--end-FF .SH__img_FF {
+    transform: translate3d(200px, 0, 0);
+    opacity: 0;
+}
+
+.slider__navi_FF {
+    position: absolute;
+    top: 0;
+    left: 65%;
+    display: flex;
+    transform: translateX(-50%);
+}
+
+.slider__navi_FF figure {
+    height: 75px;
+    width: 150px;
+    margin: 0 3px;
+    cursor: pointer;
+    transition: border 0.4s ease-in-out, bottom 0.4s ease-in-out, filter 0.4s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    backface-visibility: hidden;
+    bottom: -1.24rem;
+}
+
+
+.btn-image1FF {
+    background-image: url("https://res.cloudinary.com/dqhtvtptp/image/upload/v1675551658/Final%20Fantasy/shinra_company_xii4qq.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
+}
+
+.btn-image1FF:hover {
+    filter: grayscale(50%);
+}
+
+.btn-image1FF.active {
+    filter: grayscale(0%);
+    bottom: 0;
+    border-bottom: 2px solid rgba(116, 251, 172, 1);
+}
+
+.btn-image2FF {
+    background-image: url("https://gameranx.com/wp-content/uploads/2023/01/FlT6fahWYAIIinI-1024x576.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
+    height: 50px;
+}
+
+.btn-image2FF:hover {
+    filter: grayscale(50%);
+}
+
+.btn-image2FF.active {
+    filter: grayscale(0%);
+    bottom: 0;
+    height: 75px;
+    border-bottom: 2px solid rgba(116, 251, 172, 1);
+}
+
+.btn-image3FF {
+    background-image: url("https://res.cloudinary.com/dqhtvtptp/image/upload/v1675553128/Final%20Fantasy/Shinra_MP_cauc1x.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
+    height: 50px;
+}
+
+.btn-image3AC:hover {
+    filter: grayscale(50%);
+}
+
+.btn-image3FF.active {
+    filter: grayscale(0%);
+    bottom: 0;
+    height: 75px;
+    border-bottom: 2px solid rgba(116, 251, 172, 1);
+}
+
+.btn-image4FF {
+    background-image: url("https://res.cloudinary.com/dqhtvtptp/image/upload/v1675553294/Final%20Fantasy/Midgar-construction_frjiwf.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
+    height: 50px;
+}
+
+.btn-image4FF:hover {
+    filter: grayscale(50%);
+}
+
+.btn-image4FF.active {
+    filter: grayscale(0%);
+    bottom: 0;
+    height: 75px;
+    border-bottom: 2px solid rgba(116, 251, 172, 1);
+}
+
+.btn-image5FF {
+    background-image: url("https://res.cloudinary.com/dqhtvtptp/image/upload/v1675553654/Final%20Fantasy/Sister_Ray-Crisis_Core_mpumly.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
+    height: 50px;
+}
+
+.btn-image5FF:hover {
+    filter: grayscale(50%);
+}
+
+.btn-image5FF.active {
+    filter: grayscale(0%);
+    bottom: 0;
+    height: 75px;
+    border-bottom: 2px solid rgba(116, 251, 172, 1);
+}
+
+.btn-image6FF {
+    background-image: url("https://live.staticflickr.com/65535/49811645401_f818a8a1ba_b.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
+    height: 50px;
+}
+
+.btn-image6FF:hover {
+    filter: grayscale(50%);
+}
+
+.btn-image6FF.active {
+    filter: grayscale(0%);
+    bottom: 0;
+    height: 75px;
+    border-bottom: 2px solid rgba(116, 251, 172, 1);
+}
+
+.btn-image7FF {
+    background-image: url("https://www.gamespot.com/a/uploads/ignore_jpg_scale_super/1581/15811374/3665292-ff7%20city%20ancients.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
+    height: 50px;
+}
+
+.btn-image7FF:hover {
+    filter: grayscale(50%);
+}
+
+.btn-image7FF.active {
+    filter: grayscale(0%);
+    bottom: 0;
+    height: 75px;
+    border-bottom: 2px solid rgba(116, 251, 172, 1);
+}
+
+.btn-image8FF {
+    background-image: url("https://res.cloudinary.com/dqhtvtptp/image/upload/v1675554308/Final%20Fantasy/Cetra_fuxfq7.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
+    height: 50px;
+}
+
+.btn-image8FF:hover {
+    filter: grayscale(50%);
+}
+
+.btn-image8FF.active {
+    filter: grayscale(0%);
+    bottom: 0;
+    height: 75px;
+    border-bottom: 2px solid rgba(116, 251, 172, 1);
+}
+
+.btn-image9FF {
+    background-image: url("https://res.cloudinary.com/dqhtvtptp/image/upload/v1675554861/Final%20Fantasy/Northern-Crater_qgkdwk.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
+    height: 50px;
+}
+
+.btn-image9FF:hover {
+    filter: grayscale(50%);
+}
+
+.btn-image9FF.active {
+    filter: grayscale(0%);
+    bottom: 0;
+    height: 75px;
+    border-bottom: 2px solid rgba(116, 251, 172, 1);
+}
+
+.faded {
+    position: relative;
+    display: inline-block;
+    color: black;
+}
+
+.faded:after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-collapse: separate;
+}
+
+.faded.faded-left:after {
+    box-shadow: inset 100px 0 100px -16px;
+}
+
+/*-----------------------------SECTION MATERIA-----------------------------------*/
+
+.contents-pageFF .materia-section {
+    visibility: visible;
+    margin: 0px;
+    border: 0;
+    vertical-align: baseline;
+    position: relative;
+    border-bottom: 1px solid #3a3a3a;
+    background: #000;
+    width: 100%;
+    overflow: hidden;
+}
+
+.contents-pageFF .materia-section {
+    background-image: url("https://d3kjluh73b9h9o.cloudfront.net/original/4X/e/1/a/e1a818bf3aa2d8a08353eeaafe50698965670fb4.jpeg");
+    background-repeat: no-repeat;
+    z-index: 0 !important;
+    background-attachment: fixed;
+    color: black;
+    background-size: cover;
+}
+
+.contents-pageFF .materia-section .inner-materia {
+    vertical-align: baseline;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1190px;
+    margin: 0 auto;
+    padding: 120px 0 80px;
+}
+
+
+.contents-pageFF .materia-section .inner-materia h3 {
+
+    vertical-align: baseline;
+    position: relative;
+    margin: 0 0 2vh;
+    color: #fff;
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: .05em;
+    text-shadow: 0 0 5px #000;
+    opacity: 1;
+    font-family: 'Runic MT Condensed', sans-serif;
+}
+
+.contents-pageFF .materia-section .inner-materia h3 span {
+    display: block;
+    width: 690px;
+    margin: 2px 0 0 6px;
+    color: #e7e7e7;
+    font-size: 2.0rem;
+    line-height: 2;
+    text-shadow: 0 0 5px #000;
+    letter-spacing: 0em;
+    font-family: 'Runic MT Condensed', sans-serif;
+}
+
+.FF-Materia {
+    vertical-align: baseline;
+    position: relative;
+    color: white;
+    font-size: 40px;
+    margin-top: 50px;
+    text-align: justify;
+}
+
+.FF-Materia .Image-cult {
+    margin-left: 15px;
+    float: right;
+    shape-outside: circle(50%);
+}
+
+.FF-Materia .Image-metatron {
+    margin-left: 5px;
+    float: right;
+    shape-outside: circle(50%);
+}
+
+.FF-Materia img {
+    width: 15%;
+    height: 15%;
+    margin-right: 10px;
+    float: left;
+    shape-outside: circle(50%);
+}
+
+.Text-Format-FF-Materia p {
+    font-family: 'Runic MT Condensed', sans-serif;
+    mix-blend-mode: difference;
+}
+
+/*-----------------------------SECTION JENOVA-SEPHIROTH-----------------------------------*/
+
+.contents-pageFF .jenova-section {
+    visibility: visible;
+    margin: 0px;
+    border: 0;
+    vertical-align: baseline;
+    position: relative;
+    border-bottom: 1px solid #3a3a3a;
+    background: #000;
+    width: 100%;
+    overflow: hidden;
+}
+
+.contents-pageFF .jenova-section {
+    background-image: url("https://scontent-dus1-1.xx.fbcdn.net/v/t1.6435-9/85025455_2683240645047128_7554432266290593792_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=973b4a&_nc_ohc=SaclDd5PCA8AX_VLSMs&_nc_ht=scontent-dus1-1.xx&oh=00_AfC2GYZnnxuDiMQ42wDJIK8DlmZxQOPSWjQ2ABafJ0ttaw&oe=640C9F59");
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 1);
+    z-index: 0 !important;
+    background-attachment: fixed;
+    color: black;
+    background-size: cover;
+}
+
+.contents-pageFF .jenova-section .inner-jenova {
+    vertical-align: baseline;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1190px;
+    margin: 0 auto;
+    padding: 120px 0 80px;
+}
+
+
+.contents-pageFF .jenova-section .inner-jenova h3 {
+
+    vertical-align: baseline;
+    position: relative;
+    margin: 0 0 2vh;
+    color: #fff;
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: .05em;
+    text-shadow: 0 0 5px #000;
+    opacity: 1;
+    font-family: 'Runic MT Condensed', sans-serif;
+}
+
+.contents-pageFF .jenova-section .inner-jenova h3 span {
+    display: block;
+    width: 690px;
+    margin: 2px 0 0 6px;
+    color: #e7e7e7;
+    font-size: 2.0rem;
+    line-height: 2;
+    text-shadow: 0 0 5px #000;
+    letter-spacing: 0em;
+    font-family: 'Runic MT Condensed', sans-serif;
+}
+
+.FF-Jenova {
+    vertical-align: baseline;
+    position: relative;
+    color: white;
+    font-size: 40px;
+    margin-top: 50px;
+    text-align: justify;
+}
+
+.FF-Jenova img {
+    width: 45%;
+    height: 15%;
+    margin-right: 80px;
+    float: left;
+    shape-outside: circle(50%);
+}
+
+.Text-Format-FF-Jenova p {
+    font-family: 'Runic MT Condensed', sans-serif;
+}
+

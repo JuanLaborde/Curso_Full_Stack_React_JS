@@ -12,7 +12,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.8;
+    opacity: 1;
     z-index: 0 !important;
     background-attachment: fixed;
 }
@@ -697,7 +697,7 @@
 
 
 .btn-image1 {
-    background-image: url("../../../ImagesCSS/SH-Town-day.jpg");
+    background-image: url("https://res.cloudinary.com/dqhtvtptp/image/upload/v1675077143/Silent-Hill-Characters/SH-History-Section/SH-Town-day_qmqizk.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     filter: grayscale(100%);
@@ -714,7 +714,7 @@
 }
 
 .btn-image2 {
-    background-image: url("../../../ImagesCSS/Silent-hill-gas.jpg");
+    background-image: url("https://res.cloudinary.com/dqhtvtptp/image/upload/v1675077160/Silent-Hill-Characters/SH-History-Section/Silent-hill-gas_rd7fj0.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     filter: grayscale(100%);
@@ -733,7 +733,7 @@
 }
 
 .btn-image3 {
-    background-image: url("../../../ImagesCSS/Alchemilla-Hospital.jpg");
+    background-image: url("https://res.cloudinary.com/dqhtvtptp/image/upload/v1675077173/Silent-Hill-Characters/SH-History-Section/Alchemilla-Hospital_niaroe.webp");
     background-repeat: no-repeat;
     background-size: cover;
     filter: grayscale(100%);
@@ -752,7 +752,7 @@
 }
 
 .btn-image4 {
-    background-image: url("../../../ImagesCSS/Lakeside-Amusement-Park.jpg");
+    background-image: url("https://res.cloudinary.com/dqhtvtptp/image/upload/v1675077192/Silent-Hill-Characters/SH-History-Section/Lakeside-Amusement-Park_xhzbqh.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     filter: grayscale(100%);
@@ -771,7 +771,7 @@
 }
 
 .btn-image5 {
-    background-image: url("../../../ImagesCSS/Midwich-Elementary-School.jpg");
+    background-image: url("https://res.cloudinary.com/dqhtvtptp/image/upload/v1675077217/Silent-Hill-Characters/SH-History-Section/Midwich-Elementary-School_rbzofp.webp");
     background-repeat: no-repeat;
     background-size: cover;
     filter: grayscale(100%);
@@ -790,7 +790,7 @@
 }
 
 .btn-image6 {
-    background-image: url("../../../ImagesCSS/OtherWorld.jpg");
+    background-image: url("https://res.cloudinary.com/dqhtvtptp/image/upload/v1675077253/Silent-Hill-Characters/SH-History-Section/OtherWorld_fciiwe.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     filter: grayscale(100%);
